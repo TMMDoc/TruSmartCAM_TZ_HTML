@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -414,10 +414,10 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_laser_sequence">Laser Sequence</h2>
+<h2 id="_laser_reihenfolge">Laser Reihenfolge</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Laser Processing Sequence</strong> - Nutzen Sie diese
+<p><strong>Reihenfolge der Laserbearbeitung</strong> - Nutzen Sie diese
 Einstellung, um die Laserbearbeitungsreihenfolge zu definieren. Das ist
 nützlich, wenn Sie Einstiche oder Markierungen haben, die zuerst bearbeitet
 werden müssen.</p>
@@ -439,15 +439,15 @@ vorgenommen, gefolgt von Schneid-/Markiervorgängen.</p>
 jedoch werden zuerst alle Markierungen abgeschlossen.</p>
 </div>
 <div class="paragraph">
-<p><em>Pierce &#8594; Mark &#8594; Cut</em> - Wie die
+<p><em>Einstechen &gt; Markieren &gt; Schneiden</em> - Wie die
 dritte Option, jedoch erfolgt das Markieren vor dem Schneiden.</p>
 </div>
 <div class="paragraph">
-<p><strong>Laser Sequence</strong> - In diesem Pull-down-Menü können Sie Optionen
+<p><strong>Laser Reihenfolge</strong> - In diesem Pull-down-Menü können Sie Optionen
 für die Laserreihenfolge auswählen.</p>
 </div>
 <div class="paragraph">
-<p><em>Partwise</em> - Wenn diese Option gewählt wird, wird
+<p><em>Per Teil</em> - Wenn diese Option gewählt wird, wird
 die Reihenfolge Teil für Teil ausgeführt. Wenn die Bearbeitung eines Teils
 beginnt, werden erst alle Arbeitsgänge an diesem Teil abgeschlossen, bevor das
 nächste Teil in Angriff genommen wird. Die Reihenfolge innerhalb der einzelnen
@@ -457,24 +457,24 @@ benötigt wird, kann die Reihenfolge innerhalb eines Teils über verschiedene
 Instanzen des gleichen Teils variieren.</p>
 </div>
 <div class="paragraph">
-<p><em>Partwise native</em> - Wenn diese Option gewählt
+<p><em>Per Teil klassisch</em> - Wenn diese Option gewählt
 wird, wird die Reihenfolge Teil für Teil ausgeführt. Wenn die Bearbeitung eines
 Teils beginnt, werden erst alle Arbeitsgänge an diesem Teil abgeschlossen, bevor
 das nächste Teil in Angriff genommen wird. Die Reihenfolge innerhalb eines Teils
 und all seiner Instanzen ist dieselbe wie die native Teilebearbeitung.</p>
 </div>
 <div class="paragraph">
-<p><em>Inner first</em> - Die gesamte Bearbeitung von
+<p><em>Inneres zuerst</em> - Die gesamte Bearbeitung von
 Innenkonturen wird zuerst in eine Reihenfolge gebracht, gefolgt von den
 Außenkonturen.</p>
 </div>
 <div class="paragraph">
-<p><em>Sort by contour size</em> - Die gesamte Bearbeitung
+<p><em>Sortieren nach Konturgröße</em> - Die gesamte Bearbeitung
 von Innenkonturen wird vor den Außenkonturen abgewickelt, wobei die Sortierung
 nach Konturgröße erfolgt.</p>
 </div>
 <div class="paragraph">
-<p><strong>Do pre-pierce part-by-part</strong> - Der Einstichbetrieb
+<p><strong>Teil für Teil vorstechen</strong> - Der Einstichbetrieb
 erfolgt Teil für Teil. Wenn alle Einstiche an einem Teil abgeschlossen sind,
 wird das Schneiden abgeschlossen, bevor das nächste Teil in Angriff genommen
 wird.</p>
@@ -482,7 +482,7 @@ wird.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_route_traverse">Route Traverse</h2>
+<h2 id="_positionierbewegung">Positionierbewegung</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
@@ -490,12 +490,12 @@ wird.</p>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Move pierce points to reduce traverse</strong> - Mit dieser
+<p><strong>Verschieben von Einstechpunkten zur Verringerung der Positionierbewegung</strong> - Mit dieser
 Checkbox kann eine andere Platzierung des Anfahrpunkts gewählt werden, um die
 Verfahrdistanz zu verringern.</p>
 </div>
 <div class="paragraph">
-<p><strong>Move pierce points to prevent tilting</strong> - Mit
+<p><strong>Bewegen Sie die Einstichstellen, um ein Kippen zu verhindern.</strong> - Mit
 dieser Checkbox kann eine andere Platzierung des Anfahrpunkts gewählt werden, um
 das Kippen der Ausschnitte zu verhindern.</p>
 </div>
@@ -506,49 +506,49 @@ ihrem Inneren nur dann mit Microjoints versehen, wenn die Evaluierung ergibt,
 dass die Kontur durchfallen oder kippen könnte.</p>
 </div>
 <div class="paragraph">
-<p><strong>Ignore holes smaller than this</strong> - Durchbrüche,
+<p><strong>Löcher, die kleiner sind, werden ignoriert</strong> - Durchbrüche,
 die kleiner als der angegebene Wert sind, werden als nicht groß genug
 betrachtet, damit der Höhensensor den Maschinenkopf hineintauchen kann, und
 daher ignoriert.</p>
 </div>
 <div class="paragraph">
-<p><strong>Minimum cutting head height when traversing</strong> -
+<p><strong>Mindesthöhe des Schneidkopfes beim Verfahren</strong> -
 Mindestabstand des Kopfs von der Tafel beim Verfahren mit Kopf oben.</p>
 </div>
 <div class="paragraph">
-<p><strong>Max. head down traverse distance</strong> - Die Software
+<p><strong>Max. Verfahrweg mit Kopf nach unten</strong> - Die Software
 berechnet ausgehend vom Düsenabstand von der Tafel automatisch einen Grenzwert
 für das Verfahren mit Kopf unten. Aus dem berechneten und dem hier eingegebenen
 Wert wird der niedrigere zur Anwendung ausgewählt.</p>
 </div>
 <div class="paragraph">
-<p><strong>Route traverse lines around holes</strong> - Aktivieren Sie
+<p><strong>Positonierbewegung um Löcher herum verlegen</strong> - Aktivieren Sie
 diese Option, um den Laserkopf, wenn möglich, um Ausschnitte herumzuführen,
 anstatt den Kopf anzuheben.</p>
 </div>
 <div class="paragraph">
-<p><strong>Allowance when routing around holes</strong> - Wenn Linien so
+<p><strong>Zugabe bei Bewegung um Löcher herum</strong> - Wenn Linien so
 geführt werden, dass Ausschnitte vermieden werden, wird zwischen dem Verfahrweg
 und dem Rand eines Schnitts dieser Abstand eingehalten. Wenn dieser Wert zu hoch
 ist, um Verfahrlinien um die Ausschnitte zu führen, werden diese Verfahrlinien
 mit angehobenem Maschinenkopf zurückgelegt.</p>
 </div>
 <div class="paragraph">
-<p><strong>Lift nozzle if routing penalty more than</strong> - Diese Option
+<p><strong>Heben Sie die Düse an, wenn die Positionierung mehr als</strong> - Diese Option
 wird verwendet, um zu definieren, ob die Düse angehoben werden soll, wenn der
 Streckennachteil über diesem Wert liegt.</p>
 </div>
 <div class="paragraph">
-<p><strong>Allowance when routing around tilting holes</strong> -
+<p><strong>Zulässigkeit beim Schneiden um Kipplöcher herum</strong> -
 Diese Option definiert das Streckenaufmaß um kippende Löcher.</p>
 </div>
 <div class="paragraph">
-<p><strong>Always reposition with head-up between holes</strong> -
+<p><strong>Positionieren Sie sich zwischen den Teilen immer mit dem Kopf oben</strong> -
 Diese Option sollte aktiviert werden, wenn Unterprogramme für die Nachproduktion
 sicher sein sollten.</p>
 </div>
 <div class="paragraph">
-<p><strong>Turn off gas between contours to prevent tilting</strong> -
+<p><strong>Gas zwischen Konturen ausschalten, um Verkippung zu verhindern</strong> -
 Diese Option wird verwendet, um das Hilfsgas automatisch auszuschalten, wenn der Laserkopf
 zwischen Konturen verfährt, die bereits geschnitten wurden, vorausgesetzt, der kürzeste
 Abstand zwischen dem Verfahrweg und einer bereits geschnittenen Kante beträgt weniger als 50 mm.</p>
@@ -587,7 +587,7 @@ hohem Gasdruck führen kann, auch wenn die Teile durch einen Mikro- oder Nanojoi
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Um die Option <strong>Turn off gas between contours to prevent tilting</strong>
+<p>Um die Option <strong>Gas zwischen Konturen ausschalten, um Verkippung zu verhindern</strong>
 zu aktivieren, navigieren Sie zu <strong>Settings / Cut CAM / Laser CAM / Sequence</strong>.</p>
 </div>
 <div class="paragraph">
@@ -600,7 +600,7 @@ zu aktivieren, navigieren Sie zu <strong>Settings / Cut CAM / Laser CAM / Sequen
 </div>
 </div>
 <div class="sect1">
-<h2 id="_laser_heads">Laser heads</h2>
+<h2 id="_laser_köpfe">Laser-Köpfe</h2>
 <div class="sectionbody">
 <div class="admonitionblock note">
 <table>
@@ -620,7 +620,7 @@ Dieser Abschnitt ist anwendbar, wenn eine relevante Option gewählt wird.
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Cut with single head</strong> - Diese Option ist für
+<p><strong>Schnitt mit Einzelkopf</strong> - Diese Option ist für
 Zweikopflaser vorgesehen, um das Schneiden mit nur einem Laserkopf zu
 ermöglichen.</p>
 </div>
@@ -634,13 +634,13 @@ ermöglichen.</p>
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_laser_sequence">Laser Sequence</a>
+   <a href="#_laser_reihenfolge">Laser Reihenfolge</a>
   </li>
   <li level="1">
-   <a href="#_route_traverse">Route Traverse</a>
+   <a href="#_positionierbewegung">Positionierbewegung</a>
   </li>
   <li level="1">
-   <a href="#_laser_heads">Laser heads</a>
+   <a href="#_laser_köpfe">Laser-Köpfe</a>
   </li>
  </ul>
 </aside>

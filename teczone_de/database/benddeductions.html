@@ -11,12 +11,12 @@
   <link rel="stylesheet" href="../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../img/trumpf-icon.png">
-  <title>Biegeabzüge</title>
+  <title>Verkürzungswerte</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a class="active" href="benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a class="active" href="benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -388,46 +388,49 @@
  </div>
  <div>/</div>
  <div>
-  <a href="benddeductions.html">Biegeabzüge</a>
+  <a href="benddeductions.html">Verkürzungswerte</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Biegeabzüge</h1>
+                        <h1>Verkürzungswerte</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Biegeabzüge werden verwendet, um die abgewickelte Länge<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> eines Blechteils zu berechnen.
+<p>Verkürzungswerte werden verwendet, um die abgewickelte Länge<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> eines Blechteils zu berechnen.
 Sie ist erforderlich, um Teile mit den korrekten Abmessungen nach dem Biegen präzise zu
 produzieren.</p>
 </div>
 <div class="paragraph">
-<p>Biegeabzüge berücksichtigen die Materialdehnung und -kompression, die während des
-Biegevorgangs auftritt. Durch die Verwendung von Biegeabzügen kann TecZone Bend die Länge
-des Flachmusters anpassen, um sicherzustellen, dass das fertige gebogene Teil die
-angegebenen Abmessungen erfüllt.</p>
+<p>Kundenverkürzungswerte berücksichtigen die Materialdehnung und
+-kompression, die während des Biegevorgangs auftritt. Durch die Verwendung von
+verkürzungswerten kann TecZone Bend die Länge des Flachmusters anpassen, um
+sicherzustellen, dass das fertige gebogene Teil die angegebenen Abmessungen
+erfüllt.</p>
 </div>
 <div class="paragraph">
-<p>Biegeabzüge können je nach Faktoren wie Materialtyp, Dicke, Biegeradius und Biegemethode
-variieren.</p>
+<p>Kundenverkürzungswerte können je nach Faktoren wie Materialtyp,
+Dicke, Biegeradius und Biegemethode variieren.</p>
 </div>
 <div class="paragraph">
-<p>Wenn ein 3D-Teil in TecZone Bend importiert wird, berechnet die Software automatisch die
-Biegeabzüge basierend auf der Geometrie und den Materialeigenschaften des Teils. Sie
-können die Biegeabzüge bei Bedarf auch manuell anpassen, um die Länge des Flachmusters
-zu optimieren.</p>
+<p>Wenn ein 3D-Teil in TecZone Bend importiert wird, berechnet die Software
+automatisch die Kundenverkürzungswerte basierend auf der
+Geometrie und den Materialeigenschaften des Teils. Sie können die
+Kundenverkürzungswerte bei Bedarf auch manuell anpassen, um die
+Länge des Flachmusters zu optimieren.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_einstellungen_für_biegeabzüge">Einstellungen für Biegeabzüge</h2>
+<h2 id="_einstellungen_für_kundenverkürzungswerte">Einstellungen für Kundenverkürzungswerte</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Benutzerdefinierte Biegeabzüge können in der Datenbank für Biegeabzüge festgelegt werden.
-Klicken Sie zum Zugriff auf das Symbol <strong>database</strong> und wählen Sie
-<strong>Bend Deductions</strong>.</p>
+<p>Benutzerdefinierte Kundenverkürzungswerte können in der
+Datenbank für Kundenverkürzungswerte festgelegt werden. Um
+darauf zuzugreifen, klicken Sie auf das Symbol <strong>Datenbank</strong> und
+wählen Sie <strong>Kundenverkürzungswerte</strong>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -435,9 +438,9 @@ Klicken Sie zum Zugriff auf das Symbol <strong>database</strong> und wählen Sie
 </div>
 </div>
 <div class="paragraph">
-<p>Sie können mit <strong>Add</strong> ein neues Biegeabzug-Szenario hinzufügen oder ein
-vorhandenes Szenario auswählen, um es zu <strong>Edit</strong> oder zu löschen. Sie können
-auch mit <strong>Copy</strong> ein vorhandenes Szenario kopieren, um ein neues mit ähnlichen
+<p>Sie können mit <strong>Szenario hinzufügen</strong> ein neues Verkürzungswerte-Szenario hinzufügen oder ein
+vorhandenes Szenario auswählen, um es zu <strong>Szenario bearbeiten</strong> oder zu Löschen. Sie können
+auch mit <strong>Szenario kopieren</strong> ein vorhandenes Szenario kopieren, um ein neues mit ähnlichen
 Einstellungen zu erstellen.</p>
 </div>
 <div class="imageblock">
@@ -446,31 +449,31 @@ Einstellungen zu erstellen.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Klicken Sie auf <strong>Add</strong>, um ein neues Biegeabzug-Szenario zu erstellen. Wählen
-Sie die folgenden Parameter aus und geben Sie sie ein:</p>
+<p>Klicken Sie auf <strong>Szenario hinzufügen</strong>, um ein neues Verkürzungswerte-Szenario zu erstellen. Wählen
+Sie die folgenden Parameter aus und editieren Sie sie:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Material</strong>: Wählen Sie das Material aus, für das die Biegeabzüge gelten.</p>
+<p><strong>Material|Dicke|Oberwerkzeugradius|Unterwerkzeugtyp|Unterwerkzeugweite|Unterwerkzeug Einzugsradius|Unterwerkzeug Winkel|Traktrix Radius|Übergangswinkel</strong>: Wählen Sie das Material aus, für das die Kundenverkürzungswerte gelten.</p>
 </li>
 <li>
-<p><strong>Thickness</strong>: Legen Sie die Dicke des Blechs fest, für das die Biegeabzüge gelten.</p>
+<p><strong>Material|Dicke|Oberwerkzeugradius|Unterwerkzeugtyp|Unterwerkzeugweite|Unterwerkzeug Einzugsradius|Unterwerkzeug Winkel|Traktrix Radius|Übergangswinkel</strong>: Legen Sie die Dicke des Blechs fest, für das die Kundenverkürzungswerte gelten.</p>
 </li>
 <li>
-<p><strong>Punch radius</strong>: Legen Sie den Radius des Oberwerkzeugs fest, für den die Biegeabzüge gelten.</p>
+<p><strong>Material|Dicke|Oberwerkzeugradius|Unterwerkzeugtyp|Unterwerkzeugweite|Unterwerkzeug Einzugsradius|Unterwerkzeug Winkel|Traktrix Radius|Übergangswinkel</strong>: Legen Sie den Radius des Oberwerkzeugs fest, für den die Kundenverkürzungswerte gelten.</p>
 </li>
 <li>
-<p><strong>V-width type</strong>: Wählen Sie den Typ der verwendeten V-Breiten-Messung.</p>
+<p><strong>Material|Dicke|Oberwerkzeugradius|Unterwerkzeugtyp|Unterwerkzeugweite|Unterwerkzeug Einzugsradius|Unterwerkzeug Winkel|Traktrix Radius|Übergangswinkel</strong>: Wählen Sie den Typ der verwendeten V-Breiten-Messung.</p>
 </li>
 <li>
-<p><strong>Die V-width</strong>: Legen Sie die Breite des Unterwerkzeugs fest, für die die Biegeabzüge gelten.</p>
+<p><strong>Material|Dicke|Oberwerkzeugradius|Unterwerkzeugtyp|Unterwerkzeugweite|Unterwerkzeug Einzugsradius|Unterwerkzeug Winkel|Traktrix Radius|Übergangswinkel</strong>: Legen Sie die Breite des Unterwerkzeugs fest, für die die Kundenverkürzungswerte gelten.</p>
 </li>
 <li>
-<p><strong>Die radius</strong>: Legen Sie den Radius des Unterwerkzeugs fest, für den die Biegeabzüge gelten.</p>
+<p><strong>Material|Dicke|Oberwerkzeugradius|Unterwerkzeugtyp|Unterwerkzeugweite|Unterwerkzeug Einzugsradius|Unterwerkzeug Winkel|Traktrix Radius|Übergangswinkel</strong>: Legen Sie den Radius des Unterwerkzeugs fest, für den die Kundenverkürzungswerte gelten.</p>
 </li>
 <li>
-<p><strong>Die angle</strong>: Legen Sie den Winkel des Unterwerkzeugs fest, für den die Biegeabzüge gelten.</p>
+<p><strong>Material|Dicke|Oberwerkzeugradius|Unterwerkzeugtyp|Unterwerkzeugweite|Unterwerkzeug Einzugsradius|Unterwerkzeug Winkel|Traktrix Radius|Übergangswinkel</strong>: Legen Sie den Winkel des Unterwerkzeugs fest, für den die Kundenverkürzungswerte gelten.</p>
 </li>
 </ul>
 </div>
@@ -478,7 +481,7 @@ Sie die folgenden Parameter aus und geben Sie sie ein:</p>
 <p>Klicken Sie auf <strong>OK</strong>, um das neue Szenario zu speichern.</p>
 </div>
 <div class="paragraph">
-<p>Wählen Sie zusätzlich ein Biegeabzug-Szenario aus und klicken Sie auf die Option <strong>&#8230;&#8203;</strong>,
+<p>Wählen Sie zusätzlich ein Verkürzungswerte-Szenario aus und klicken Sie auf die Option <strong>&#8230;&#8203;</strong>,
 um weitere Optionen anzuzeigen:</p>
 </div>
 <div class="imageblock">
@@ -489,9 +492,9 @@ um weitere Optionen anzuzeigen:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Graph</strong>: Zeigt ein Diagramm an, das die Beziehung zwischen Biegewinkel
-und Biegeabzug darstellt. Diese visuelle Darstellung hilft zu verstehen, wie sich
-Biegeabzüge mit unterschiedlichen Biegewinkeln ändern. Bewegen Sie den Cursor über die
+<p><strong>Graph…</strong>: Zeigt ein Diagramm an, das die Beziehung zwischen Biegewinkel
+und Verkürzungswert darstellt. Diese visuelle Darstellung macht deutlich, wie sich
+Kundenverkürzungswerte mit unterschiedlichen Biegewinkeln ändern. Bewegen Sie den Cursor über die
 blauen und roten Linien des Diagramms, um bestimmte Werte anzuzeigen.</p>
 </li>
 </ul>
@@ -504,41 +507,42 @@ blauen und roten Linien des Diagramms, um bestimmte Werte anzuzeigen.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Import</strong>: Ermöglicht den Import von Biegeabzugdaten aus einer externen CSV-Datei.</p>
+<p><strong>Import…</strong>: Ermöglicht den Import von Verkürzungswertdaten aus einer externen CSV-Datei.</p>
 </li>
 <li>
-<p><strong>Export</strong>: Ermöglicht den Export der aktuellen Biegeabzugdaten in eine CSV-Datei
+<p><strong>Export…</strong>: Ermöglicht den Export der aktuellen Verkürzungswertdaten in eine CSV-Datei
 zu Sicherungs- oder Weitergabezwecken.</p>
 </li>
 <li>
-<p><strong>3rd party</strong>: Bietet Optionen zum Importieren von Biegeabzugdaten aus Drittsoftware oder -quellen.</p>
+<p><strong>3rd party</strong>: Bietet Optionen zum Importieren von Verkürzungswertdaten aus Drittsoftware oder -quellen.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_arten_von_biegeabzügen">Arten von Biegeabzügen</h2>
+<h2 id="_arten_von_verkürzungswerten">Arten von Verkürzungswerten</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>TecZone Bend unterstützt drei Arten von Biegeabzügen: <strong>Air Bending</strong>,
-<strong>Folding</strong> und <strong>Coining</strong>.</p>
+<p>TecZone Bend unterstützt drei Arten von verkürzungswerten: <strong>Biegewinkel</strong>,
+<strong>Falzen</strong> und <strong>Prägebiegen</strong>.</p>
 </div>
 <div class="paragraph">
-<p>Jede Art hat ihre eigenen Parameter und Berechnungen, um die Biegeabzüge basierend auf
-der verwendeten Biegemethode genau zu bestimmen.</p>
+<p>Jede Art hat ihre eigenen Parameter und Berechnungen, um die
+Kundenverkürzungswerte auf der Basis der verwendeten
+Biegemethode genau zu bestimmen.</p>
 </div>
 <div class="sect2">
-<h3 id="_air_bending">Air Bending</h3>
+<h3 id="_biegewinkel">Biegewinkel</h3>
 <div class="paragraph">
 <p>Freibiegen ist eine gängige Biegemethode, bei der das Blech mit einem Stempel und einer
 Matrize gebogen wird, ohne die Matrize vollständig zu schließen. Diese Methode ermöglicht
 mehr Flexibilität und eignet sich für eine Vielzahl von Materialien und Dicken.</p>
 </div>
 <div class="paragraph">
-<p>Um Biegeabzüge für Freibiegen hinzuzufügen, wählen Sie ein geeignetes Szenario aus der
-Datenbank für Biegeabzüge aus. Klicken Sie auf <strong>Add</strong>, um ein neues
-Freibiege-Abzugsszenario zu erstellen, und geben Sie den <strong>Bend Angle</strong> ein.</p>
+<p>Um Kundenverkürzungswerte für Freibiegen hinzuzufügen, wählen Sie ein geeignetes Szenario aus der
+Datenbank für Kundenverkürzungswerte aus. Klicken Sie auf <strong>Verkürzungswert hinzufügen</strong>, um ein neues
+Szenario für Freibiege-Verkürzungswerte zu erstellen, und geben Sie den <strong>Biegewinkel</strong> ein.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -547,20 +551,20 @@ Freibiege-Abzugsszenario zu erstellen, und geben Sie den <strong>Bend Angle</str
 </div>
 <div class="paragraph">
 <p>Wenn Sie den Biegewinkel eingeben, werden die entsprechenden Werte für
-<strong>Deduction (Edge)</strong>, <strong>Deduction (Tangent)</strong> und <strong>Inner Radius</strong>
+<strong>Öffnungswinkel|Verkürzung (Kantwert)|Verkürzung (Tangentenwert)|Innen-Radius</strong>, <strong>Öffnungswinkel|Verkürzung (Kantwert)|Verkürzung (Tangentenwert)|Innen-Radius</strong> und <strong>Öffnungswinkel|Verkürzung (Kantwert)|Verkürzung (Tangentenwert)|Innen-Radius</strong>
 berechnet und angezeigt.</p>
 </div>
 <div class="paragraph">
-<p>Klicken Sie auf <strong>OK</strong>, um den neuen Freibiege-Abzug zu speichern.</p>
+<p>Klicken Sie auf <strong>OK</strong>, um den neuen Freibiege-Verkürzungswert zu speichern.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_folding">Folding</h3>
+<h3 id="_falzen">Falzen</h3>
 <div class="paragraph">
-<p>Falzen oder Falzen ist eine Biegemethode, bei der das Blech mit einem Stempel und einer
+<p>Falzen ist eine Biegemethode, bei der das Blech mit einem Stempel und einer
 Matrize gebogen wird, die vollständig geschlossen ist und eine scharfe Biegung erzeugt.
-Diese Methode wird häufig für dünnere Materialien verwendet und erfordert eine präzise
-Kontrolle der Biegeabzüge.</p>
+Diese Methode wird häufig für dünnere Materialien verwendet und erfordert eine genaue
+Kontrolle der Kundenverkürzungswerte.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -568,20 +572,20 @@ Kontrolle der Biegeabzüge.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Um Biegeabzüge für Falzen hinzuzufügen, wählen Sie ein geeignetes Szenario aus der
-Datenbank für Biegeabzüge aus. Klicken Sie auf <strong>Add</strong>, um ein neues
-Falz-Abzugsszenario zu erstellen, und wählen Sie die <strong>Hemming method</strong>.</p>
+<p>Um Kundenverkürzungswerte für Falzen hinzuzufügen, wählen Sie ein geeignetes Szenario aus der
+Datenbank für Kundenverkürzungswerte aus. Klicken Sie auf <strong>Verkürzungswert hinzufügen</strong>, um ein neues
+Szenario für Verkürzungswerte beim Falzen  zu erstellen, und wählen Sie die <strong>Falzmethode</strong>.</p>
 </div>
 <div class="paragraph">
-<p>Klicken Sie auf <strong>OK</strong>, um den neuen Falz-Abzug zu speichern.</p>
+<p>Klicken Sie auf <strong>OK</strong>, um den neuen Verkürzungswert für Falzen zu speichern.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_coining">Coining</h3>
+<h3 id="_prägebiegen">Prägebiegen</h3>
 <div class="paragraph">
-<p>Prägen ist eine Biegemethode, bei der das Blech mit hohem Druck zwischen Stempel und
+<p>Prägebiegen ist eine Biegemethode, bei der das Blech mit hohem Druck zwischen Stempel und
 Matrize gepresst wird, was zu einer präzisen und scharfen Biegung führt. Diese Methode
-wird typischerweise für dickere Materialien verwendet und erfordert genaue Biegeabzüge.</p>
+wird typischerweise für dickere Materialien verwendet und erfordert genaue Kundenverkürzungswerte.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -589,12 +593,12 @@ wird typischerweise für dickere Materialien verwendet und erfordert genaue Bieg
 </div>
 </div>
 <div class="paragraph">
-<p>Um Biegeabzüge für Prägen hinzuzufügen, wählen Sie ein geeignetes Szenario aus der
-Datenbank für Biegeabzüge aus. Klicken Sie auf <strong>Add</strong>, um ein neues
-Präge-Abzugsszenario zu erstellen.</p>
+<p>Um Kundenverkürzungswerte für Prägebiegen hinzuzufügen, wählen Sie ein geeignetes Szenario aus der
+Datenbank für Kundenverkürzungswerte aus. Klicken Sie auf <strong>Verkürzungswert hinzufügen</strong>, um ein neues
+Szenario für Verkürzungswerte für Prägebiegen zu erstellen.</p>
 </div>
 <div class="paragraph">
-<p>Klicken Sie auf <strong>OK</strong>, um den neuen Präge-Abzug zu speichern.</p>
+<p>Klicken Sie auf <strong>OK</strong>, um den neuen Verkürzungswert für Prägebiegen zu speichern.</p>
 </div>
 </div>
 </div>
@@ -613,19 +617,19 @@ Präge-Abzugsszenario zu erstellen.</p>
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_einstellungen_für_biegeabzüge">Einstellungen für Biegeabzüge</a>
+   <a href="#_einstellungen_für_kundenverkürzungswerte">Einstellungen für Kundenverkürzungswerte</a>
   </li>
   <li level="1">
-   <a href="#_arten_von_biegeabzügen">Arten von Biegeabzügen</a>
+   <a href="#_arten_von_verkürzungswerten">Arten von Verkürzungswerten</a>
   </li>
   <li level="2">
-   <a href="#_air_bending">Air Bending</a>
+   <a href="#_biegewinkel">Biegewinkel</a>
   </li>
   <li level="2">
-   <a href="#_folding">Folding</a>
+   <a href="#_falzen">Falzen</a>
   </li>
   <li level="2">
-   <a href="#_coining">Coining</a>
+   <a href="#_prägebiegen">Prägebiegen</a>
   </li>
  </ul>
 </aside>

@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -429,7 +429,7 @@ auf eine der folgenden Arten bearbeiten lassen:</p>
 <li>
 <p>Klicken Sie zweimal auf eine Biegungsnummer im Navigator, um den
 Fensterbereich „Biegen“ öffnen, und klicken Sie anschließend auf die
-Schaltfläche <strong>Angle Measure</strong> (diese Schaltfläche wird nur
+Schaltfläche <strong>Winkelmessung</strong> (diese Schaltfläche wird nur
 angezeigt, wenn für die Maschine ein Winkelmesssystem konfiguriert ist).</p>
 </li>
 <li>
@@ -476,18 +476,18 @@ befindet).</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Mit dem Wahlschalter <strong>System</strong> können Sie zwischen Laser- und
+<p>Mit dem Wahlschalter <strong>Winkelmesssystem</strong> können Sie zwischen Laser- und
 Scheibenmesssystemen umschalten. Der Schalter wird nur angezeigt, wenn für die
 Maschine beide Systeme installiert sind.</p>
 </li>
 <li>
-<p>Der <strong>Mode</strong> ist einer der Identifikationsmodi, die im Abschnitt
+<p>Der <strong>Messmethode</strong> ist einer der Identifikationsmodi, die im Abschnitt
 <a href="../advanced/anglemeasurement.html#_acb_methods">ACB-Methoden</a> besprochen wurden. Wenn
 der <strong>ACB Smart</strong>-Modus in dieser Liste ausgewählt ist, werden zusätzliche Optionen
 <strong>Winkel</strong> und <strong>ACB-Qualitätsprüfung</strong> angezeigt.</p>
 </li>
 <li>
-<p>In der Liste <strong>Lasers</strong> können Sie auswählen, ob beide Laser für
+<p>In der Liste <strong>Laser</strong> können Sie auswählen, ob beide Laser für
 die Messung verwendet werden (Standardeinstellung). In einigen Fällen können Sie
 sich entscheiden, nur den vorderen oder hinteren Laser zu verwenden. Die Option
 <strong>Beide (Schiefe)</strong> in dieser Liste wird verwendet, wenn Sie beide Laser verwenden
@@ -502,12 +502,12 @@ möglicherweise einige Warnungen und Fehler im Zusammenhang mit der Strahllänge
 im Navigator erscheinen/verschwinden, alles in Echtzeit.</p>
 </li>
 <li>
-<p>Die Anzeige <strong>Trace</strong> zeigt den zur Messung verfügbaren
+<p>Die Anzeige <strong>Strahl</strong> zeigt den zur Messung verfügbaren
 Laserstrahl an. Im Allgemeinen kann die Länge des vorderen und hinteren Strahls
 variieren; hier wird das Minimum angezeigt.</p>
 </li>
 <li>
-<p>Die Einstellung <strong>Move to measure</strong> steuert, _ wann_ sich die
+<p>Die Einstellung <strong>Messungpunkt anfahren</strong> steuert, _ wann_ sich die
 ACB-Lasersensoren in die Messposition bewegen. In der Regel bewegen sie sich
 während der Phase des <em>Schrittwechsels</em> (wenn wir von der vorherigen Biegung zur
 aktuellen Biegung wechseln), aber manchmal kann dies das Einlegen des Teils
@@ -516,7 +516,7 @@ dann in Position zu bringen, wenn der Stempel den <em>Mutepunkt</em> zu Beginn d
 Biegens erreicht hat.</p>
 </li>
 <li>
-<p>Die Einstellung <strong>After measure</strong> steuert, wohin sich die
+<p>Die Einstellung <strong>Nach der Messung</strong> steuert, wohin sich die
 ACB-Lasersensoren nach Abschluss der Messung bewegen. Wenn die Sensoren nicht
 nicht mehr benutzt werden, kehren sie in der Regel in ihre <em>Parkposition</em>
 zurück. Wenn sie dagegen für nachfolgende Biegungen benötigt werden, <em>bleiben
@@ -534,7 +534,7 @@ der in den ACB-Qualitätseinstellungen definierten Qualitätsschwellenwerte gepr
 <div class="ulist">
 <ul>
 <li>
-<p>Die Einstellungen <strong>Warning</strong> und <strong>Error</strong>
+<p>Die Einstellungen <strong>Warnung</strong> und <strong>Fehler</strong>
 sind Schwellenwerte. Überschreitet die gemessene Winkelabweichung diese Werte,
 zeigt der Regler dem Bediener Warnungen oder Fehler an.</p>
 </li>
@@ -559,10 +559,10 @@ TecZone Bend mehr Messungen. Dann sehen Sie eine Anzeige wie die nebenstehende:<
 <div class="ulist">
 <ul>
 <li>
-<p>In diesem Beispiel haben wir für die Einstellung <strong>Lasers</strong> <strong>Beide
+<p>In diesem Beispiel haben wir für die Einstellung <strong>Laser</strong> <strong>Beide
 (Schiefe)</strong> gewählt, und so wird die Eingabe <strong>Position</strong>
-aufgeteilt, um separate Positionen für <strong>Front</strong> und
-<strong>Rear</strong> anzuzeigen.</p>
+aufgeteilt, um separate Positionen für <strong>Vorne</strong> und
+<strong>Hinten</strong> anzuzeigen.</p>
 <div class="imageblock">
 <div class="content">
 <img src="img/acbskew.png" alt="ACB Vorder- und Rückposition" width="350">
@@ -570,7 +570,7 @@ aufgeteilt, um separate Positionen für <strong>Front</strong> und
 </div>
 </li>
 <li>
-<p>Die Eingabe <strong>Measures</strong> zeigt die Anzahl der durchzuführenden
+<p>Die Eingabe <strong>Abmessungen</strong> zeigt die Anzahl der durchzuführenden
 Messungen an; sie wird auf den optimalen von TecZone Bend (basierend auf der
 Biegelänge) berechneten Wert eingestellt. In diesem Beispiel hat sich TecZone Bend
 entschieden, 3 Messungen durchzuführen. Sie können die Anzahl aber bis auf 1

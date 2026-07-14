@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -429,7 +429,7 @@ Einstellungen und Vorgänge zum Bearbeiten der Biegung.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Das Eingabefeld <strong>Air-gap</strong> dient zum Einstellen des Spalts für die
+<p>Das Eingabefeld <strong>Luftspalt</strong> dient zum Einstellen des Spalts für die
 Biegung (dabei handelt es sich um den Spalt zwischen Schwert und Niederhaltern).
 Wenn für den Spalt ein anderer als der Standardwert eingestellt wird, zeigt der
 Falznavigator eine Warnung wegen eines <em>nicht standardmäßigen Spalts</em> an. Die
@@ -443,10 +443,10 @@ Falznavigator einen entsprechenden Fehler an.</p>
 <p>Die Einstellung <strong>P86</strong> wird verwendet, um das Anlegen eines zusätzlichen Niederhaltedrucks während des Biegezyklus zu steuern.</p>
 </li>
 <li>
-<p>Verwenden Sie die Schaltfläche <strong>Skip Bend</strong>, um eine Biegung zu überspringen. Die jeweilige Biegung wird von der Schwenkbiegemaschine nicht bearbeitet und muss später bearbeitet werden (evtl. durch eine Abkantpresse).</p>
+<p>Verwenden Sie die Schaltfläche <strong>Biegung überspringen</strong>, um eine Biegung zu überspringen. Die jeweilige Biegung wird von der Schwenkbiegemaschine nicht bearbeitet und muss später bearbeitet werden (evtl. durch eine Abkantpresse).</p>
 </li>
 <li>
-<p>Die Schaltfläche <strong>New Side</strong> wird verwendet, um einen Schenkel in zwei separate Schenkel zu teilen; sie wird nur angezeigt, wenn Sie nicht die erste Biegung an einem Schenkel bearbeiten. Wenn Sie auf diese Schaltfläche klicken, teilt das den Schenkel an dieser Biegung und startet einen neuen Schenkel. Für das <em>Aufteilen</em> eines Schenkels gibt es mehrere Gründe:</p>
+<p>Die Schaltfläche <strong>Neue Seite</strong> wird verwendet, um einen Schenkel in zwei separate Schenkel zu teilen; sie wird nur angezeigt, wenn Sie nicht die erste Biegung an einem Schenkel bearbeiten. Wenn Sie auf diese Schaltfläche klicken, teilt das den Schenkel an dieser Biegung und startet einen neuen Schenkel. Für das <em>Aufteilen</em> eines Schenkels gibt es mehrere Gründe:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -459,16 +459,16 @@ Falznavigator einen entsprechenden Fehler an.</p>
 </div>
 </li>
 <li>
-<p>Mit den Schaltflächen <strong>Prev</strong> und <strong>Next</strong> navigieren Sie von einer Biegung im Teil zu einer der anderen. (Sie können dafür auch die Tasten <kbd>PageUp</kbd> und <kbd>PageDown</kbd> verwenden).</p>
+<p>Mit den Schaltflächen <strong>Zurück</strong> und <strong>Weiter</strong> navigieren Sie von einer Biegung im Teil zu einer der anderen. (Sie können dafür auch die Tasten <kbd>PageUp</kbd> und <kbd>PageDown</kbd> verwenden).</p>
 </li>
 <li>
-<p>Die Schaltfläche <strong>Side</strong> wird verwendet, um von diesem Biegevorgang nach oben zum zugehörigen Schenkel zu navigieren. Wenn Sie auf diese Schaltfläche klicken, wird der Fensterbereich „Biegeschenkel“ angezeigt (unten beschrieben), der verwendet werden kann, um einige Vorgänge am gesamten Biegeschenkel (oder -abschnitt) auszuführen.</p>
+<p>Die Schaltfläche <strong>Seite</strong> wird verwendet, um von diesem Biegevorgang nach oben zum zugehörigen Schenkel zu navigieren. Wenn Sie auf diese Schaltfläche klicken, wird der Fensterbereich „Biegeschenkel“ angezeigt (unten beschrieben), der verwendet werden kann, um einige Vorgänge am gesamten Biegeschenkel (oder -abschnitt) auszuführen.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p>Wenn diese Biegung übersprungen wurde, werden diese Einstellungen nicht
-angezeigt; es gibt nur eine Schaltfläche <strong>Unskip Bend</strong>, um
+angezeigt; es gibt nur eine Schaltfläche <strong>Biegung nicht überspringen</strong>, um
 die Biegung wieder in Bearbeitung zu bringen.</p>
 </div>
 

@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -403,14 +403,14 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>TecZone erkennt automatisch Stanzformen, die sich auf einer einzelnen Schicht
+<p>TecZone erkennt automatisch Umformungen, die sich auf einer einzelnen Schicht
 innerhalb eines Blechmodells befinden. Wenn ein Oberflächenmodell in ein
-Metallmodell umgewandelt wird, werden alle geformten Bereiche erkannt und in
+Blechmodell umgewandelt wird, werden alle Umformungen erkannt und in
 Stanzformen umgewandelt.</p>
 </div>
 <div class="paragraph">
 <p>Importieren Sie ein Blech (mit umgeformten Bereichen) in TecZone Bend. Wählen Sie
-<strong>Convert to Sheet-metal</strong> im Fensterbereich „Workflow".</p>
+<strong>In Blech umwandeln</strong> im Fensterbereich „Workflow".</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -438,7 +438,7 @@ ansonsten ist sie gelb.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_umformen_bearbeiten">Umformen bearbeiten</h2>
+<h2 id="_umformung_bearbeiten">Umformung bearbeiten</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Um einen geformten Bereich in einem Teil zu erkennen:</p>
@@ -447,7 +447,7 @@ ansonsten ist sie gelb.
 <ol class="arabic">
 <li>
 <p>Klicken Sie auf einen beliebigen gelb markierten Bereich, um auf den
-Fensterbereich <strong>Forming</strong> zuzugreifen.</p>
+Fensterbereich <strong>Umformung</strong> zuzugreifen.</p>
 </li>
 </ol>
 </div>
@@ -460,17 +460,17 @@ Fensterbereich <strong>Forming</strong> zuzugreifen.</p>
 <div class="olist arabic">
 <ol class="arabic" start="2">
 <li>
-<p>Wählen Sie die Option <strong>Identify&#8230;&#8203;</strong>, um auf den Fensterbereich <strong>Add Forming</strong> zuzugreifen.</p>
+<p>Wählen Sie die Option <strong>Identifizieren…</strong>, um auf den Fensterbereich <strong>Umformung hinzufügen</strong> zuzugreifen.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p><strong>Durchbruch herstellen:</strong> Die Stanzform wird in einen Durchbruch umgewandelt.</p>
 </li>
 <li>
-<p><strong>Delete:</strong> Die Stanzform wird gelöscht.</p>
+<p><strong>Löschen:</strong> Die Stanzform wird gelöscht.</p>
 </li>
 <li>
-<p><strong>Similar:</strong> Diese Funktion wählt alle Formen, die der ausgewählten Form ähneln.</p>
+<p><strong>Ähnlich:</strong> Diese Funktion wählt alle Formen, die der ausgewählten Form ähneln.</p>
 </li>
 </ol>
 </div>
@@ -489,32 +489,32 @@ Fensterbereich <strong>Forming</strong> zuzugreifen.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p><strong>Show:</strong> Alle anderen bereits identifizierten Formen werden hier angezeigt. Diese Form kann durch Anklicken eines Namens als Referenz angezeigt werden. Um zum Hinzufügen der neuen Form zurückzukehren, klicken Sie oben in der Liste auf <strong>NEU</strong>.</p>
+<p><strong>Anzeigen:</strong> Alle anderen bereits identifizierten Formen werden hier angezeigt. Diese Form kann durch Anklicken eines Namens als Referenz angezeigt werden. Um zum Hinzufügen der neuen Form zurückzukehren, klicken Sie oben in der Liste auf <strong>NEU</strong>.</p>
 </li>
 <li>
-<p><strong>Preview:</strong> Zeigt eine Vorschau der gewählten Form an.</p>
+<p><strong>Vorschaubild:</strong> Zeigt eine Vorschau der gewählten Form an.</p>
 </li>
 <li>
-<p><strong>Variants:</strong> Formennamen können mehrfach verwendet werden. Das ist normal, da es verschiedene Möglichkeiten gibt, eine Form zu modellieren. Wenn mehrere Formen mit demselben Namen hinzugefügt werden, werden sie zu Varianten. Bei Komponenten mit mehreren Varianten ist hinter dem Namen die Anzahl als <strong>Instances</strong> aufgelistet (z. B.: 3). Wenn eine dieser Formen ausgewählt wird, können verschiedene Varianten angezeigt werden.
+<p><strong>Varianten:</strong> Formennamen können mehrfach verwendet werden. Das ist normal, da es verschiedene Möglichkeiten gibt, eine Form zu modellieren. Wenn mehrere Formen mit demselben Namen hinzugefügt werden, werden sie zu Varianten. Bei Komponenten mit mehreren Varianten ist hinter dem Namen die Anzahl als <strong>Objektkomponenten</strong> aufgelistet (z. B.: 3). Wenn eine dieser Formen ausgewählt wird, können verschiedene Varianten angezeigt werden.
 Alle diese Varianten haben denselben Namen und dieselbe ID. Sie werden nur durch unterschiedliche Formen dargestellt. .Erkennt die Software eine dieser Formen in einer Baugruppe, wird die jeweilige Form mit diesem Namen und dieser ID gekennzeichnet.
-Es ist möglich, dass zwei verschiedene Formen mit demselben Namen falsch eingruppiert werden. Verwenden Sie in diesem Fall die Schaltfläche <strong>Separate</strong>, um die betroffenen Varianten zu trennen und ihnen einen neuen Namen zuzuweisen.
+Es ist möglich, dass zwei verschiedene Formen mit demselben Namen falsch eingruppiert werden. Verwenden Sie in diesem Fall die Schaltfläche <strong>Trennen</strong>, um die betroffenen Varianten zu trennen und ihnen einen neuen Namen zuzuweisen.
 Wenn dagegen zwei Formen mit ursprünglich unterschiedlichen Namen in einer Gruppe zusammengefasst werden sollen, wählen Sie eine davon aus und benennen Sie sie mit dem Namen der anderen um. Dann werden beide als Varianten derselben Form in eine Gruppe eingeordnet.</p>
 </li>
 <li>
 <p><strong>Name:</strong> Dieser Name wird verwendet, um die Form anzuzeigen.</p>
 </li>
 <li>
-<p><strong>Identifier:</strong> Hier kann eine ID eingetragen werden.</p>
+<p><strong>Identifizierer:</strong> Hier kann eine ID eingetragen werden.</p>
 </li>
 <li>
-<p><strong>Output Layer (DXF):</strong> Diese Einstellung wird verwendet, um eine bestimmten Schicht anzugeben, auf der diese Form ausgegeben wird. Das wird vom Stanz-CAM-System verwendet, um ein geeignetes Stanzwerkzeug zuzuweisen.</p>
+<p><strong>Ausgabe Layer (DXF):</strong> Diese Einstellung wird verwendet, um eine bestimmten Schicht anzugeben, auf der diese Form ausgegeben wird. Das wird vom Stanz-CAM-System verwendet, um ein geeignetes Stanzwerkzeug zuzuweisen.</p>
 </li>
 </ol>
 </div>
 <div class="olist arabic">
 <ol class="arabic" start="4">
 <li>
-<p>Betätigen Sie die Schaltfläche <strong>Add</strong>, um die Form zur späteren Verwendung in der Datenbank zu speichern.</p>
+<p>Betätigen Sie die Schaltfläche <strong>Hinzufügen</strong>, um die Form zur späteren Verwendung in der Datenbank zu speichern.</p>
 </li>
 </ol>
 </div>
@@ -528,7 +528,7 @@ Wenn dagegen zwei Formen mit ursprünglich unterschiedlichen Namen in einer Grup
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_umformen_bearbeiten">Umformen bearbeiten</a>
+   <a href="#_umformung_bearbeiten">Umformung bearbeiten</a>
   </li>
  </ul>
 </aside>

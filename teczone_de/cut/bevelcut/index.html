@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -399,7 +399,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Bevel cut</strong> wird im Blechdesign verwendet, um
+<p><strong>Schrägschnitt</strong> wird im Blechdesign verwendet, um
 Teile zu erstellen, die leichter zu schweißen sind. Abgeschrägte Kanten
 vergrößern die Schweißnahtoberfläche, was zu stärkeren Schweißnähten führt. Das
 Schweißen an abgeschrägten Kanten kann auch zu einer verbesserten Ästhetik von
@@ -480,7 +480,7 @@ Schrägschnitte <em>kippen</em> kann.</p>
 <div class="paragraph">
 <p>Wenn alle diese Bedingungen erfüllt sind, gibt es im Fensterbereich
 <a href="../partworkflow/panels/lasercut/index.html">Laserschneiden</a> einen <strong>Bereich
-Chamfer</strong>, in dem der Schrägschnitt programmiert werden kann.</p>
+Fase</strong>, in dem der Schrägschnitt programmiert werden kann.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -490,13 +490,13 @@ Chamfer</strong>, in dem der Schrägschnitt programmiert werden kann.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Methoden <strong>Top chamfer °</strong> und
-<strong>Top chamfer depth</strong> müssen beide ungleich Null sein,
+<p>Methoden <strong>Obere Fase (°)</strong> und
+<strong>Tiefe obere Fase</strong> müssen beide ungleich Null sein,
 um einen Fasenschnitt oben zu erstellen.</p>
 </li>
 <li>
-<p>Methoden <strong>Bottom chamfer °</strong> und
-<strong>Bottom chamfer depth</strong> müssen beide ungleich Null
+<p>Methoden <strong>Untere Fase (°)</strong> und
+<strong>Tiefe untere Fase</strong> müssen beide ungleich Null
 sein, um einen Fasenschnitt unten zu erstellen.</p>
 </li>
 <li>
@@ -504,7 +504,7 @@ sein, um einen Fasenschnitt unten zu erstellen.</p>
 Fase bzw. definieren die Fasen effektiv die äußere Begrenzung des Teils, und der
 in der obigen Abbildung gezeigte <em>Senkrechtschnitt</em> ist nicht wirklich
 notwendig. Allerdings wird die Kante mit einem Senkrechtschnitt manchmal
-sauberer, und Sie können diese Funktion mit dem <strong>Schalter Force vertical cut</strong>
+sauberer, und Sie können diese Funktion mit dem <strong>Schalter Bedingungsloser Senkrechtschnitt</strong>
 aktivieren.</p>
 </li>
 </ul>

@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -427,7 +427,7 @@ Standardkomponenten und stellt sie gelb dar (nicht identifiziert).</p>
 </li>
 <li>
 <p>Klicken Sie auf das Icon <strong>Workflow</strong> und wählen Sie Baugruppe
-<strong>Explode</strong>.</p>
+<strong>Auflösen</strong>.</p>
 <div class="imageblock">
 <div class="content">
 <img src="img/explode.png" alt="Explode" width="550">
@@ -444,7 +444,7 @@ Standardkomponenten und stellt sie gelb dar (nicht identifiziert).</p>
 </li>
 <li>
 <p>Klicken Sie auf eine beliebige gelbe Komponente auf der Oberfläche, um auf den Fensterbereich
-<strong>Surface</strong> zuzugreifen.</p>
+<strong>Greifposition</strong> zuzugreifen.</p>
 <div class="imageblock">
 <div class="content">
 <img src="img/surface.png" alt="Identity" width="90">
@@ -452,7 +452,7 @@ Standardkomponenten und stellt sie gelb dar (nicht identifiziert).</p>
 </div>
 </li>
 <li>
-<p>Klicken Sie auf <strong>Identifizieren&#8230;&#8203;</strong>, um den Fensterbereich <strong>Add Component</strong> aufzurufen.</p>
+<p>Klicken Sie auf <strong>Identifizieren&#8230;&#8203;</strong>, um den Fensterbereich <strong>Komponente hinzufügen</strong> aufzurufen.</p>
 <div class="imageblock">
 <div class="content">
 <img src="img/addcomp.png" alt="Add component" width="500">
@@ -464,23 +464,23 @@ Standardkomponenten und stellt sie gelb dar (nicht identifiziert).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p><strong>Show:</strong> Alle anderen bereits identifizierten Komponenten werden hier angezeigt. Diese Komponente kann als Referenz angezeigt werden, indem Sie auf einen Namen klicken. Um zum Hinzufügen neuer Komponenten zurückzukehren, klicken Sie oben in der Liste auf <strong>NEU</strong>.</p>
+<p><strong>Anzeigen:</strong> Alle anderen bereits identifizierten Komponenten werden hier angezeigt. Diese Komponente kann als Referenz angezeigt werden, indem Sie auf einen Namen klicken. Um zum Hinzufügen neuer Komponenten zurückzukehren, klicken Sie oben in der Liste auf <strong>NEU</strong>.</p>
 </li>
 <li>
-<p><strong>Preview:</strong> Zeigt eine Vorschau der gewählten Komponente an.</p>
+<p><strong>Vorschaubild:</strong> Zeigt eine Vorschau der gewählten Komponente an.</p>
 </li>
 <li>
-<p><strong>Variants:</strong> Komponentennamen können mehrfach verwendet werden. Das ist üblich, da beispielsweise eine M8-Schraube unterschiedlich modelliert werden kann. Wenn mehrere Komponenten mit demselben Namen hinzugefügt werden, werden sie zu Varianten. Bei Komponenten mit mehreren Varianten ist hinter dem Namen die Anzahl aufgelistet (z. B.: x4).
+<p><strong>Varianten:</strong> Komponentennamen können mehrfach verwendet werden. Das ist üblich, da beispielsweise eine M8-Schraube unterschiedlich modelliert werden kann. Wenn mehrere Komponenten mit demselben Namen hinzugefügt werden, werden sie zu Varianten. Bei Komponenten mit mehreren Varianten ist hinter dem Namen die Anzahl aufgelistet (z. B.: x4).
 Wenn eine dieser Komponenten ausgewählt wird, können alle Varianten angezeigt werden.</p>
 </li>
 <li>
 <p><strong>Name:</strong> Dieser Name wird verwendet, um die Komponente anzuzeigen.</p>
 </li>
 <li>
-<p><strong>Identifier:</strong> Hier kann eine ID eingetragen werden.</p>
+<p><strong>Identifizierer:</strong> Hier kann eine ID eingetragen werden.</p>
 <div class="paragraph">
 <p>Alle diese Varianten haben denselben Namen und dieselbe ID. Sie werden nur durch unterschiedliche 3D-Modelle dargestellt. Erkennt die Software eines dieser 3D-Modelle in einer Baugruppe, wird die jeweilige Komponente mit diesem Namen und dieser ID gekennzeichnet.
-Es ist möglich, dass zwei verschiedene Komponenten mit demselben Namen falsch eingruppiert werden. Verwenden Sie in diesem Fall die Schaltfläche <strong>Separate</strong>, um die betroffenen Varianten zu trennen und ihnen einen neuen Namen zuzuweisen.</p>
+Es ist möglich, dass zwei verschiedene Komponenten mit demselben Namen falsch eingruppiert werden. Verwenden Sie in diesem Fall die Schaltfläche <strong>Trennen</strong>, um die betroffenen Varianten zu trennen und ihnen einen neuen Namen zuzuweisen.</p>
 </div>
 <div class="paragraph">
 <p>Wenn dagegen zwei Komponenten mit ursprünglich unterschiedlichen Namen in einer Gruppe zusammengefasst werden sollen, wählen Sie eine davon aus und benennen Sie sie mit dem Namen der anderen um. Dann werden beide als Varianten derselben Komponente in eine Gruppe eingeordnet.</p>
@@ -490,7 +490,7 @@ Es ist möglich, dass zwei verschiedene Komponenten mit demselben Namen falsch e
 </div>
 </li>
 <li>
-<p>Klicken Sie auf die Schaltfläche <strong>Add</strong>, um die Komponente zur späteren Verwendung in der Datenbank zu speichern.</p>
+<p>Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>, um die Komponente zur späteren Verwendung in der Datenbank zu speichern.</p>
 </li>
 </ol>
 </div>

@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -410,22 +410,22 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_report_settings">Report Settings</h2>
+<h2 id="_einrichteplaneinstellungen">Einrichteplaneinstellungen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Layout report template</strong> - Der Standardspeicherort
+<p><strong>Layout-Berichtsvorlage</strong> - Der Standardspeicherort
 verweist auf die Schablone, die zusammen mit Cut geliefert wird.</p>
 </div>
 <div class="paragraph">
-<p><strong>Job report template</strong> - Verwenden Sie dies, um den
+<p><strong>Vorlage für einen Arbeitsbericht</strong> - Verwenden Sie dies, um den
 Speicherort der Jobberichtschablone zu definieren.</p>
 </div>
 <div class="paragraph">
-<p><strong>Report destination</strong> - Der Zielspeicherort, an dem der
+<p><strong>Speicherort des Einrichteplans</strong> - Der Zielspeicherort, an dem der
 Einrichteplan gespeichert wird.</p>
 </div>
 <div class="paragraph">
-<p><strong>Available Variables</strong></p>
+<p><strong>Verfügbare Variablen:+</strong></p>
 </div>
 <div class="paragraph">
 <p>$COMMONDOCUMENTS - Standard-Dokumentenverzeichnis von Windows</p>
@@ -446,10 +446,10 @@ Einrichteplan gespeichert wird.</p>
 <p>$PROGRAMDATA - Windows-Programmdatenverzeichnis</p>
 </div>
 <div class="paragraph">
-<p><strong>Report output format</strong> - Bevorzugtes Druckformat, HTML oder PDF.</p>
+<p><strong>Ausgabeformat des Einrichteplans</strong> - Bevorzugtes Druckformat, HTML oder PDF.</p>
 </div>
 <div class="paragraph">
-<p><strong>Released parts CSV destination</strong> - Geben Sie hier
+<p><strong>Freigegebene Teile CSV-Ablageort</strong> - Geben Sie hier
 den Speicherort der CSV-Datei an, die für freigegebene Teile gespeichert werden
 soll.</p>
 </div>
@@ -464,23 +464,23 @@ soll.</p>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>NC program destination</strong> - Legen Sie dies als den
+<p><strong>NC-Ablageort</strong> - Legen Sie dies als den
 Speicherort für alle NC-Programmdateien fest.</p>
 </div>
 <div class="paragraph">
-<p><strong>Code processor</strong> - Dateienpfad zum
+<p><strong>Code-Prozessor</strong> - Dateienpfad zum
 Postprozessor-Werkzeug (.exe), das nach der Programmgenerierung ausgeführt
 werden soll.</p>
 </div>
 <div class="paragraph">
-<p><strong>Use TC_WRITE macro to mark text</strong> - Diese Option steuert, ob
+<p><strong>Verwende TC_WRITE, um Text zu markieren</strong> - Diese Option steuert, ob
 der geätzte Text TC_WRITE oder die Standard-G-Befehle verwendet. Bei einer
 Maschine mit einem Regler, die nicht TC_WRITE unterstützt, kann der Anwender
 diese Option auf Ebene der Maschinenvoreinstellungen deaktivieren, damit das
 Programm für diese Maschine immer ohne TC_WRITE generiert werden kann.</p>
 </div>
 <div class="paragraph">
-<p><strong>Output geometry in NC file</strong> - Wenn dieses Kontrollkästchen
+<p><strong>Ausgabegeometrie in NC-Datei</strong> - Wenn dieses Kontrollkästchen
 aktiviert ist, enthält das generierte NC-Programm auch die <strong>.geo</strong>-Dateiinformationen
 am Ende des NC-Programms.</p>
 </div>
@@ -494,7 +494,7 @@ am Ende des NC-Programms.</p>
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_report_settings">Report Settings</a>
+   <a href="#_einrichteplaneinstellungen">Einrichteplaneinstellungen</a>
   </li>
   <li level="1">
    <a href="#_programmeinstellungen">Programmeinstellungen</a>

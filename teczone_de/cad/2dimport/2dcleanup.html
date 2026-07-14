@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -423,7 +423,7 @@ kann. Angenommen, Sie beginnen mit einer DXF, die wie folgt aussieht:</p>
 <li>
 <p>Das Material und die Dicke sind nicht angegeben (Sie sehen, dass nach dem
 Import der Tab am unteren Rand des TecZone-Fensters
-<strong>None</strong>, <strong>0</strong> für das Material und die Dicke anzeigt).</p>
+<strong>Aus</strong>, <strong>0</strong> für das Material und die Dicke anzeigt).</p>
 </li>
 <li>
 <p>Einige der Konturen sind nicht <em>geschlossen</em> - es gibt kleine Überlappungen
@@ -454,7 +454,7 @@ möchten, sind alle ausgewählt:</p>
 </div>
 <div class="paragraph">
 <p>Klicken Sie auf die Schaltfläche <strong>Umschalten</strong>, um <em>alles andere</em> auszuwählen,
-und betätigen Sie dann die Schaltfläche <strong>Delete</strong> in diesem
+und betätigen Sie dann die Schaltfläche <strong>Löschen</strong> in diesem
 Fensterbereich, um alle unerwünschten Einheiten wie den Rahmen, den Titelblock
 usw. zu löschen.</p>
 </div>
@@ -478,7 +478,7 @@ markieren</strong>.</p>
 <p>Die Enden aller offenen Polylinien werden mit gelben Markierungen
 gekennzeichnet, die das Heranzoomen und Bereinigen einfach machen. Um die
 Bereinigung durchzuführen, wechseln Sie in den Skizzenmodus, indem Sie auf die
-Schaltfläche <strong>Sketch</strong> auf der linken Symbolleiste klicken (oder
+Schaltfläche <strong>Bereinigen</strong> auf der linken Symbolleiste klicken (oder
 die Taste <kbd>S</kbd> verwenden).</p>
 </div>
 <div class="imageblock">
@@ -487,11 +487,11 @@ die Taste <kbd>S</kbd> verwenden).</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Wählen Sie den Befehl <strong>Trim</strong> und schneiden Sie alle überhängenden
+<p>Wählen Sie den Befehl <strong>Element trimmen</strong> und schneiden Sie alle überhängenden
 Segmente ab, die die Konturen am Schließen hindern, wie in der Abbildung oben
 gezeigt. Sie können auch den Befehl <strong>Verlängern</strong> verwenden, um einige Ecken, die
 sich nicht treffen, zu verlängern. Oder verwenden Sie den Befehl
-<strong>Line</strong>, um kleine Linien zu zeichnen und damit Lücken zu
+<strong>Linie</strong>, um kleine Linien zu zeichnen und damit Lücken zu
 schließen.</p>
 </div>
 <div class="imageblock">
@@ -542,10 +542,10 @@ hinzufügen, indem Sie auf die Linie klicken, um zuerst den Fensterbereich
 </div>
 </div>
 <div class="paragraph">
-<p>Durch Klicken auf die Schaltfläche <strong>To Bendline</strong> wird die
+<p>Durch Klicken auf die Schaltfläche <strong>Biegelinie erzeugen</strong> wird die
 Linie in eine Biegelinie umgewandelt. Sie können den Winkel und den Radius
 einstellen und die Richtung der Biegelinie (nach oben / unten) ändern, indem Sie
-die Schaltfläche <strong>Flip</strong> anklicken. Wiederholen Sie diesen
+die Schaltfläche <strong>Invertieren</strong> anklicken. Wiederholen Sie diesen
 Vorgang mit allen Biegelinien, bis Sie eine vollständig kommentierte Zeichnung
 haben, wie unten zu sehen:</p>
 </div>

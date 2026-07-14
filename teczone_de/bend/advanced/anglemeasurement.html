@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -403,7 +403,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Systeme für die <strong>Angle measurement</strong> wie ACB&#8482;, ACBLaser&#8482; oder LCB&#8482;
+<p>Systeme für die <strong>Winkelmessung</strong> wie ACB&#8482;, ACBLaser&#8482; oder LCB&#8482;
 können verwendet werden, um die Winkelgenauigkeit beim Biegen zu verbessern.
 Diese Systeme messen den Ist-Winkel während des Biegens und Rückfederung des
 Blechs und verwenden diese Informationen, um den unteren Totpunkt des
@@ -445,7 +445,7 @@ Fensterbereich <strong>Einstellungen</strong> tun.<sup class="footnote">[<a id="
 </div>
 </div>
 <div class="paragraph">
-<p>Der Abschnitt <strong>Angle measurement</strong> der Seite <strong>Einstellungen/BendCAM</strong>
+<p>Der Abschnitt <strong>Winkelmessung</strong> der Seite <strong>Einstellungen/BendCAM</strong>
 enthält eine Auswahlliste, mit der Sie die verschiedenen Winkelmesssysteme ein-
 oder ausschalten können. Sie können eines dem anderen gegenüber priorisieren,
 indem Sie es wählen und mit den Pfeilschaltflächen daneben nach oben oder unten
@@ -489,15 +489,15 @@ erreichen. Das ist die genaueste, aber auch die zeitaufwendigste ACB-Methode.</p
 <p>Bei der Methode <strong>Y lernen</strong> wird das ACB-System überhaupt nicht verwendet. Das
 Y-Ziel des Pressbalkens (der untere Totpunkt) wird einfach aus einer früheren
 Biegung, die bereits mit der Methode <strong>Identifizieren</strong> gemessen wurde (und als
-<em>Reference bend</em> bezeichnet wird), kopiert. Diese
+<em>Referenzbiegung</em> bezeichnet wird), kopiert. Diese
 frühere Biegung muss im Hinblick auf Winkel, Radius und Werkzeugeinsatz
 identisch sein.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_learn_sb">Learn SB</h3>
+<h3 id="_gelernte_rückfederung">Gelernte Rückfederung</h3>
 <div class="paragraph">
-<p>Bei der Methode <strong>Learn SB</strong> oder <strong>Rückfederung lernen</strong>
+<p>Bei der Methode <strong>Gelernte Rückfederung</strong> oder <strong>Rückfederung lernen</strong>
 verwendet das ACB-System den Rückfederungswinkel aus einer früheren Biegung, die
 mit der Methode <strong>Identifizieren</strong> gemessen wurde. Das ACB-System wird immer noch
 zum Regeln der Biegung verwendet, aber da keine zweite Messung nach der
@@ -506,9 +506,9 @@ vollständiger Zyklus mit der Methode <strong>Identifizieren</strong>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_enter_sb">Enter SB</h3>
+<h3 id="_eingabe_rückfederung">Eingabe Rückfederung</h3>
 <div class="paragraph">
-<p>Die Methode <strong>Enter SB</strong> oder <strong>Rückfederung eingeben</strong>
+<p>Die Methode <strong>Eingabe Rückfederung</strong> oder <strong>Rückfederung eingeben</strong>
 <strong>Korrigiert</strong> oder <strong>ACB Smart</strong> nutzt das ACB-System zum Messen des Soll-Winkels,
 verwendet dabei aber einen Rückfederungswert, der vom Benutzer eingegeben wird.
 Mit anderen Worten biegt das ACB-System biegt das Teil einfach auf den
@@ -657,10 +657,10 @@ Anschläge einstellen, sehen Sie die Ergebnisse sofort im Navigator.</p>
    <a href="#_y_lernen">Y lernen</a>
   </li>
   <li level="2">
-   <a href="#_learn_sb">Learn SB</a>
+   <a href="#_gelernte_rückfederung">Gelernte Rückfederung</a>
   </li>
   <li level="2">
-   <a href="#_enter_sb">Enter SB</a>
+   <a href="#_eingabe_rückfederung">Eingabe Rückfederung</a>
   </li>
   <li level="1">
    <a href="#_symbole_für_acb">Symbole für ACB</a>

@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -407,11 +407,11 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Der Fensterbereich <strong>Part</strong> in TecZone Laser wird verwendet, um einem
+<p>Der Fensterbereich <strong>Werkstück</strong> in TecZone Laser wird verwendet, um einem
 Teil Freihand-Laserschnitte oder Textmarkierungen hinzuzufügen. Um auf diesen
 Fensterbereich zuzugreifen, klicken Sie auf ein beliebiges Laser-Rüstelement im
-Teil. Klicken Sie dann auf den <strong>Contour</strong>-Navigator und anschließend auf
-den <strong>Part</strong>-Navigator:</p>
+Teil. Klicken Sie dann auf den <strong>Kontur</strong>-Navigator und anschließend auf
+den <strong>Teil</strong>-Navigator:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -421,7 +421,7 @@ den <strong>Part</strong>-Navigator:</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_insert_laser_cut">Insert laser cut</h2>
+<h2 id="_laserschnitt_einfügen">Laserschnitt einfügen&#8230;&#8203;</h2>
 <div class="sectionbody">
 <div class="imageblock right">
 <div class="content">
@@ -429,7 +429,7 @@ den <strong>Part</strong>-Navigator:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Durch Klicken auf die Schaltfläche <strong>Insert laser cut</strong>
+<p>Durch Klicken auf die Schaltfläche <strong>Laserschnitt einfügen&#8230;&#8203;</strong>
 wird der Fensterbereich „Teil“ in einen Modus versetzt, in dem freihändige
 Laserschnitte in das Teil eingefügt werden können. Klicken Sie dazu auf
 aufeinanderfolgende Punkte, die dann miteinander verbunden werden.</p>
@@ -437,12 +437,12 @@ aufeinanderfolgende Punkte, die dann miteinander verbunden werden.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Pierce</strong> und <strong>Condition</strong>: Wählen
+<p><strong>Pierce</strong> und <strong>Zustand</strong>: Wählen
 Sie die Einstechart und die Schnittbedingung für die zu erstellenden
 Freihand-Laserschnitte.</p>
 </li>
 <li>
-<p><strong>Distance from contour (%)</strong>: Das ist die Entfernung,
+<p><strong>Abstand von der Kontur (%)</strong>: Das ist die Entfernung,
 die von der Mittellinie des einzufügenden Schnitts bis zu allen vorhandenen
 Konturen eingehalten werden muss, als Prozentsatz der Schnittspaltbreite in der
 <em>Bedingung der großen Kontur</em>.</p>
@@ -493,7 +493,7 @@ Radius, basierend auf der LTT und der verwendeten Schnittbedingung.
 </div>
 </div>
 <div class="paragraph">
-<p>Durch Klicken auf die Schaltfläche <strong>Insert Laser Mark</strong>
+<p>Durch Klicken auf die Schaltfläche <strong>Lasermarkierung einfügen&#8230;&#8203;</strong>
 wird der Fensterbereich „Teil“ in einen Modus versetzt, in dem Textmarkierungen
 in das Teil eingefügt werden können. Wenn Sie die Parameter wie unten zu sehen
 eingerichtet haben, klicken Sie auf das Teil, um den Text dort einzufügen.</p>
@@ -505,7 +505,7 @@ eingerichtet haben, klicken Sie auf das Teil, um den Text dort einzufügen.</p>
 Text im NC-Programm mit <strong>TC_WRITE</strong>-Kommandos erzeugt).</p>
 </li>
 <li>
-<p><strong>Angle</strong> und <strong>Height</strong>: Der Drehwinkel
+<p><strong>Winkel</strong> und <strong>Höhe</strong>: Der Drehwinkel
 der Textgrundlinie und die M-Höhe des erstellten Texts.</p>
 </li>
 </ul>
@@ -535,7 +535,7 @@ verschieben.</p>
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_insert_laser_cut">Insert laser cut</a>
+   <a href="#_laserschnitt_einfügen">Laserschnitt einfügen&#8230;&#8203;</a>
   </li>
   <li level="1">
    <a href="#_lasermarkierung_einfügen">Lasermarkierung einfügen</a>

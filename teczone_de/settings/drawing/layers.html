@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -412,10 +412,10 @@
 <p>Sie standardmäßige Schichtenkonfiguration kann so eingestellt werden, dass sie beim Zeichnen verschiedene Elemente eines Teils zeigt.</p>
 </div>
 <div class="paragraph">
-<p><strong>Name</strong> - Das ist die Benennung der Schicht, die die Geometrie nutzen wird.</p>
+<p><strong>Name|Farbe|Linientyp|Sichtbar|verwenden</strong> - Das ist die Benennung der Schicht, die die Geometrie nutzen wird.</p>
 </div>
 <div class="paragraph">
-<p><strong>Colour</strong> - Hier kann ein Farbspektrum ausgewählt werden, um verschiedene Elemente des Teils anzuzeigen.</p>
+<p><strong>Name|Farbe|Linientyp|Sichtbar|verwenden</strong> - Hier kann ein Farbspektrum ausgewählt werden, um verschiedene Elemente des Teils anzuzeigen.</p>
 </div>
 <div class="imageblock right">
 <div class="content">
@@ -423,10 +423,10 @@
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Linetype</strong> - Das ist die Art der Linie, die für die Anzeige der Schicht verwendet werden soll, gepunktet oder gestrichelt dargestellt.</p>
+<p><strong>Name|Farbe|Linientyp|Sichtbar|verwenden</strong> - Das ist die Art der Linie, die für die Anzeige der Schicht verwendet werden soll, gepunktet oder gestrichelt dargestellt.</p>
 </div>
 <div class="paragraph">
-<p><strong>Visible</strong> - Aktivieren Sie diese Checkbox, wenn die Schicht sichtbar sein soll, oder deaktivieren Sie sie, wenn die Schicht in der Zeichnung nicht zu sehen sein soll.</p>
+<p><strong>Name|Farbe|Linientyp|Sichtbar|verwenden</strong> - Aktivieren Sie diese Checkbox, wenn die Schicht sichtbar sein soll, oder deaktivieren Sie sie, wenn die Schicht in der Zeichnung nicht zu sehen sein soll.</p>
 </div>
 <div class="imageblock right">
 <div class="content">
@@ -434,7 +434,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Use</strong> - Das ist die Verwendung des Elements der Schicht. Diese Optionen stehen zur Auswahl:</p>
+<p><strong>Name|Farbe|Linientyp|Sichtbar|verwenden</strong> - Das ist die Verwendung des Elements der Schicht. Diese Optionen stehen zur Auswahl:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -442,31 +442,31 @@
 <p><em>Standard</em> - Das ist die Standardschicht, die für CAM verwendet werden soll.</p>
 </li>
 <li>
-<p><em>Auxiliary</em> - Eine Hilfsschicht, die nicht für CAM verwendet werden soll.</p>
+<p><em>Hilfsmittel</em> - Eine Hilfsschicht, die nicht für CAM verwendet werden soll.</p>
 </li>
 <li>
-<p><em>Mark</em> - Alle Elemente in dieser Schicht werden markiert, nicht geschnitten.</p>
+<p><em>Markieren</em> - Alle Elemente in dieser Schicht werden markiert, nicht geschnitten.</p>
 </li>
 <li>
-<p><em>Approach marker</em> - Point entities, die die Anfahrposition des Lasers angeben.</p>
+<p><em>Annäherungsmarker</em> - Punkteinheiten, die die Anfahrposition des Lasers angeben.</p>
 </li>
 <li>
-<p><em>Sequence marker</em> - Textmarker, die die Reihenfolge von Konturen angeben.</p>
+<p><em>Sequenzmarker</em> - Textmarker, die die Reihenfolge von Konturen angeben.</p>
 </li>
 <li>
-<p><em>Forming centre</em> - Mittelmarkierung für die Umformung (Punkt oder kleines L).</p>
+<p><em>Umformungszentrum</em> - Mittelmarkierung für die Umformung (Punkt oder kleines L).</p>
 </li>
 <li>
-<p><em>Forming footprint</em> - Die Umrandung (der Umriss) einer Umformung.</p>
+<p><em>Fußabdruck umformen</em> - Die Umrandung (der Umriss) einer Umformung.</p>
 </li>
 <li>
-<p><em>Evaporate</em> - Diese Schicht wird verwendet, um Folieneinbrand zu unterscheiden.</p>
+<p><em>Verdampfen</em> - Diese Schicht wird verwendet, um Folieneinbrand zu unterscheiden.</p>
 </li>
 <li>
-<p><em>Dot marking</em> - Diese Schicht wird für QR-Codes verwendet</p>
+<p><em>Punktmarkierung</em> - Diese Schicht wird für QR-Codes verwendet</p>
 </li>
 <li>
-<p><em>Info</em> - Diese Schicht dient nur zur Information.</p>
+<p><em>Information</em> - Diese Schicht dient nur zur Information.</p>
 </li>
 </ol>
 </div>

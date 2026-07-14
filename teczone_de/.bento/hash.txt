@@ -5,16 +5,16 @@ BRAND=TRUMPF
 CUTAPP=TecZone Laser
 FLAVOR=TRUMPF
 FOLDAPP=TecZone Fold
-LANGUAGE=EN
+LANGUAGE=DE
 TECNOAPP=Boost Next
 TRUMPF=
 Folders=39
 Pages=160
-UIXlate=False, DebugUIXlate=False, Language=EN
+UIXlate=True, DebugUIXlate=False, Language=DE
 
-contents.txt • 260131.120142
+contents.txt • 261614.051628
 Index.adoc • Willkommen bei {APPNAME}
-manifest.txt • 263719.083750
+manifest.txt • 263314.063319
 Appendix\3DFormats.adoc • Unterstützte 3D-Formate
 Appendix\AdaptGeometry.adoc • Die Funktion „Geometrie anpassen"
 Appendix\BendToolDXF.adoc • Biegewerkzeug DXF
@@ -35,7 +35,7 @@ CAD\Index.adoc • CAD
 CAD\Sketch.adoc • Ändern der Geometrie
 Cut\contents.txt • 255726.115716
 Cut\Index.adoc • Laserschneiden
-Database\BendDeductions.adoc • Biegeabzüge
+Database\BendDeductions.adoc • Verkürzungswerte
 Database\BendGrippers.adoc • Biegegreifer
 Database\BendTools.adoc • Biegewerkzeuge
 Database\contents.txt • 260531.120550

@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -399,9 +399,6 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><mark>Check translation start</mark></p>
-</div>
-<div class="paragraph">
 <p>Dieses Dokument erläutert die drei verschiedenen Verarbeitungsoptionen, die mit
 der Funktion „Geometrie anpassen" verfügbar sind:</p>
 </div>
@@ -425,7 +422,7 @@ hergestellt werden; der Radius muss geändert werden.</p>
 </li>
 <li>
 <p>Der K-Faktor der Biegelinie kann falsch sein. Die Prozessmaschine (Schwenkbiegemaschine vs.
-Abkantpresse) und die Prozesswerkzeuge oder -bedingungen (Stempel/Matrize/Faltschwert/Luftspalt)
+Abkantpresse) und die Prozesswerkzeuge oder -bedingungen (Stempel/Matrize/Falzschwert/Luftspalt)
 bestimmen zusammen, was der tatsächliche K-Faktor der Biegung sein wird. Die Biegung kann mit
 einem anderen K-Faktor konstruiert sein.<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
 </li>
@@ -439,7 +436,7 @@ K-Faktor hat, und sehen wir uns an, wie die Funktion „Geometrie anpassen" dies
 <div class="content">
 <img src="img/adaptgeom2.png" alt="2D Part" width="550">
 </div>
-<div class="title">Figure 1. 2D-Teil</div>
+<div class="title">Abbildung 1. 2D-Teil</div>
 </div>
 <div class="paragraph">
 <p>Das Eingabe-2D-Teil ist oben dargestellt - es ist ein einfaches Rechteck mit einer Biegelinie
@@ -453,7 +450,7 @@ Die Flachbreite (Länge der Neutrallinie) beträgt daher:</p>
 <p><em>Winkel * (Innenradius + K-Faktor * Dicke) = PI/2 * (0,5 + 0,5 * 2,5)</em> = <strong>2,75</strong> mm</p>
 </div>
 <div class="paragraph">
-<p>Da dies eine 90-Grad-Biegung ist, beträgt der Biegeabzug einfach:</p>
+<p>Da dies eine 90-Grad-Biegung ist, beträgt der Verkürzungswert einfach:</p>
 </div>
 <div class="paragraph">
 <p><em>2 * Dicke - Flachbreite = 2 * 3 - 2,75</em> = <strong>3,25</strong> mm</p>
@@ -471,7 +468,7 @@ diesen Abmessungen:</p>
 <div class="content">
 <img src="img/adaptgeom3.png" alt="Dont Change Anything" width="500">
 </div>
-<div class="title">Figure 2. Nichts ändern</div>
+<div class="title">Abbildung 2. Nichts ändern</div>
 </div>
 <div class="paragraph">
 <p>Dies ist auch genau das Ergebnis, das wir mit der Option <strong>Nichts ändern</strong> erhalten. Weder
@@ -497,7 +494,7 @@ nun intern zuerst zu diesem geändert:</p>
 <div class="content">
 <img src="img/adaptgeom4.png" alt="Retain Flat Size" width="550">
 </div>
-<div class="title">Figure 3. Flachgröße beibehalten</div>
+<div class="title">Abbildung 3. Flachgröße beibehalten</div>
 </div>
 <div class="paragraph">
 <p>Beachten Sie, wie die Gesamtgröße des Teils unverändert ist (immer noch 96,75 mm) und die
@@ -509,7 +506,7 @@ erhöht wurde. Dies wird nun hochgeklappt und ergibt Folgendes:</p>
 <div class="content">
 <img src="img/adaptgeom5.png" alt="Retain Flat Size2" width="500">
 </div>
-<div class="title">Figure 4. Flachgröße beibehalten2</div>
+<div class="title">Abbildung 4. Flachgröße beibehalten2</div>
 </div>
 <div class="paragraph">
 <p>Wie Sie sehen können, ist die 2D-Abmessung des Teils unverändert, aber die 3D-Abmessung
@@ -544,7 +541,7 @@ Abbildung 2 aussieht.</p>
 <div class="content">
 <img src="img/adaptgeom6.png" alt="Retain 3D" width="500">
 </div>
-<div class="title">Figure 5. 3D beibehalten</div>
+<div class="title">Abbildung 5. 3D beibehalten</div>
 </div>
 <div class="ulist">
 <ul>
@@ -558,7 +555,7 @@ abgewickelt und ergibt die folgende Abwicklung:</p>
 <div class="content">
 <img src="img/adaptgeom7.png" alt="Retain 3D2" width="550">
 </div>
-<div class="title">Figure 6. 3D beibehalten2</div>
+<div class="title">Abbildung 6. 3D beibehalten2</div>
 </div>
 <div class="paragraph">
 <p>Mit dieser Option wird die 3D-Abmessung bei der Konstruktionsabmessung von 50x50 beibehalten.
@@ -572,11 +569,11 @@ Die Breite des abgewickelten Teils hat sich von 96,75 auf 95,73 mm geändert.</p
 <div class="ulist">
 <ul>
 <li>
-<p>Wenn die Abwicklung noch nicht hergestellt wurde, ist die beste Option typischerweise
+<p>Wenn die Abwicklung noch nicht erstellt wurde, ist die beste Option typischerweise
 <strong>3D-Abmessung beibehalten</strong></p>
 </li>
 <li>
-<p>Wenn die Abwicklung bereits hergestellt wurde und nicht geändert werden kann, ist die
+<p>Wenn die Abwicklung bereits erstellt wurde und nicht geändert werden kann, ist die
 beste Option <strong>Flachgröße beibehalten</strong></p>
 </li>
 </ul>
@@ -587,9 +584,6 @@ beste Option <strong>Flachgröße beibehalten</strong></p>
 führt die Option <strong>Nichts ändern</strong> zu einem endgültigen gefertigten Teil, das den im TecZone
 angezeigten 3D-Daten <em>nicht</em> entspricht, da die tatsächlichen Biegeradien und K-Faktoren
 in der Konstruktion nicht korrekt modelliert sind.</p>
-</div>
-<div class="paragraph">
-<p><mark>Check translation end</mark></p>
 </div>
 </div>
 </div>

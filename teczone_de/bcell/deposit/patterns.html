@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -401,14 +401,14 @@
                     <article id="article">
                         <h1>Ablagemustertypen</h1>
 <div class="sect1">
-<h2 id="_simple_grid">Simple Grid</h2>
+<h2 id="_einfaches_raster">Einfaches Raster</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das Muster <strong>Simple Grid</strong> ist das am häufigsten verwendete
+<p>Das Muster <strong>Einfaches Raster</strong> ist das am häufigsten verwendete
 und stapelt Teile einfach in einem rechteckigen Raster auf der Palette.</p>
 </div>
 <div class="paragraph">
-<p>Bei Verwendung der Position Simple Grid ist standardmäßig
+<p>Bei Verwendung der Position Einfaches Raster ist standardmäßig
 nur eine Ablageposition <strong>D1</strong> verfügbar.</p>
 </div>
 <div class="imageblock">
@@ -419,10 +419,10 @@ nur eine Ablageposition <strong>D1</strong> verfügbar.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_weave">Weave</h2>
+<h2 id="_waben">Waben</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das Muster <strong>Weave</strong> ist bei langen und dünnen Teilen nützlich.
+<p>Das Muster <strong>Waben</strong> ist bei langen und dünnen Teilen nützlich.
 Die Teile in den <strong>D2</strong>-Schichten werden im 90&#176;-Winkel zu den Teilen in der <strong>D1</strong>-Schicht
 platziert, wie nebenstehend gezeigt.</p>
 </div>
@@ -451,7 +451,7 @@ um den gesamten Verschränkungsstapel mehrmals auf der Palette zu wiederholen. I
 Beispiel wird der Verschränkungsstapel zweimal wiederholt (2 Spalten, 1 Zeile).</p>
 </li>
 <li>
-<p>Die Einstellung <strong>Gap (Z,X)</strong> auf der Registerkarte Wiederholen wird
+<p>Die Einstellung <strong>Abstand (Z, X)</strong> auf der Registerkarte Wiederholen wird
 verwendet, wenn die Verschränkung wiederholt wird, und gibt den Abstand zwischen den
 Verschränkungsschichten an.</p>
 </li>
@@ -460,10 +460,10 @@ Verschränkungsschichten an.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_alternating">Alternating</h2>
+<h2 id="_abwechselnd">Abwechselnd</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das Muster <strong>Alternating</strong> ist am flexibelsten. In diesem
+<p>Das Muster <strong>Abwechselnd</strong> ist am flexibelsten. In diesem
 Muster können Sie die Ausrichtung, Drehung und relative Verschiebung jeder alternierenden
 Schicht steuern.</p>
 </div>
@@ -481,8 +481,8 @@ Regrip <strong>R1</strong> standardmäßig verfügbar.</p>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Passen Sie die <strong>Delta shift</strong>-Werte in D1, D2 an und fügen Sie
-<strong>Regrip</strong> hinzu, um die Teile miteinander zu verriegeln.
+Passen Sie die <strong>Delta-Verschiebung</strong>-Werte in D1, D2 an und fügen Sie
+<strong>Umgreifen</strong> hinzu, um die Teile miteinander zu verriegeln.
 </td>
 </tr>
 </table>
@@ -495,24 +495,24 @@ Passen Sie die <strong>Delta shift</strong>-Werte in D1, D2 an und fügen Sie
 </div>
 </div>
 <div class="sect1">
-<h2 id="_alternating_batch">Alternating Batch</h2>
+<h2 id="_abwechselnder_stapel">Abwechselnder Stapel</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das Muster <strong>Alternating Batch</strong> ähnelt dem
+<p>Das Muster <strong>Abwechselnder Stapel</strong> ähnelt dem
 alternierenden Muster, bietet jedoch die Möglichkeit, Komponenten in Batches zu stapeln
 und Schichten zu alternieren.</p>
 </div>
 <div class="paragraph">
-<p><strong>Batch shift</strong> wird verwendet, um Teile innerhalb
+<p><strong>Stapel Verschiebung</strong> wird verwendet, um Teile innerhalb
 eines Batches zu und von den Z- und X-Achsen zu bewegen.</p>
 </div>
 <div class="paragraph">
-<p><strong>Batch count</strong> wird verwendet, um die Anzahl der Komponenten
+<p><strong>Stückzahl</strong> wird verwendet, um die Anzahl der Komponenten
 pro Batch pro Ablage D1 zu definieren, die von 1 bis 50 reichen kann. Im folgenden
 Beispiel ist sie auf 5 eingestellt.</p>
 </div>
 <div class="paragraph">
-<p><strong>Delta shift</strong> wird verwendet, um eine gesamte Ablage D1
+<p><strong>Delta-Verschiebung</strong> wird verwendet, um eine gesamte Ablage D1
 bestehend aus Batches zu und von den Z- und X-Achsen zu bewegen.</p>
 </div>
 <div class="imageblock">
@@ -526,7 +526,7 @@ bestehend aus Batches zu und von den Z- und X-Achsen zu bewegen.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Verwenden Sie die Option <strong>layers</strong> auf der Registerkarte
+<p>Verwenden Sie die Option <strong>Lagen</strong> auf der Registerkarte
 <strong>Wiederholungsraster (R)</strong>, um die Anzahl der Batches pro Ablage zu definieren.
 Im folgenden Beispiel ist sie auf 2 eingestellt.</p>
 </div>
@@ -538,7 +538,7 @@ Im folgenden Beispiel ist sie auf 2 eingestellt.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_drop_to_basket">Drop to Basket</h2>
+<h2 id="_in_kiste_werfen">In Kiste werfen</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Dieses Muster wird verwendet, um kleine Teile mit dem mechanischen Greifer in
@@ -552,10 +552,10 @@ einen Sammelkorb zu legen.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_conveyor">Conveyor</h2>
+<h2 id="_förderband">Förderband</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das Muster <strong>Conveyor</strong> wird verwendet, um Teile auf einem
+<p>Das Muster <strong>Förderband</strong> wird verwendet, um Teile auf einem
 Teileförderband abzulegen. Diese Option ist wichtig, wenn lange dünne Teile auf
 dem Förderband abgelegt werden.</p>
 </div>
@@ -580,10 +580,10 @@ alle anderen Mustertypen für die Auswahl deaktiviert, mit Ausnahme des Förderb
 </div>
 </div>
 <div class="sect1">
-<h2 id="_inclined">Inclined</h2>
+<h2 id="_geneigt_wand">Geneigt (Wand)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das Muster <strong>Inclined</strong> wird verwendet, um Teile vertikal
+<p>Das Muster <strong>Geneigt (Wand)</strong> wird verwendet, um Teile vertikal
 gegen eine Wand (oder eine Palette mit einer Seitenwand) zu stapeln.</p>
 </div>
 <div class="admonitionblock note">
@@ -608,10 +608,10 @@ Teil gegen die Wand zu stapeln.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_inclined_pair">Inclined pair</h2>
+<h2 id="_geneigtes_paar">Geneigtes Paar</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Dieser Mustertyp ist dem Muster Alternating sehr ähnlich,
+<p>Dieser Mustertyp ist dem Muster Abwechselnd sehr ähnlich,
 außer dass die Teile vertikal als Paar abgelegt werden.</p>
 </div>
 <div class="paragraph">
@@ -619,12 +619,12 @@ außer dass die Teile vertikal als Paar abgelegt werden.</p>
 um ein Paar zu bilden.</p>
 </div>
 <div class="paragraph">
-<p><strong>Auto-pitch</strong> bestimmt den Neigungswinkel des Stapels
+<p><strong>Automatische Neigung</strong> bestimmt den Neigungswinkel des Stapels
 automatisch.</p>
 </div>
 <div class="paragraph">
-<p>Die Einstellung <strong>Pitch</strong> wird verwendet, um den Neigungswinkel
-der Stapelung anzupassen, und die Werte für <strong>Delta shift</strong>
+<p>Die Einstellung <strong>Neigung</strong> wird verwendet, um den Neigungswinkel
+der Stapelung anzupassen, und die Werte für <strong>Delta-Verschiebung</strong>
 werden verwendet, um das Teil in den <em>X</em>- und <em>R</em>-Achsen zu bewegen, um einen
 kompakteren Stapel zu erzielen.</p>
 </div>
@@ -634,10 +634,10 @@ kompakteren Stapel zu erzielen.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_manual">Manual</h2>
+<h2 id="_manuell">manuell</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das Muster <strong>Manual</strong> wird verwendet, um jede Schicht von Teilen
+<p>Das Muster <strong>manuell</strong> wird verwendet, um jede Schicht von Teilen
 in einer etwas anderen Ausrichtung zu platzieren.</p>
 </div>
 <div class="paragraph">
@@ -654,15 +654,15 @@ oberste Schicht hinzuzufügen.</p>
 neben der Registerkarte <strong>Dn</strong>, um zur vorherigen oder nächsten Schicht zu gelangen.</p>
 </li>
 <li>
-<p>Die Einstellungen <strong>Delta shift</strong>, <strong>Drehen</strong> und
-<strong>Pitch</strong> können verwendet werden, um das Teil anzupassen,
+<p>Die Einstellungen <strong>Delta-Verschiebung</strong>, <strong>Drehen</strong> und
+<strong>Neigung</strong> können verwendet werden, um das Teil anzupassen,
 damit es besser auf dem darunter liegenden Teil sitzt. Sie können auch die
-<strong>Delta shift</strong> verwenden und auf
-<strong>Auto-pitch</strong> klicken, um TecZone Bend zu bitten, einen
+<strong>Delta-Verschiebung</strong> verwenden und auf
+<strong>Automatische Neigung</strong> klicken, um TecZone Bend zu bitten, einen
 optimalen Neigungswinkel zu berechnen.</p>
 </li>
 <li>
-<p>Verwenden Sie die Schaltfläche <strong>Remove</strong>, um das oberste Teil zu entfernen.</p>
+<p>Verwenden Sie die Schaltfläche <strong>Entfernen</strong>, um das oberste Teil zu entfernen.</p>
 </li>
 <li>
 <p>Nachdem ein manueller Stapel erstellt wurde, können Sie die Einstellungen auf der
@@ -672,7 +672,7 @@ mit einem Abstand von 250 mm zwischen den Spalten wiederholt wird.</p>
 </li>
 <li>
 <p>Die Einstellungen auf der Registerkarte Sequenz <strong>(S)</strong> können verwendet werden, um zu
-steuern, ob die Teile <strong>by layer</strong> oder <strong>by pile</strong> gestapelt
+steuern, ob die Teile <strong>Nach Ebenen</strong> oder <strong>Nach Stapeln</strong> gestapelt
 werden. Wenn Sie die Stapelung Stapel für Stapel verwenden, werden alle Teile auf dem
 ersten Stapel fertiggestellt, bevor wir mit dem zweiten Stapel beginnen.</p>
 </li>
@@ -688,31 +688,31 @@ ersten Stapel fertiggestellt, bevor wir mit dem zweiten Stapel beginnen.</p>
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_simple_grid">Simple Grid</a>
+   <a href="#_einfaches_raster">Einfaches Raster</a>
   </li>
   <li level="1">
-   <a href="#_weave">Weave</a>
+   <a href="#_waben">Waben</a>
   </li>
   <li level="1">
-   <a href="#_alternating">Alternating</a>
+   <a href="#_abwechselnd">Abwechselnd</a>
   </li>
   <li level="1">
-   <a href="#_alternating_batch">Alternating Batch</a>
+   <a href="#_abwechselnder_stapel">Abwechselnder Stapel</a>
   </li>
   <li level="1">
-   <a href="#_drop_to_basket">Drop to Basket</a>
+   <a href="#_in_kiste_werfen">In Kiste werfen</a>
   </li>
   <li level="1">
-   <a href="#_conveyor">Conveyor</a>
+   <a href="#_förderband">Förderband</a>
   </li>
   <li level="1">
-   <a href="#_inclined">Inclined</a>
+   <a href="#_geneigt_wand">Geneigt (Wand)</a>
   </li>
   <li level="1">
-   <a href="#_inclined_pair">Inclined pair</a>
+   <a href="#_geneigtes_paar">Geneigtes Paar</a>
   </li>
   <li level="1">
-   <a href="#_manual">Manual</a>
+   <a href="#_manuell">manuell</a>
   </li>
  </ul>
 </aside>

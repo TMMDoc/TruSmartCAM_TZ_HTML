@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -406,26 +406,26 @@
 <p>Das Hinzufügen eines Umgreifvorgangs zwischen den Biegezyklus kann
 Kollisionsfehler verhindern. Um ein Umgreifen hinzuzufügen, klicken Sie zweimal
 auf eine Biegezelle im Biegenavigator und wählen Sie die Option
-<strong>Add Regrip</strong>.</p>
+<strong>Umgreifen hinzufügen</strong>.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/addregrip.png" alt="Add Regrip" width="368"></span> <span class="image"><img src="img/addregrip1.png" alt="Regrip panel" width="158"></span></p>
 </div>
 <div class="paragraph">
-<p>Wenn Sie auf <strong>Add Regrip</strong> klicken, sehen Sie die folgenden
+<p>Wenn Sie auf <strong>Umgreifen hinzufügen</strong> klicken, sehen Sie die folgenden
 Optionen:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>During (Parallel)</strong> - Eine neue Umgreifsequenz (<strong>1R</strong>)
+<p><strong>Während (Parallel)</strong> - Eine neue Umgreifsequenz (<strong>1R</strong>)
 wird eingeführt, wobei die <em>Methode</em> <strong>ui:BCRegrip+EFlavor.DuringBend[During
 Bend]</strong> standardmäßig ausgewählt ist.</p>
 </li>
 <li>
-<p><strong>After (Post- Bend)</strong> - Dies fügt eine neue Umgreifzelle
+<p><strong>Danach (Nach dem Biegen)</strong> - Dies fügt eine neue Umgreifzelle
 nach der ausgewählten Biegezelle im Navigator hinzu. Auch hier wird die
-<em>Methode</em> <strong>Post-Bend</strong> standardmäßig ausgewählt.</p>
+<em>Methode</em> <strong>Nach dem Biegen</strong> standardmäßig ausgewählt.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -443,10 +443,10 @@ nach der ausgewählten Biegezelle im Navigator hinzu. Auch hier wird die
 </div>
 </li>
 <li>
-<p><strong>After (Station)</strong> - Diese Option fügt das Umgreifen hinzu,
+<p><strong>Danach (Station)</strong> - Diese Option fügt das Umgreifen hinzu,
 nachdem die Umgreifstationen unter dem zu haltenden Teil platziert werden (während der
 Robotergreifer um das Teil schwenkt, um es von der anderen Seite mit der
-Option <strong>Swivel</strong> zu greifen).</p>
+Option <strong>Schwenken</strong> zu greifen).</p>
 </li>
 </ul>
 </div>
@@ -470,7 +470,7 @@ Option <strong>Swivel</strong> zu greifen).</p>
 <h2 id="_umgreifen_entfernen">Umgreifen entfernen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Verwenden Sie die Option <strong>Remove Regrip</strong>, um ein neu
+<p>Verwenden Sie die Option <strong>Umgreifen entfernen</strong>, um ein neu
 hinzugefügtes oder ein vorhandenes Umgreifen zu entfernen. Diese Option wird nur
 in Fällen angezeigt, in denen es möglich sein kann, einen Umgreifvorgang zu
 entfernen. Im Allgemeinen kann ein Umgreifvorgang nicht entfernt werden, wenn

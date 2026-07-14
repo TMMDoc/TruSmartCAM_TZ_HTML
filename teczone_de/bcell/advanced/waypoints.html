@@ -16,7 +16,7 @@
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
         <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
-        <div><p>TecZone Reference Manual  (Pre-release version/Vorabversion)</p></div>
+        <div><p>TecZone Reference Manual</p></div>
     </header>
     <div id="site-main">
         <nav id="site-nav">
@@ -347,7 +347,7 @@
     <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
     <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
-    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Biegeabzüge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
     <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
     <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
    </ul>
@@ -404,7 +404,7 @@
 <h2 id="_überblick">Überblick</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Jede Bewegung des BendMasters besteht aus <strong>Wegpunkten</strong>, die
+<p>Jede Bewegung des BendMasters besteht aus <strong>Stützpunkte</strong>, die
 nacheinander durchlaufen werden. Alle Wegpunkte einer Bewegung werden von TecZone
 bestimmt, aber die meisten von ihnen können angepasst werden. Punkte, die direkt mit
 der Nachführung während des Biegeprozesses zusammenhängen, können nicht geändert werden.
@@ -427,7 +427,7 @@ Verschiedene Einstellungen zur Steuerung der Wegpunkte sind unten aufgeführt:</
 </ol>
 </div>
 <div class="paragraph">
-<p>So greifen Sie auf das Panel Wegpunkte zu:</p>
+<p>So greifen Sie auf das Panel Stützpunkte zu:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -461,7 +461,7 @@ oder Ablage.</p>
 </div>
 <div class="title">Figure 3. RG-Stations-Panel</div>
 </div>
-<h2 id="_panel_wegpunkte" class="discrete">Panel Wegpunkte</h2>
+<h2 id="_panel_stützpunkte" class="discrete">Panel Stützpunkte</h2>
 <div class="imageblock right">
 <div class="content">
 <img src="img/waypoints.png" alt="Wegpunkte" width="150">
@@ -481,13 +481,13 @@ Jede Phase spiegelt eine bestimmte Roboter operation wie Aufnahme, Biegen, Umgre
 <div class="ulist">
 <ul>
 <li>
-<p>Greifpunkt</p>
+<p>TCP|Kupplung|Roboterachsen</p>
 </li>
 <li>
-<p>Handgelenkpunkt</p>
+<p>TCP|Kupplung|Roboterachsen</p>
 </li>
 <li>
-<p>Roboterachsen.</p>
+<p>TCP|Kupplung|Roboterachsen.</p>
 </li>
 </ul>
 </div>
@@ -512,7 +512,7 @@ tatsächliche Phase, die wir bearbeiten.</p>
 und achsenorientierter Interpolation umzuschalten.</p>
 </li>
 <li>
-<p>Die Einstellungen <strong>Geschwindigkeit</strong> und <strong>Rundung</strong>
+<p>Die Einstellungen <strong>Geschwindigkeit</strong> und <strong>Verschleifen</strong>
 werden verwendet, um die Geschwindigkeits- und Genauigkeitseinstellung für diesen Schritt zu bearbeiten.</p>
 </li>
 <li>
@@ -613,7 +613,7 @@ Keine lineare TCP-Bewegung.</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Rundung Typ</th>
+<th class="tableblock halign-left valign-top">Verschleifen Typ</th>
 <th class="tableblock halign-left valign-top">Beschreibung</th>
 </tr>
 </thead>
@@ -674,7 +674,7 @@ Keine lineare TCP-Bewegung.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_wegpunkte_anzeigen">Wegpunkte anzeigen</h2>
+<h2 id="_stützpunkte_anzeigen">Stützpunkte anzeigen</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Wenn ein Biegeteil gewerkzeugt ist, werden alle Wegpunkte automatisch für jede Bewegungsphase
@@ -696,7 +696,7 @@ berechnet. Diese Punkte können phasenweise mit einer entsprechenden Beschreibun
 </div>
 </div>
 <div class="sect1">
-<h2 id="_wegpunkte_ändern">Wegpunkte ändern</h2>
+<h2 id="_stützpunkte_ändern">Stützpunkte ändern</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Die Position eines Wegpunkts kann bei Bedarf geändert werden, zum Beispiel um zu verhindern,
@@ -736,7 +736,7 @@ Klicken Sie auf <strong>OK</strong>, um mit der Änderung des Wegpunkts fortzufa
 </div>
 </div>
 <div class="sect1">
-<h2 id="_wegpunkte_simulieren">Wegpunkte simulieren</h2>
+<h2 id="_stützpunkte_simulieren">Stützpunkte simulieren</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Standardmäßig befindet sich der Schieberegler Simulieren in der Mittelposition.
@@ -764,13 +764,13 @@ simuliert.</p>
    <a href="#_eigenschaften_von_wegpunkten">Eigenschaften von Wegpunkten</a>
   </li>
   <li level="1">
-   <a href="#_wegpunkte_anzeigen">Wegpunkte anzeigen</a>
+   <a href="#_stützpunkte_anzeigen">Stützpunkte anzeigen</a>
   </li>
   <li level="1">
-   <a href="#_wegpunkte_ändern">Wegpunkte ändern</a>
+   <a href="#_stützpunkte_ändern">Stützpunkte ändern</a>
   </li>
   <li level="1">
-   <a href="#_wegpunkte_simulieren">Wegpunkte simulieren</a>
+   <a href="#_stützpunkte_simulieren">Stützpunkte simulieren</a>
   </li>
  </ul>
 </aside>
