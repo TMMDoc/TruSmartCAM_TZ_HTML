@@ -1,0 +1,839 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/trumpf-icon.png">
+  <title>Pickup from pallet</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
+        <div><p>TecZone Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Welcome to TecZone</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../intro/index.html">Introduction</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../intro/install.html">Installing the software</a></li>
+    <li><button class="tree blank"></button><a href="../../intro/clarity.html">The user interface</a></li>
+    <li><button class="tree blank"></button><a href="../../intro/workflow.html">Part workflow</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cad/2dimport/index.html">2-D Import</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cad/2dimport/2dcleanup.html">2-D Cleanup</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cad/3dimport/index.html">3-D Import</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/prep3dmodel.html">Import 3D Model</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/prepassembly.html">Import assembly</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/formdetect.html">Form detection</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/componentdetect.html">Component detection</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../cad/sketch.html">Modifying the geometry</a></li>
+    <li><button class="tree blank"></button><a href="../../cad/attachments.html">Attachments</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../cut/index.html">TecZone Laser</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/partworkflow/index.html">Part workflow</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/partworkflow/panels/index.html">Editing panels</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../../cut/partworkflow/panels/lasercut/index.html">Laser cut</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/approach.html">Approach</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/withdrawal.html">Withdrawal</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/microjoint.html">Microjoint</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/advanced.html">Advanced</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/contour.html">Contour</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/scrapcut.html">Scrap cut</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/part.html">Part</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/cornertreatment.html">Corner treatment</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../cut/partworkflow/quicknest.html">Quick-Nest</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/jobworkflow/index.html">Job workflow</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/jobworkflow/jobpanel/index.html">Job panel</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/sheets.html">Sheets tab</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/parts.html">Parts tab</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/layouts.html">Layouts tab</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/summary.html">Summary tab</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/jobworkflow/editlayout/index.html">Edit layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/nestingmodes.html">Nesting modes</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/placementpanel.html">Placement panel</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/sequencing.html">Sequencing</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/slicesheet.html">Slice sheet</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/bevelcut/index.html">Bevel cut</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cut/bevelcut/opencontours.html">Open contours</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/bevelcut/variablebevel.html">Variable bevel</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/bevelcut/miscellaneous.html">Miscellaneous</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cut/advanced/finishingrules.html">Finishing rules</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/editltt.html">Edit LTT</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/advanced/twinline/index.html">TwinLine</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/strategies.html">Strategy</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/microjoints.html">Microjoints</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/stability.html">Further settings</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/detectline.html">DetectLine</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../bend/index.html">TecZone Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">Create bend data</a></li>
+    <li><button class="tree blank"></button><a href="../../bend/navigator.html">Bend navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bend/editing/index.html">Edit bend data</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bend/editing/editbend.html">Edit a bend</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editmount.html">Edit a tool mount</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editsetup.html">Edit a bend setup</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editgauge.html">Edit the back-gauges</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editacb.html">Edit angle measurement</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/bendsheet.html">Bends spreadsheet</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/sequencing.html">Changing the sequence</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/addsetup.html">Adding setups and stations</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bend/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bend/advanced/anglemeasurement.html">Angle measurement</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/batchprocess.html">Batch process</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/recompute.html">Recompute solution</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/tonnage.html">Tonnage check</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../bend/bendingaids.html">Bending Aids</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../bcell/index.html">BendMaster CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../bcell/navigator.html">Bend navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/pickup/index.html">Part pickup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/pickup/frompallet.html">Pickup from pallet</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/pickup/fromdispenser.html">Pickup from dispenser</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/bending/index.html">Robotic bending</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/bending/insertion.html">Insertion</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/bending/bending.html">Bending</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/bending/extraction.html">Extraction</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/regrip/index.html">Regripping</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/regrippanel.html">Regrip panel</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/addregrip.html">Add regrip</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/editregrip.html">Edit regrip</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/jawregrip.html">Regrip with jaw</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/rgstationpanel.html">RG-Stations panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/deposit/index.html">Part deposit</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/patterns.html">Deposit pattern types</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/deposit.html">Deposit tabs</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/separatorsheet.html">Add separator sheets</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/lockpartrest.html">Lock part-rest</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/advanced/waypoints.html">Waypoints</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/advanced/cellconfig.html">Cell configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/advanced/customcellcomp.html">Custom Cell Components</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../bcell/advanced/gripperdb/index.html">Gripper database</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../bcell/advanced/gripperdb/creategripper.html">Create a gripper</a></li>
+        <li><button class="tree blank"></button><a href="../../bcell/advanced/gripperdb/importgripper.html">Import gripper from DXF</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">FlexCell CAM</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../navigator.html">Bend navigator</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Part pickup</a>
+     <ul>
+      <li><button class="tree blank"></button><a class="active" href="frompallet.html">Pickup from pallet</a></li>
+      <li><button class="tree blank"></button><a href="centeringtable.html">Centering table</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bending/index.html">Robotic bending</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bending/strategypanel.html">Strategy panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../regrip/index.html">Regripping</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../regrip/regrippanel.html">Regrip panel</a></li>
+      <li><button class="tree blank"></button><a href="../regrip/addregrip.html">Add/Remove regrip</a></li>
+      <li><button class="tree blank"></button><a href="../regrip/gripperpanel.html">Gripper Panel</a></li>
+      <li><button class="tree blank"></button><a href="../regrip/doublesheetstation.html">Double Sheet Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../deposit/index.html">Part deposit</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../deposit/deposit.html">Deposit panel</a></li>
+      <li><button class="tree blank"></button><a href="../deposit/deposittabs.html">Deposit Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../advanced/waypoints.html">Waypoints</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../troubleshoot.html">Troubleshooting</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../fold/index.html">TecZone Fold</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../fold/createfolddata.html">Create fold data</a></li>
+    <li><button class="tree blank"></button><a href="../../fold/foldview.html">The Fold view</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fold/editing/index.html">Editing Fold data</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fold/editing/editbend.html">Edit a bend</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editside.html">Edit a side/section</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editseq.html">Change the sequence</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editbh.html">Edit the blank-holders</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editgauge.html">Edit the gauging</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editblade.html">Edit the blades</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editload.html">Edit the loading</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editunload.html">Edit the unloading</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../fold/toolinventory.html">Tool inventory</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fold/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fold/advanced/airgaptables.html">Custom air-gap tables</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/advanced/manualbend.html">Manual bend completion</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/advanced/minflangelength.html">Required flange length</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../settings/index.html">Settings</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/drawing/index.html">Drawing</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/drawing/layers.html">Layers</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/drawing/dimensions.html">Dimensions</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/drawing/view.html">View</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/bendcam/index.html">Bend CAM</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/bendcam/benddefaults.html">Machine defaults</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/bendcam/bendoutputs.html">Bend outputs</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/bendcam/bendview.html">Bend view</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/bendcam/bendcell.html">Bend cell</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/cutcam/index.html">Cut settings</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutcam.html">Cut CAM</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../settings/cutcam/layout/index.html">Layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/nesting.html">Nest settings</a></li>
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/sheet.html">Sheet</a></li>
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/sheethandling.html">Sheet handling</a></li>
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/skeletoncuts.html">Skeleton cuts</a></li>
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/worksupport.html">Work support</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../settings/cutcam/lasercam/index.html">Laser CAM</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/lasercam/sequence.html">Sequence</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutoutputs.html">Cut outputs</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutview.html">Cut view</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/foldcam/index.html">Panel bending</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/foldcam/defaults.html">Defaults</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/foldcam/zbwcarriers.html">ZBW carriers</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/foldcam/foldoutputs.html">Outputs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/reports/index.html">Reports</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/reports/itemdefaults.html">Item defaults</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../settings/importexport.html">Import/Export</a></li>
+    <li><button class="tree blank"></button><a href="../../settings/environment.html">Environment</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../database/index.html">Database</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../database/materials.html">Materials</a></li>
+    <li><button class="tree blank"></button><a href="../../database/machines.html">Machines</a></li>
+    <li><button class="tree blank"></button><a href="../../database/bendtools.html">Bend tools</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Bend deductions</a></li>
+    <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Bend grippers</a></li>
+    <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Forms and Components</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../report/index.html">Reports</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../report/designer.html">Report designer</a></li>
+    <li><button class="tree blank"></button><a href="../../report/fields.html">Fields, pictures and tables</a></li>
+    <li><button class="tree blank"></button><a href="../../report/bands.html">Bands (sub-reports)</a></li>
+    <li><button class="tree blank"></button><a href="../../report/labels.html">Labels, bitmaps and shapes</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../appendix/index.html">Appendix</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../appendix/3dformats.html">Supported 3D formats</a></li>
+    <li><button class="tree blank"></button><a href="../../appendix/bseparatordxf.html">Separator sheet DXF</a></li>
+    <li><button class="tree blank"></button><a href="../../appendix/bendtooldxf.html">Bend tool DXF</a></li>
+    <li><button class="tree blank"></button><a href="../../appendix/adaptgeometry.html">The Adapt Geometry feature</a></li>
+   </ul>
+  </li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">FlexCell CAM</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Part pickup</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="frompallet.html">Pickup from pallet</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Pickup from pallet</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Parts are picked up from the <strong>Pickup pallet</strong> using the Combi gripper&#8217;s
+Suction-type, then transferred to the <strong>Centering table</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_panels">Panels</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The panels below cover all the settings for the pickup operation.</p>
+</div>
+<div class="sect2">
+<h3 id="_pallet_panel">Pallet panel</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="img/palletpanel.png" alt="Pallet" width="141"></span></p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>Pallet</strong> panel to select a pallet and set its position in the cell.
+Click on the pickup pallet to open the <strong>Pallet</strong> panel.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Lists pallets compatible with the current blank. To see all
+available pallets, clear the <strong>Filtered</strong> checkbox.</p>
+</li>
+<li>
+<p><strong>Position Z, X, R</strong>: These fields display the pallet&#8217;s position in the
+machine coordinate system. These fields are not editable, as the pallet position
+is preset.</p>
+</li>
+<li>
+<p><strong>Rotation Z, X, R</strong>: These fields display the pallet&#8217;s rotation in the machine
+coordinate system. These fields are not editable, as the pallet rotation is
+preset.</p>
+</li>
+<li>
+<p><strong>Save Config</strong>: Click the <strong>Advanced</strong> dropdown to
+view this option. Saves the current cell configuration as the default for this
+machine.</p>
+</li>
+<li>
+<p><strong>Prev</strong> / <strong>Next</strong>: Navigate to the previous or next pallet in
+the cell.</p>
+</li>
+<li>
+<p><strong>Pickup</strong>: Opens the Pickup panel.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pickup_panel">Pickup panel</h3>
+<div class="paragraph">
+<p>Use the <strong>Pickup</strong> panel to set the position of the blank stack on the pallet.
+Click the stack of blanks on the pallet to open this panel, or use the
+<strong>Pickup</strong> link in the Pallet panel. The Pickup panel has the following tabs:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Part settings (P)</p>
+</li>
+<li>
+<p>Repeat grid (R)</p>
+</li>
+<li>
+<p>Pickup sequence (S)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image right"><img src="img/pickup_p.png" alt="Pickup P" width="166"></span></p>
+</div>
+<div class="sect3">
+<h4 id="_part_settings_tab">Part settings tab</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Position</strong>: Sets the <strong>Z</strong> and <strong>X</strong> position of the part stack
+on the pallet.</p>
+</li>
+<li>
+<p><strong>Angle</strong>: Sets the rotation of the part on the pallet.</p>
+</li>
+<li>
+<p><strong>Layers</strong>: Sets the number of blanks in the stack.</p>
+</li>
+<li>
+<p><strong>Part Flipped</strong>: Flips the part so the other side faces up. An
+additional regrip is usually needed before the first bend; FlexCell CAM adds
+this automatically.</p>
+</li>
+<li>
+<p><strong>Double sheet station</strong>: Enables the double sheet detection component. It
+helps to prevent picking up multiple sheets at once. Also this station can be
+used as a regrip station post bending.</p>
+</li>
+<li>
+<p><strong>Simulate</strong>: Selects which part in the stack to simulate (1 = top, 2 = second
+from top, etc.).</p>
+</li>
+<li>
+<p><strong>Waypoints</strong>: Opens the <a href="../advanced/waypoints.html">Waypoints</a>
+panel to fine-tune the robot trajectory during pickup.</p>
+</li>
+<li>
+<p><strong>Gripper</strong>: Opens the Gripper panel.</p>
+</li>
+<li>
+<p><strong>Prev</strong> / <strong>Next</strong>: Navigate to the previous or next operation
+(Pickup, Centering, Bending, etc.).</p>
+</li>
+<li>
+<p><strong>Pallet</strong>: Opens the Pallet panel.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image right"><img src="img/pickup_r.png" alt="Pickup R" width="148"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_repeat_grid_tab">Repeat grid tab</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Grid</strong>: This setting is used to set up the number of columns and rows in the
+part grid.</p>
+</li>
+<li>
+<p><strong>Layers</strong>: This setting specifies how many parts are stacked
+on top of each other in each pile.</p>
+</li>
+<li>
+<p><strong>Gap (Z, X)</strong>: These settings are used to specify the gap
+between successive columns or successive rows. If you set this to 0, the rows or
+columns are exactly touching each other.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Note that parts are positioned along the pin locations. As grid (row, column)
+or part angle (rotation) is changed the 'Gap' is adjusted so the parts still
+align along pin loc ations.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Simulate</strong>: Selects which part in the stack to simulate.</p>
+</li>
+<li>
+<p><strong>Waypoints</strong>: Opens the <a href="../advanced/waypoints.html">Waypoints</a>
+panel.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_pickup_sequence_tab">Pickup sequence tab</h4>
+<div class="paragraph">
+<p><span class="image right"><img src="img/pickup_s.png" alt="Pickup S" width="160"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Stack</strong>: This <strong>By Pile</strong> setting picks up all parts
+from one pile before moving to the next pile.</p>
+</li>
+<li>
+<p><strong>Start</strong> and <strong>Path</strong>: These corner and
+path settings are used when there are multiple rows or columns, and decide which
+corner of the stack the pickup starts from, and whether the pickup then proceeds
+row-by-row, or column-by-column.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Note that if corner is set to '<strong>Front Left</strong>', the initial part (part index 1) will
+be picked up at the top right corner of the pallet. This is because FlexCell
+pallet is rotated 180 degrees in its default configuration.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Simulate</strong>: This setting (both the number spinner and the slider) can be used
+to scrub through the parts to see the order in which they are picked up. This is
+especially useful when adjusting the start corner and the path settings.</p>
+</li>
+<li>
+<p><strong>Waypoints</strong>: Opens the <a href="../advanced/waypoints.html">Waypoints</a>
+panel.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gripper_panel">Gripper panel</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="img/pickupgripper.png" alt="PickupGripper" width="177"></span></p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>Gripper</strong> panel to select a gripper or adjust the position at which it
+picks up the part. Click the gripper to open the <strong>Gripper</strong> panel.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Lists grippers compatible with the current part. To see all
+available grippers, clear the <strong>Filtered</strong> checkbox.</p>
+</li>
+<li>
+<p><strong>Configuration</strong>: If a selected gripper&#8217;s suction cup parameters are modified,
+the modifications can be saved as a new configuration by selecting the
+<strong>SaveConfig</strong> option under <strong>Actions</strong>. This altered configuration can
+then be reused.</p>
+</li>
+<li>
+<p><strong>Position</strong>: Sets the <strong>Z</strong> and <strong>X</strong> position of the gripper
+relative to the part.</p>
+</li>
+<li>
+<p><strong>Angle</strong>: Sets the rotation of the gripper relative to the part.</p>
+</li>
+<li>
+<p><strong>Actions</strong>: Opens a menu of gripper actions.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/actions.png" alt="Actions" width="184"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Auto-place: Shift</strong>: Repositions the gripper so all suction
+cups lie within the part and avoid holes (where possible).</p>
+</li>
+<li>
+<p><strong>Turn on all cups</strong>: Turns on all suction cups that are
+currently off.</p>
+</li>
+<li>
+<p><strong>Save Config</strong>: If you configure the gripper by turning off
+or removing some suction cups, or by changing the arm lengths or angles (for
+MultiGrippers that can change shape), you can save the altered configuration of
+the gripper with a new name, for easy reuse.</p>
+</li>
+<li>
+<p><strong>Export Gripper</strong>: Save the current gripper as <strong>.fxbgrip</strong>
+file that can be imported into another installation of FlexCell CAM. This is
+useful if you have imported a custom gripper and need to share it with other
+installations.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Set Grip Plane</strong>: Changes the plane on which the gripper is
+positioned. By default the largest plane in the model is used. If you want to
+change the plane, click the <strong>Set Grip Plane</strong>, then click the
+desired plane in the simulation.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/setgripplane.png" alt="Set Grip Plane" width="480"></span></p>
+</div>
+</li>
+<li>
+<p><strong>Suction</strong>: Opens the Suction panel to configure suction cups.</p>
+</li>
+<li>
+<p><strong>Pickup</strong>: Opens the Pickup panel.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_suction_panel">Suction panel</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="img/pickupsuction.png" alt="PickupSuction" width="136"></span></p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>Suction</strong> panel to configure the suction cup layout of a gripper.
+Click any suction cup to open this panel, or use the <strong>Suction</strong> link in the
+Gripper panel.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Cup #</strong>: Selects a suction cup to edit.</p>
+</li>
+<li>
+<p><strong>State</strong>: Sets each cup to <strong>On</strong> or <strong>Removed</strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>On</strong>: Default state. Cup is connected to the vacuum line and contributes to
+lift.</p>
+</li>
+<li>
+<p><strong>Removed</strong>: Cup is physically removed from the frame. There will be no lift
+from this cup and no collision occurs. It is useful when a cup falls over a
+formed feature or collides with the die.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Type</strong>: Changes the suction cup type. By default all cups change
+together; clear <strong>Change All</strong> to change individual cups. Note that
+all cups on a gripper frame must share the same working height.</p>
+</li>
+<li>
+<p><strong>Reset</strong>: Restores all cups to their default type and turns them
+all on.</p>
+</li>
+<li>
+<p><strong>Prev</strong> / <strong>Next</strong>: Navigate to the previous or next cup. The
+selected cup is highlighted in blue</p>
+</li>
+<li>
+<p><strong>Gripper</strong>: Opens the Gripper panel.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_panels">Panels</a>
+  </li>
+  <li level="2">
+   <a href="#_pallet_panel">Pallet panel</a>
+  </li>
+  <li level="2">
+   <a href="#_pickup_panel">Pickup panel</a>
+  </li>
+  <li level="2">
+   <a href="#_gripper_panel">Gripper panel</a>
+  </li>
+  <li level="2">
+   <a href="#_suction_panel">Suction panel</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Part pickup</a></span>
+ <span class="next"><a href="centeringtable.html">Centering table</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co. KG. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

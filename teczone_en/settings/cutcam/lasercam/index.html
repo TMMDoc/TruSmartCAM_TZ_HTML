@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../../cut/index.html">Laser CAM</a>
+   <a href="../../../cut/index.html">TecZone Laser</a>
    <ul class="hide">
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../../bend/index.html">Bend CAM</a>
+   <a href="../../../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../../bend/createbenddata.html">Create bend data</a></li>
     <li><button class="tree blank"></button><a href="../../../bend/navigator.html">Bend navigator</a></li>
@@ -214,11 +214,10 @@
      <button class="tree closed"></button>
      <a href="../../../bcell/deposit/index.html">Part deposit</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../../../bcell/deposit/deposit.html">Deposit panel</a></li>
-      <li><button class="tree blank"></button><a href="../../../bcell/deposit/repeat.html">Repeat and sequence</a></li>
+      <li><button class="tree blank"></button><a href="../../../bcell/deposit/patterns.html">Deposit pattern types</a></li>
+      <li><button class="tree blank"></button><a href="../../../bcell/deposit/deposit.html">Deposit tabs</a></li>
       <li><button class="tree blank"></button><a href="../../../bcell/deposit/separatorsheet.html">Add separator sheets</a></li>
       <li><button class="tree blank"></button><a href="../../../bcell/deposit/lockpartrest.html">Lock part-rest</a></li>
-      <li><button class="tree blank"></button><a href="../../../bcell/deposit/patterns.html">Deposit pattern types</a></li>
      </ul>
     </li>
     <li>
@@ -227,6 +226,7 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../../../bcell/advanced/waypoints.html">Waypoints</a></li>
       <li><button class="tree blank"></button><a href="../../../bcell/advanced/cellconfig.html">Cell configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../../bcell/advanced/customcellcomp.html">Custom Cell Components</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../../../bcell/advanced/gripperdb/index.html">Gripper database</a>
@@ -241,7 +241,55 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../../fold/index.html">Fold CAM</a>
+   <a href="../../../fcell/index.html">FlexCell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../../fcell/navigator.html">Bend navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../fcell/pickup/index.html">Part pickup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../fcell/pickup/frompallet.html">Pickup from pallet</a></li>
+      <li><button class="tree blank"></button><a href="../../../fcell/pickup/centeringtable.html">Centering table</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../fcell/bending/index.html">Robotic bending</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../fcell/bending/strategypanel.html">Strategy panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../fcell/regrip/index.html">Regripping</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../fcell/regrip/regrippanel.html">Regrip panel</a></li>
+      <li><button class="tree blank"></button><a href="../../../fcell/regrip/addregrip.html">Add/Remove regrip</a></li>
+      <li><button class="tree blank"></button><a href="../../../fcell/regrip/gripperpanel.html">Gripper Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../../fcell/regrip/doublesheetstation.html">Double Sheet Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../fcell/deposit/index.html">Part deposit</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../fcell/deposit/deposit.html">Deposit panel</a></li>
+      <li><button class="tree blank"></button><a href="../../../fcell/deposit/deposittabs.html">Deposit Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../fcell/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../fcell/advanced/waypoints.html">Waypoints</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../../fcell/troubleshoot.html">Troubleshooting</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../../fold/index.html">TecZone Fold</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../../fold/createfolddata.html">Create fold data</a></li>
     <li><button class="tree blank"></button><a href="../../../fold/foldview.html">The Fold view</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree open"></button>
-     <a href="../index.html">Cut CAM</a>
+     <a href="../index.html">Cut settings</a>
      <ul>
+      <li><button class="tree blank"></button><a href="../cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../layout/index.html">Layout</a>
@@ -388,7 +437,7 @@
  </div>
  <div>/</div>
  <div>
-  <a href="../index.html">Cut CAM</a>
+  <a href="../index.html">Cut settings</a>
  </div>
  <div>/</div>
  <div>
@@ -400,6 +449,38 @@
                 <div id="site-toc-left">
                     <article id="article">
                         <h1>Laser CAM</h1>
+<div class="sect1">
+<h2 id="_approachescape_settings">Approach/Escape settings</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/approach.png" alt="Approach/Escape settings" width="925">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Use approach radius from LTT</strong> - Select the checkbox
+to continue using the default approach radius defined by the LTT.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When the checkbox is selected, the override field for
+<strong>Approach radius</strong> will be disabled. Clear the checkbox
+to enable the override field.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Approach radius</strong> - Enter a value to override the
+default approach radius defined by the LTT.</p>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_cutting">Cutting</h2>
 <div class="sectionbody">
@@ -575,6 +656,33 @@ be applied).</p>
 <div class="content">
 <img src="img/cornerprocess2.png" alt="Cornerprocess2">
 </div>
+</div>
+<div class="paragraph">
+<p><strong>Use corner data from LTT</strong> - Select the checkbox to
+continue using the default corner treatment and radius defined by the LTT.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When the checkbox for <strong>Use corner data from LTT</strong>
+is selected, the override fields for corner data will be disabled. Clear the
+checkbox to enable the override fields.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Treatment</strong> - Pick a suitable treatment for the
+corner. For corner treatment types refer to
+<a href="../../../cut/partworkflow/panels/cornertreatment.html#_treatment_methods">treatment methods</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Radius</strong> - Enter a value to override the default radius
+defined by the LTT.</p>
 </div>
 </div>
 </div>
@@ -781,8 +889,8 @@ user can add multiple rules, each rule leading to placement of a single line of 
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">Checkbox</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">You can enable or disable a rule using the checkbox in the first column.</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">☑</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select the checkbox to enable the rule.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Text</p></td>
@@ -795,8 +903,16 @@ value from Part info. These tokens are not case sensitive.</p>
 <p class="tableblock">$PARTID - Part identifier.</p>
 <p class="tableblock">$CUSTOMER - Customer.</p>
 <p class="tableblock">$AUTHOR - Author.</p>
-<p class="tableblock">$JOBNUMBER - Job number from Part&#8594;Info.</p>
-<p class="tableblock">These variables are indicated in a tooltip.</p></td>
+<p class="tableblock">$JOBNUMBER - Job number from Part &#8594; Info.</p>
+<p class="tableblock">$SERIALNUMBER - Serial number from Part &#8594; Info.</p>
+<p class="tableblock">These variables are indicated in a tooltip.
+Apart from these, special macros are also supported by the laser marking technology as described below.</p>
+<p class="tableblock">TM_MAINPROG - This macro will be replaced by the main program name followed by the suffix *MPF.</p>
+<p class="tableblock">TM_MAINPROG_SHORT - This macro will be replaced by the main program name.</p>
+<p class="tableblock">TM_MACHINE_NUMBER - This macro will be replaced by the machine name.</p>
+<p class="tableblock">TM_TIME - This macro will be replaced by the current time. Format is hh:mm:ss.</p>
+<p class="tableblock">TM_DATE - This macro will be replaced by the current date. Format is dd.mm.yyyy.</p>
+<p class="tableblock">TM_TIMEDATE - This macro will be replaced by the current date and time. Format depends on the unit of measurement.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Height</p></td>
@@ -832,6 +948,11 @@ will run left-to-right and when placed to top-center will run
 right-to-left.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Group</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Laser marking rules are grouped according to the selected
+Orientation type.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Horizontal pos</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Horizontal alignment of text. Possible values are
 <em>center</em>, <em>left</em>
@@ -846,6 +967,18 @@ as the required orientation.</p></td>
 &amp; <em>top</em>. This setting is not relevant if
 <em>Along longest segment</em> is chosen
 as the required orientation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defines the type of text mark to be added.<br>
+<em>TC_WRITE</em> - Engraves text using TC_WRITE command. Supports plain text (ASCII) and special macros.<br>
+<em>TC_LABEL_Text</em> - Engraves text using TC_LABEL command. Supports only plain text (ASCII).<br>
+<em>TC_LABEL_DMC</em> - Engraves Data Matrix Code using TC_LABEL command.<br></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">☑ Align vertically</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select the checkbox to align all text marks
+vertically within a group.</p></td>
 </tr>
 </tbody>
 </table>
@@ -865,6 +998,9 @@ from any holes.</p>
                     <aside id="site-toc">
  <h3>Contents</h3>
  <ul>
+  <li level="1">
+   <a href="#_approachescape_settings">Approach/Escape settings</a>
+  </li>
   <li level="1">
    <a href="#_cutting">Cutting</a>
   </li>

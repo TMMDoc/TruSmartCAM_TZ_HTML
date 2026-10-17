@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../cut/index.html">Laser CAM</a>
+   <a href="../../cut/index.html">TecZone Laser</a>
    <ul class="hide">
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../bend/index.html">Bend CAM</a>
+   <a href="../../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">Create bend data</a></li>
     <li><button class="tree blank"></button><a href="../../bend/navigator.html">Bend navigator</a></li>
@@ -214,11 +214,10 @@
      <button class="tree open"></button>
      <a class="active" href="index.html">Part deposit</a>
      <ul>
-      <li><button class="tree blank"></button><a href="deposit.html">Deposit panel</a></li>
-      <li><button class="tree blank"></button><a href="repeat.html">Repeat and sequence</a></li>
+      <li><button class="tree blank"></button><a href="patterns.html">Deposit pattern types</a></li>
+      <li><button class="tree blank"></button><a href="deposit.html">Deposit tabs</a></li>
       <li><button class="tree blank"></button><a href="separatorsheet.html">Add separator sheets</a></li>
       <li><button class="tree blank"></button><a href="lockpartrest.html">Lock part-rest</a></li>
-      <li><button class="tree blank"></button><a href="patterns.html">Deposit pattern types</a></li>
      </ul>
     </li>
     <li>
@@ -227,6 +226,7 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../advanced/waypoints.html">Waypoints</a></li>
       <li><button class="tree blank"></button><a href="../advanced/cellconfig.html">Cell configuration</a></li>
+      <li><button class="tree blank"></button><a href="../advanced/customcellcomp.html">Custom Cell Components</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../advanced/gripperdb/index.html">Gripper database</a>
@@ -241,7 +241,55 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../fold/index.html">Fold CAM</a>
+   <a href="../../fcell/index.html">FlexCell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../fcell/navigator.html">Bend navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/pickup/index.html">Part pickup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/frompallet.html">Pickup from pallet</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/centeringtable.html">Centering table</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/bending/index.html">Robotic bending</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/bending/strategypanel.html">Strategy panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/regrip/index.html">Regripping</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/regrippanel.html">Regrip panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/addregrip.html">Add/Remove regrip</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/gripperpanel.html">Gripper Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/doublesheetstation.html">Double Sheet Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/deposit/index.html">Part deposit</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/deposit/deposit.html">Deposit panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/deposit/deposittabs.html">Deposit Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/advanced/waypoints.html">Waypoints</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../fcell/troubleshoot.html">Troubleshooting</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../fold/index.html">TecZone Fold</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../fold/createfolddata.html">Create fold data</a></li>
     <li><button class="tree blank"></button><a href="../../fold/foldview.html">The Fold view</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../../settings/cutcam/index.html">Cut CAM</a>
+     <a href="../../settings/cutcam/index.html">Cut settings</a>
      <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../../settings/cutcam/layout/index.html">Layout</a>
@@ -396,13 +445,12 @@
                 <div id="site-toc-left">
                     <article id="article">
                         <h1>Part deposit</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
 <p>After the bending is completed, the finished part is deposited on a pallet or
 conveyor, or dropped into a basket. Various settings are used to control this
 deposit operation:</p>
-</div>
-<div class="paragraph">
-<p><span class="image right"><img src="img/depositpallet.png" alt="Deposit panel" width="350"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -418,65 +466,174 @@ deposit operation:</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>These settings are controlled mainly from the <strong>Deposit</strong> panel, and
-also from the <strong>Pallet</strong> panel that is supporting the deposit. Here is
-how these panel are accessed:</p>
+<p>These settings are controlled mainly from the <strong>Deposit</strong>
+panel, <strong>Pallet</strong> panel and <strong>Gripper</strong> panel that is supporting the
+deposit operation. These panels are displayed below. They are all
+interconnected by up/down navigation links.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_deposit_panel">Deposit panel</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="img/deposit.png" alt="Deposit panel" width="148"></span></p>
+</div>
+<div class="paragraph">
+<p>The <strong>deposit</strong> panel manages the primary settings for placing a part onto a
+pallet, basket, or conveyor. Click on the cells like <strong>D1</strong>, <strong>D2</strong> etc on the <strong>bend
+navigator</strong> to open the <strong>deposit</strong> panel or by clicking on one of
+the finished parts lying on the deposit pallet.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Click on the deposit pallet (or conveyor, or basket) to open the
-<strong>Pallet</strong> panel and navigate <span class="icon"><i class="fa fa-arrow-up"></i></span> to the <strong>Deposit D1</strong>.</p>
-<div class="paragraph">
-<p><span class="image"><img src="img/bendnav.png" alt="Bend navigator" width="200"></span></p>
-</div>
+<p><strong><a href="patterns.html">Pattern</a></strong>: This link brings up the details of different
+deposit pattern types available for the part deposit operation.</p>
 </li>
 <li>
-<p>Click twice on the cells like <strong>D1</strong>, <strong>D2</strong> etc on the <strong>bend navigator</strong> to open
-the <strong>Deposit</strong> panel.</p>
+<p><strong><a href="deposit.html">Deposit tabs</a></strong>: The <strong>deposit</strong> panel contains
+several tabs that allow you to configure different aspects of the deposit
+operation. See the <a href="deposit.html">Part 1 settings (D1)</a>,
+<a href="deposit.html#_repeat_grid_r">Repeat grid (R)</a>,
+<a href="deposit.html#_deposit_sequence_s">Deposit sequence (S)</a> for details.</p>
 </li>
 <li>
-<p>Click on one of the finished parts lying on the deposit pallet to open
-the <strong>Deposit</strong> panel.</p>
+<p><strong><a href="../advanced/waypoints.html">Waypoints</a></strong>: This link brings up
+the Waypoints editor panel where the robot
+trajectory during deposit can be fine-tuned.</p>
+</li>
+<li>
+<p><strong><a href="../regrip/rgstationpanel.html">RG-Stations</a></strong>: This link brings up the Regrip
+Station panel where the position of the regrip station during the deposit
+operation can be configured.</p>
+</li>
+<li>
+<p><strong>Prev</strong> and <strong>Next</strong>: Use these buttons to navigate to the
+previous and the next operation panels.</p>
+</li>
+<li>
+<p><strong><a href="index.html#_gripper_panel">Gripper</a></strong>: This button takes you to the
+<strong>gripper</strong> panel and allows you to configure the gripper settings used during the
+deposit operation.</p>
+</li>
+<li>
+<p><strong><a href="index.html#_pallet_panel">Pallet</a></strong>: This button takes you to the
+<strong>pallet</strong> panel and allows you to configure the settings related to the
+deposit pallet.</p>
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pallet_panel">Pallet panel</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>In addition, these two panels have navigation links (<span class="icon"><i class="fa fa-arrow-left"></i></span> <span class="icon"><i class="fa fa-arrow-up"></i></span>
-<span class="icon"><i class="fa fa-arrow-down"></i></span> <span class="icon"><i class="fa fa-arrow-right"></i></span>) leading to each other.</p>
+<p><span class="image right"><img src="img/palletpanel.png" alt="Pallet panel" width="149"></span></p>
 </div>
 <div class="paragraph">
-<p>We will further discuss about the part deposit options used from the below topics:</p>
+<p>The <strong>pallet</strong> panel allows you to configure various settings related to
+the deposit pallet. Click on the deposit pallet (or conveyor, or basket) to open
+the <strong>pallet</strong> panel or click on the pallet <span class="icon"><i class="fa fa-arrow-down"></i></span> icon in the
+<strong>deposit</strong> panel to navigate to the <strong>pallet</strong> panel.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="deposit.html">Deposit panel</a></p>
+<p><strong>Name</strong>: Lists pallets compatible with the current part. To see all
+available pallets, clear the <strong>Filtered</strong> checkbox.</p>
 </li>
 <li>
-<p><a href="repeat.html">Repeat and sequence</a></p>
+<p><strong>Position</strong>: These inputs are used to position the pallet in <strong>Z</strong> and <strong>X</strong> (in cell coordinates).</p>
 </li>
 <li>
-<p><a href="separatorsheet.html">Add separator sheets</a></p>
+<p><strong>Lift</strong>: Use this input to lift the pallet above the base floor.</p>
 </li>
 <li>
-<p><a href="lockpartrest.html">Lock part-rest</a></p>
+<p><strong>Angle</strong>: Use this input to rotate the pallet.</p>
 </li>
 <li>
-<p><a href="patterns.html">Deposit pattern types</a></p>
+<p><strong>Save Config</strong>: Use this button under the
+<strong>Advanced</strong> section to save current pallet configuration (including
+all pallets) as a default for this machine.</p>
+</li>
+<li>
+<p><strong><a href="index.html#_deposit_panel">Deposit</a></strong>: This button takes you to the
+<strong>deposit</strong> panel and allows you to configure the settings related
+to the deposit operation.</p>
+</li>
+<li>
+<p><strong>Prev</strong> and <strong>Next</strong>: Use these buttons to navigate to the
+other pallets.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gripper_panel">Gripper panel</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="img/gripperpanel.png" alt="Gripper panel"></span></p>
+</div>
+<div class="paragraph">
+<p>The <strong>gripper</strong> panel allows you to configure various settings related to
+the gripper used during the deposit operation. Click on the gripper open the
+<strong>gripper</strong> panel or click on the gripper <span class="icon"><i class="fa fa-arrow-up"></i></span> icon in the
+<strong>deposit</strong> panel to navigate to the <strong>gripper</strong> panel.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Swivel Neck</strong>: This option helps to rotate the Jaw Neck
+with 180° rotation.</p>
+</li>
+<li>
+<p><strong>Slide Gripper</strong>: This option helps to move the gripper sled
+to the other side.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This <strong>gripper</strong> panel is available only when the jaw gripper is
+used during the deposit operation.
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 
                     </article>
                 </div>
                 <div id="site-toc-holder">
-                    <aside id="site-toc"></aside>
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_deposit_panel">Deposit panel</a>
+  </li>
+  <li level="1">
+   <a href="#_pallet_panel">Pallet panel</a>
+  </li>
+  <li level="1">
+   <a href="#_gripper_panel">Gripper panel</a>
+  </li>
+ </ul>
+</aside>
+
                 </div>
             </div>
             <nav class="pagination">
  <span class="prev"><a href="../regrip/rgstationpanel.html">RG-Stations panel</a></span>
- <span class="next"><a href="deposit.html">Deposit panel</a></span>
+ <span class="next"><a href="patterns.html">Deposit pattern types</a></span>
 </nav>
 
         </div>

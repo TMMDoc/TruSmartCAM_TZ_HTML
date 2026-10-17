@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../cut/index.html">Laser CAM</a>
+   <a href="../cut/index.html">TecZone Laser</a>
    <ul class="hide">
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../bend/index.html">Bend CAM</a>
+   <a href="../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../bend/createbenddata.html">Create bend data</a></li>
     <li><button class="tree blank"></button><a href="../bend/navigator.html">Bend navigator</a></li>
@@ -214,11 +214,10 @@
      <button class="tree closed"></button>
      <a href="../bcell/deposit/index.html">Part deposit</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../bcell/deposit/deposit.html">Deposit panel</a></li>
-      <li><button class="tree blank"></button><a href="../bcell/deposit/repeat.html">Repeat and sequence</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/deposit/patterns.html">Deposit pattern types</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/deposit/deposit.html">Deposit tabs</a></li>
       <li><button class="tree blank"></button><a href="../bcell/deposit/separatorsheet.html">Add separator sheets</a></li>
       <li><button class="tree blank"></button><a href="../bcell/deposit/lockpartrest.html">Lock part-rest</a></li>
-      <li><button class="tree blank"></button><a href="../bcell/deposit/patterns.html">Deposit pattern types</a></li>
      </ul>
     </li>
     <li>
@@ -227,6 +226,7 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../bcell/advanced/waypoints.html">Waypoints</a></li>
       <li><button class="tree blank"></button><a href="../bcell/advanced/cellconfig.html">Cell configuration</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/advanced/customcellcomp.html">Custom Cell Components</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../bcell/advanced/gripperdb/index.html">Gripper database</a>
@@ -241,7 +241,55 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../fold/index.html">Fold CAM</a>
+   <a href="../fcell/index.html">FlexCell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../fcell/navigator.html">Bend navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/pickup/index.html">Part pickup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/pickup/frompallet.html">Pickup from pallet</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/pickup/centeringtable.html">Centering table</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/bending/index.html">Robotic bending</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/bending/strategypanel.html">Strategy panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/regrip/index.html">Regripping</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/regrip/regrippanel.html">Regrip panel</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/addregrip.html">Add/Remove regrip</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/gripperpanel.html">Gripper Panel</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/doublesheetstation.html">Double Sheet Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/deposit/index.html">Part deposit</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/deposit/deposit.html">Deposit panel</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/deposit/deposittabs.html">Deposit Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/advanced/waypoints.html">Waypoints</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../fcell/troubleshoot.html">Troubleshooting</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../fold/index.html">TecZone Fold</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../fold/createfolddata.html">Create fold data</a></li>
     <li><button class="tree blank"></button><a href="../fold/foldview.html">The Fold view</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../settings/cutcam/index.html">Cut CAM</a>
+     <a href="../settings/cutcam/index.html">Cut settings</a>
      <ul class="hide">
+      <li><button class="tree blank"></button><a href="../settings/cutcam/cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../settings/cutcam/layout/index.html">Layout</a>
@@ -399,61 +448,48 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>TecZone Bend uses an innovative user interface design, code-named <strong>Clarity</strong>. When
-you are working in TecZone Bend, you are presented with an uncluttered, minimalist
-view.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="img/clarity.png" alt="Clarity" width="651">
-</div>
+<p>TecZone uses a modern user interface designed to keep the workspace focused and easy to understand. Instead of presenting every command at once, the interface shows the tools and settings that are relevant to the item currently selected.</p>
 </div>
 <div class="paragraph">
-<p>In the TecZone Bend interface, you will <strong>not</strong> find:</p>
+<p>In the TecZone interface, you will <strong>not</strong> find:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Many rows of stacked icons, with only a small number being relevant to the
-current context.</p>
+<p>Many rows of stacked icons, only a few of which are relevant to the current context.</p>
 </li>
 <li>
-<p>Deep menu structures with dozens of menus.</p>
+<p>Deep menu structures containing dozens of commands.</p>
 </li>
 <li>
-<p>User-interface <em>ribbons</em> take up a lot of space on the top of the screen.</p>
+<p>User-interface <em>ribbons</em> that take up a large amount of space at the top of the screen.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Instead, the Clarity interface works on the principle of <strong>Select</strong>, then <strong>Operate</strong>.</p>
+<p>Instead, the interface follows a simple principle: <strong>Select</strong>, then <strong>Operate</strong>.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Select things by clicking on them.</p>
+<p>Select an item by clicking it.</p>
 </li>
 <li>
-<p>A Clarity Panel pops-up, containing various <strong>Settings</strong> and <strong>Operations</strong> for the
-selected thing.</p>
+<p>An interface panel opens and displays the settings and operations available for the selected item.</p>
 </li>
 <li>
-<p>The Panel often contains some controls for <strong>Extend</strong> the selection by selecting
-other similar things.</p>
+<p>The panel may provide controls for extending the selection to other similar items.</p>
 </li>
 <li>
-<p>The Panel often also contains controls for <strong>Navigating</strong> among the various things
-you are working with.</p>
+<p>The panel may also provide controls for navigating among related items.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>These user-interface principles are consistent across every working mode of
-TecZone Bend. Whether you are cleaning up a 3D model, arranging parts on a nested
-sheet, or editing press brake tooling, you will use the same set of key
-concepts. To make these abstract ideas more concrete, let us take a small
-excursion and see the Clarity interface in action (we will take examples from
-the TecZone Bend report editor and from TecZone Bend to illustrate).</p>
+<p>These principles are consistent across every working mode of TecZone. Whether you are cleaning up a 3D model, arranging parts on a nested sheet, or editing press-brake tooling, you use the same core concepts.</p>
+</div>
+<div class="paragraph">
+<p>To make these ideas concrete, the following sections demonstrate the interface using examples from the TecZone Bend report editor.</p>
 </div>
 </div>
 </div>
@@ -461,11 +497,7 @@ the TecZone Bend report editor and from TecZone Bend to illustrate).</p>
 <h2 id="_a_guided_tour">A guided tour</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This is a quick tour of how the Clarity interface works. There are just a
-handful of simple concepts that are repeated everywhere in TecZone Bend, and
-understanding these concepts will mean that most of TecZone Bend can be used
-without much reading or training. In other words, if you read this section, you
-could skip reading the rest of the TecZone Bend user guide!</p>
+<p>This is a short tour of the interface. A small number of concepts are repeated throughout TecZone, and understanding them makes most areas of the application easier to use with little additional training.</p>
 </div>
 </div>
 </div>
@@ -473,9 +505,7 @@ could skip reading the rest of the TecZone Bend user guide!</p>
 <h2 id="_a_sample_report">A sample report</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can learn more about creating and editing report templates in a later
-section. For now, let us introduce some report terminology so we can use this to
-illustrate concepts of the Clarity interface.</p>
+<p>You can learn more about creating and editing report templates in a later section. For now, the following report terminology will help illustrate the interface concepts.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -483,149 +513,121 @@ illustrate concepts of the Clarity interface.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>The image above shows some of the types of entities that could be placed in a report.</p>
+<p>The image above shows several types of entities that can be placed in a report.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>A <strong>Label</strong> is a simple piece of text; you can set various properties like the font,
-text-alignment, and the color.</p>
+<p>A <strong>Label</strong> is a piece of text. You can set properties such as its font, text alignment, and color.</p>
 </li>
 <li>
-<p>A <strong>Field</strong> displays some actual data picked up from the underlying Part.</p>
+<p>A <strong>Field</strong> displays data retrieved from the underlying Part.</p>
 </li>
 <li>
-<p>A <strong>Shape</strong> is some simple geometry (like an ellipse, rectangle, or line) that can
-be used to add back-drops, highlights, or dividers in a report.</p>
+<p>A <strong>Shape</strong> is simple geometry, such as an ellipse, rectangle, or line, that can be used to create backdrops, highlights, or dividers in a report.</p>
 </li>
 <li>
-<p>A <strong>Table</strong> displays data from the underlying Part that has a tabular form
-(like a spreadsheet of information). In this example, we can see a list of bend
-operations in this part, and some attributes are displayed for each of them.</p>
+<p>A <strong>Table</strong> displays tabular data retrieved from the underlying Part. In this example, the table lists the bend operations in the part and displays selected attributes for each operation.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>With this basic background about report entities, we can now begin exploring the
-Clarity interface.</p>
+<p>With this background, we can now look at the interface in action.</p>
 </div>
 <div class="sect2">
-<h3 id="_principle_click_on_something_to_edit_it">Principle: Click on something to edit it</h3>
+<h3 id="_principle_click_an_item_to_edit_it">Principle: Click an item to edit it</h3>
 <div class="paragraph">
-<p>Click on a Field, and a <strong>Clarity Panel</strong> is displayed (let&#8217;s just call this a
-Panel in this discussion). Here&#8217;s an annotated diagram of how it could look:</p>
+<p>Click a Field, and an interface panel opens. The panel provides the controls needed to view and edit the selected item. Here is an annotated example:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/fieldpanel.png" alt="Field Panel" width="581">
+<img src="img/fieldpanel.png" alt="Field panel" width="581">
 </div>
 </div>
 <div class="paragraph">
-<p>Clicking on a field selects it and displays a Panel for editing it.
-Here are some of the elements we see in this panel:</p>
+<p>Clicking a field selects it and displays a panel for editing it. The panel contains several common interface elements:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The caption bar can be used to re-position the panel (you can click
-anywhere on the background of the panel and drag it). If you set the <strong>pushpin</strong>
-in, then panels always open at that location on the screen. Else, panels open
-close to the location of the mouse cursor.</p>
+<p>The caption bar can be used to reposition the panel. Click anywhere on the panel background and drag it to a new location. If you set the <strong>pushpin</strong>, panels remain anchored at that location. Otherwise, they open near the mouse cursor.</p>
 </li>
 <li>
-<p>Edit boxes, number input boxes, choice lists, font and alignment selectors are
-all various ways in which the settings of the Field are viewed and edited.</p>
+<p>Edit boxes, number-input boxes, choice lists, font selectors, and alignment selectors provide different ways to view and change the field settings.</p>
 </li>
 <li>
-<p>Action buttons are how various operations are performed on the selected object.
-In this case, one could delete the field from the report by clicking on
-the <strong>Delete</strong> button.</p>
+<p>Action buttons perform operations on the selected item. For example, you can remove the field from the report by clicking the <strong>Delete</strong> button.</p>
 </li>
 <li>
-<p>Some Panels may contain many elements. To reduce clutter, the panels
-are divided into sections, using <strong>Expanders</strong>. In the image above, you can see
-the <strong>Visual</strong> expander is closed (hiding all the settings in that section), while
-the Font expander is open. You can click anywhere on the expander to open or
-close a section.</p>
+<p>Panels may contain many controls. To keep them manageable, related settings are grouped into sections called <strong>Expanders</strong>. In the example above, the <strong>Visual</strong> expander is closed, while the Font expander is open. Click anywhere on an expander to open or close that section.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_principle_select_multiple_things_and_edit_them_together">Principle: Select multiple things and edit them together</h3>
+<h3 id="_principle_select_multiple_items_and_edit_them_together">Principle: Select multiple items and edit them together</h3>
 <div class="paragraph">
-<p>You can select additional entities by holding down the <kbd>Shift</kbd> key when you click
-on them. When multiple entities are selected, a Panel is displayed that allows you
-to edit the settings of all of them at the same time.</p>
+<p>You can select additional entities by holding down the <kbd>Shift</kbd> key while clicking them. When multiple entities are selected, the panel displays the settings that can be edited for all selected items.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/multisel1.png" alt="Multiple Selection" width="443">
+<img src="img/multisel1.png" alt="Multiple selection" width="443">
 </div>
 </div>
 <div class="paragraph">
-<p>In the image above, we have 3 fields that we selected using the
-<span class="keyseq"><kbd>Shift</kbd>+<kbd>Click</kbd></span> mechanism. The panel that is displayed allows us to edit the
-settings of all these three fields at the same time. (Here we have the
-<strong>Visual</strong> expander open, and the <strong>Font</strong> expander
-closed). After editing the <strong>Bgrd.</strong> color and the
-<strong>Pen-wid.</strong> settings, here&#8217;s how the report looks:</p>
+<p>In the image above, three fields have been selected using the <span class="keyseq"><kbd>Shift</kbd>+<kbd>Click</kbd></span> mechanism. The panel allows their shared settings to be edited together. In this example, the <strong>Visual</strong> expander is open and the <strong>Font</strong> expander is closed.</p>
+</div>
+<div class="paragraph">
+<p>After changing the <strong>Bgrd.</strong> color and the <strong>Pen-wid.</strong> settings, the report looks as follows:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/multisel2.png" alt="Multiple Selection 2" width="311">
+<img src="img/multisel2.png" alt="Multiple selection after editing" width="311">
 </div>
 </div>
 <div class="paragraph">
-<p>The changes we made are applied to all the selected items. In this multiple-edit
-scenario, note that the <strong>Expression</strong> setting is not displayed; this is one
-of the settings that we are unlikely to want to edit together for a set of
-fields (we would not really want 3 fields displaying the same value from the Part).
-Settings which would usually have distinct values for each entity are not displayed
-in such group-editing panels.</p>
+<p>The changes are applied to every selected item. Notice that the <strong>Expression</strong> setting is not displayed in the multiple-edit panel. Settings that normally have different values for each item are omitted because applying one shared value would usually not be useful. For example, you would not normally want three fields to display the same value from the Part.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_principle_you_can_edit_entities_of_different_types_together">Principle: You can edit entities of different types together</h3>
+<h3 id="_principle_edit_different_item_types_together">Principle: Edit different item types together</h3>
 <div class="paragraph">
-<p>In the example above, we selected three entities of the same type. What happens if
-we select entities of different types? Let us see. First, here is how the panel
-for a <strong>Shape</strong> entity looks:</p>
+<p>You can select items of different types at the same time. The panel then displays only the settings and operations that the selected items have in common.</p>
+</div>
+<div class="paragraph">
+<p>The following example shows the panel for a <strong>Shape</strong> entity:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/multisel3.png" alt="Shape Panel" width="398">
+<img src="img/multisel3.png" alt="Shape panel" width="398">
 </div>
 </div>
 <div class="paragraph">
-<p>If we select a <strong>Field</strong> and a <strong>Shape</strong> at the same time, this is the panel that is displayed:</p>
+<p>If you select a <strong>Field</strong> and a <strong>Shape</strong> together, the panel changes as shown below:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/multisel4.png" alt="Field and Shape" width="395">
+<img src="img/multisel4.png" alt="Field and shape" width="395">
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The caption bar now reads <strong>2 Report Items</strong> since we are editing report items,
-but not of the same type.</p>
+<p>The caption bar reads <strong>2 Report Items</strong> because the selected items are report items, even though they are different types.</p>
 </li>
 <li>
-<p>Only the common settings between <strong>Field</strong> and <strong>Shape</strong> are displayed (in this case,
-these are just the settings in the Visual section).</p>
+<p>Only settings shared by the <strong>Field</strong> and <strong>Shape</strong> are displayed. In this example, the common settings are in the Visual section.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_principle_multiple_selection_may_provide_additional_operations">Principle: Multiple selection may provide additional operations</h3>
+<h3 id="_principle_multiple_selection_can_provide_additional_operations">Principle: Multiple selection can provide additional operations</h3>
 <div class="paragraph">
-<p>In addition to the common subset of settings and operations available on multiple
-objects, multiple selection may sometimes present new operations or settings
-that are not available on individual objects. Let us take an example from the
-bending view to illustrate this. In the bend view, clicking on a bend displays
-a panel to edit the settings of the bend and perform some operations on it:</p>
+<p>Multiple selection can provide more than a common set of settings. Depending on the selected items, the panel may also display operations that are unavailable when only one item is selected.</p>
+</div>
+<div class="paragraph">
+<p>The following example comes from the bending view. Clicking a bend opens a panel for editing its settings and performing operations on it:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -633,40 +635,35 @@ a panel to edit the settings of the bend and perform some operations on it:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>The image above shows the panel for bend 3. Let us now hold down <kbd>Shift</kbd>
-and select bend 4 as well. The panel that is now displayed looks like this:</p>
+<p>The image shows the panel for bend 3. If you hold down <kbd>Shift</kbd> and select bend 4 as well, the panel changes:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/bend2.png" alt="2-Bends" width="410">
+<img src="img/bend2.png" alt="Two bends selected" width="410">
 </div>
 </div>
 <div class="paragraph">
-<p>There are some settings that we can edit in common (the skip bending setting or
-the station number setting). However, we see a new button here called
-<strong>Group</strong>. Since two bends are selected, and these are
-collinear, they could be grouped into a single bend operation. This is detected
-automatically, and this new <strong>Group</strong> button is displayed;
-this operation is not available when just a single bend is selected. Clicking on
-that button groups the two bends together, as you can see in the image below.</p>
+<p>The two selected bends share several editable settings, including whether bending is skipped and which station is used. A new <strong>Group</strong> button is also available. Because the two bends are collinear, they can be combined into a single bend operation. This additional operation is available only when the required multiple-selection conditions are met.</p>
+</div>
+<div class="paragraph">
+<p>Clicking the <strong>Group</strong> button combines the bends, as shown below:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/bend3.png" alt="Grouped" width="412">
+<img src="img/bend3.png" alt="Grouped bends" width="412">
 </div>
 </div>
 <div class="paragraph">
-<p>Now, there are only 3 bend operations in this part. Also, bend 3 is now a
-<em>grouped</em> bend and you see a new button appear: <strong>Ungroup</strong>.</p>
+<p>The part now contains three bend operations. Bend 3 is a grouped bend, so the panel provides a new <strong>Ungroup</strong> button for separating it again.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_principle_use_the_selection_sub_panel_to_modify_the_selection">Principle: Use the Selection sub-panel to modify the selection</h3>
+<h3 id="_principle_use_the_selection_sub_panel_to_change_the_selection">Principle: Use the Selection sub-panel to change the selection</h3>
 <div class="paragraph">
-<p>A Clarity panel will often have a <strong>Selection</strong> sub-panel near the bottom.
-This panel provides some buttons to modify the selection in various ways.
-Usually, there are buttons to select more objects that are similar in some way
-or the other. For example, some ways to expand the selection would be:</p>
+<p>An interface panel often includes a <strong>Selection</strong> sub-panel near the bottom. It provides commands for changing the current selection, usually by adding items that share a relevant characteristic with the selected item.</p>
+</div>
+<div class="paragraph">
+<p>For example, the available commands might include:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -674,10 +671,13 @@ or the other. For example, some ways to expand the selection would be:</p>
 <p>Select all Fields in a report.</p>
 </li>
 <li>
-<p>Select all polylines in the same layer.</p>
+<p>Select all Bend Fields.</p>
 </li>
 <li>
-<p>Select all punch-hits in a part that use the same punch tool.</p>
+<p>Select all polylines in the current layer.</p>
+</li>
+<li>
+<p>Select all punch hits that use the same punch tool.</p>
 </li>
 <li>
 <p>Select all bends that use the same setup.</p>
@@ -685,110 +685,84 @@ or the other. For example, some ways to expand the selection would be:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Here is an example from the report editor of a selection panel being displayed
-when we click on a Field in a report:</p>
+<p>The following example shows a Selection sub-panel in the report editor:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/selection.png" alt="Selection" width="303">
+<img src="img/selection.png" alt="Selection sub-panel" width="303">
 </div>
 </div>
 <div class="paragraph">
-<p>The selection sub-panel has a distinctive patterned background and rounded
-buttons. In this example, you can see buttons to select <strong>All Fields</strong>, select
-<strong>All Bend Fields</strong> (fields related to bend CAM data), and
-<strong>Toggle</strong> (the current selection set).</p>
+<p>The Selection sub-panel uses a distinctive patterned background and rounded buttons. In this example, the buttons can be used to select <strong>All Fields</strong>, select <strong>All Bend Fields</strong>, or <strong>Toggle</strong> the current selection.</p>
 </div>
 <div class="paragraph">
-<p>The actual list of selection buttons displayed in this sub-panel will vary
-depending on the context. You will find that most common scenarios are handled
-very conveniently by these selection buttons.</p>
+<p>The available selection commands depend on the current context. They are designed to make common selection tasks quick and convenient.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_principle_use_the_navigation_sub_panel_to_walk_through_the_entity_tree">Principle: Use the Navigation sub-panel to walk through the entity tree</h3>
+<h3 id="_principle_use_the_navigation_sub_panel_to_move_through_the_item_hierarchy">Principle: Use the Navigation sub-panel to move through the item hierarchy</h3>
 <div class="paragraph">
-<p>The set of entities in a part, report or layout often have a hierarchical
-structure. We call this the <em>Entity Tree</em>. The structure is typically
-represented like an upside-down tree, with the 'parent' object at the top and
-children below it. Here&#8217;s an example of an entity tree in a report.</p>
+<p>The items in a part, report, or layout are often organized hierarchically. This structure is called the <em>Entity Tree</em>. It is typically represented as an upside-down tree, with a parent item at the top and its child items below it.</p>
+</div>
+<div class="paragraph">
+<p>The following example shows an entity tree for a report:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>A report could have multiple items within it. Some of these items could be Tables.</p>
+<p>A report can contain multiple items, including Tables.</p>
 </li>
 <li>
-<p>A Table in a report could have multiple Columns in it.</p>
+<p>A Table can contain multiple Columns.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Thus, there are 3 levels in this tree, and a graphical representation of this
-tree could be as follows:</p>
+<p>The structure therefore has three levels:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/navigate1.png" alt="Navigate" width="768">
+<img src="img/navigate1.png" alt="Entity tree navigation" width="768">
 </div>
 </div>
 <div class="paragraph">
-<p>This report has 2 Labels, 1 Field and 1 Table. The Table has 4 columns.
-When we click on the table, we see a panel like this:</p>
+<p>This report contains two Labels, one Field, and one Table. The Table contains four columns.</p>
+</div>
+<div class="paragraph">
+<p>When you click the table, the panel includes navigation controls for moving through this hierarchy:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/navigate2.png" alt="Table" width="619">
+<img src="img/navigate2.png" alt="Table navigation" width="619">
 </div>
 </div>
 <div class="paragraph">
-<p>The navigation panel provides directional navigation buttons to walk through the
-entity tree. Like the selection panel, the navigation sub-panel has a
-distinctive textured background, and appears at the bottom of the panel, but
-just above the selection sub-panel.</p>
+<p>The Navigation sub-panel provides directional buttons for moving through the entity tree. Like the Selection sub-panel, it has a distinctive textured background and appears near the bottom of the panel, above the Selection sub-panel.</p>
 </div>
 <div class="paragraph">
-<p>The <span class="icon"><i class="fa fa-arrow-left"></i></span> <strong>Prev.</strong> and <strong>Next</strong>
-<span class="icon"><i class="fa fa-arrow-right"></i></span> buttons move among items at the same level of the entity
-tree. Thus, clicking these buttons would select the other items in the report,
-such as the <strong>Label</strong> or the <strong>Field</strong> items in the report.</p>
+<p>The <span class="icon"><i class="fa fa-arrow-left"></i></span> <strong>Prev</strong> and <strong>Next</strong> <span class="icon"><i class="fa fa-arrow-right"></i></span> buttons move between items at the same level of the entity tree. From the table level, these buttons select other items in the report, such as the <strong>Label</strong> or <strong>Field</strong> items.</p>
 </div>
 <div class="paragraph">
-<p>Clicking the <strong>Report</strong> <span class="icon"><i class="fa fa-arrow-up"></i></span> would move up from
-the table to the parent - the <em>Report</em> itself. The panel that is displayed when
-you click on the <strong>Report</strong> button shows some settings
-related to the report itself, such as the paper size and the margins:</p>
+<p>Clicking the <strong>Report</strong> <span class="icon"><i class="fa fa-arrow-up"></i></span> button moves up from the table to its parent, the <em>Report</em>. The panel for the report contains settings such as the paper size and margins:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/navigate3.png" alt="Report" width="617">
+<img src="img/navigate3.png" alt="Report navigation" width="617">
 </div>
 </div>
 <div class="paragraph">
-<p>Now we are editing the report; we are at the root of the entity tree. There is
-no direction to go but down, and thus the navigation sub-panel has just one
-button (<span class="icon"><i class="fa fa-arrow-down"></i></span> Items) to go down to the list of items. Clicking this
-selects the table again.</p>
+<p>The report is the root of the entity tree, so there is no higher level to navigate to. The navigation sub-panel therefore contains only one button, <span class="icon"><i class="fa fa-arrow-down"></i></span> <strong>Items</strong>, which moves down to the report&#8217;s item list. Clicking it selects the table again.</p>
 </div>
 <div class="paragraph">
-<p>From the table, the down navigation <span class="icon"><i class="fa fa-arrow-down"></i></span>
-<strong>Columns</strong> button moves us down one level and puts us in
-column-editing mode. This is what happens when we click the <span class="icon"><i class="fa fa-arrow-down"></i></span>
-<strong>Columns</strong> navigation button from the table panel:</p>
+<p>From the table, the <span class="icon"><i class="fa fa-arrow-down"></i></span> <strong>Columns</strong> button moves down one level into column-editing mode. Clicking the <span class="icon"><i class="fa fa-arrow-down"></i></span> <strong>Columns</strong> button displays the settings for the selected table column:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/navigate4.png" alt="Columns" width="613">
+<img src="img/navigate4.png" alt="Column navigation" width="613">
 </div>
 </div>
 <div class="paragraph">
-<p>The settings for the selected column in the table are displayed. Clicking the
-<span class="icon"><i class="fa fa-arrow-left"></i></span> <strong>Prev.</strong> and <strong>Next</strong>
-<span class="icon"><i class="fa fa-arrow-right"></i></span> buttons now moves the selection between the <em>columns</em> in the
-table, since that is the level in the tree we are working with. There is no down
-navigation button, since this is the lowest level in the tree. The
-<strong>Table</strong> <span class="icon"><i class="fa fa-arrow-up"></i></span> button moves up one level, and we are
-back to editing the entire table.</p>
+<p>At the column level, the <span class="icon"><i class="fa fa-arrow-left"></i></span> <strong>Prev</strong> and <strong>Next</strong> <span class="icon"><i class="fa fa-arrow-right"></i></span> buttons move between the columns in the table. There is no down-navigation button because columns are the lowest level in this example. The <strong>Table</strong> <span class="icon"><i class="fa fa-arrow-up"></i></span> button moves up one level and returns to editing the table.</p>
 </div>
 </div>
 </div>
@@ -799,22 +773,22 @@ back to editing the entire table.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Click on something to edit it.</p>
+<p>Click an item to edit it.</p>
 </li>
 <li>
-<p>Select multiple things, and you can then edit them together.</p>
+<p>Select multiple items to edit their shared settings together.</p>
 </li>
 <li>
-<p>You can also edit entities of different types together.</p>
+<p>Select items of different types to edit the settings they have in common.</p>
 </li>
 <li>
-<p>Multiple-selection may provide additional settings and operations.</p>
+<p>Use multiple selection to access additional operations when the selected items support them.</p>
 </li>
 <li>
-<p>Use the Selection sub-panel to intelligently modify the selection.</p>
+<p>Use the Selection sub-panel to modify the current selection efficiently.</p>
 </li>
 <li>
-<p>Use the Navigation sub-panel to walk through the entity tree.</p>
+<p>Use the Navigation sub-panel to move through the entity tree.</p>
 </li>
 </ul>
 </div>
@@ -834,22 +808,22 @@ back to editing the entire table.</p>
    <a href="#_a_sample_report">A sample report</a>
   </li>
   <li level="2">
-   <a href="#_principle_click_on_something_to_edit_it">Principle: Click on something to edit it</a>
+   <a href="#_principle_click_an_item_to_edit_it">Principle: Click an item to edit it</a>
   </li>
   <li level="2">
-   <a href="#_principle_select_multiple_things_and_edit_them_together">Principle: Select multiple things and edit them together</a>
+   <a href="#_principle_select_multiple_items_and_edit_them_together">Principle: Select multiple items and edit them together</a>
   </li>
   <li level="2">
-   <a href="#_principle_you_can_edit_entities_of_different_types_together">Principle: You can edit entities of different types together</a>
+   <a href="#_principle_edit_different_item_types_together">Principle: Edit different item types together</a>
   </li>
   <li level="2">
-   <a href="#_principle_multiple_selection_may_provide_additional_operations">Principle: Multiple selection may provide additional operations</a>
+   <a href="#_principle_multiple_selection_can_provide_additional_operations">Principle: Multiple selection can provide additional operations</a>
   </li>
   <li level="2">
-   <a href="#_principle_use_the_selection_sub_panel_to_modify_the_selection">Principle: Use the Selection sub-panel to modify the selection</a>
+   <a href="#_principle_use_the_selection_sub_panel_to_change_the_selection">Principle: Use the Selection sub-panel to change the selection</a>
   </li>
   <li level="2">
-   <a href="#_principle_use_the_navigation_sub_panel_to_walk_through_the_entity_tree">Principle: Use the Navigation sub-panel to walk through the entity tree</a>
+   <a href="#_principle_use_the_navigation_sub_panel_to_move_through_the_item_hierarchy">Principle: Use the Navigation sub-panel to move through the item hierarchy</a>
   </li>
   <li level="1">
    <a href="#_summary">Summary</a>

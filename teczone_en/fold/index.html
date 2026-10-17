@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../img/trumpf-icon.png">
-  <title>Fold CAM</title>
+  <title>TecZone Fold</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../cut/index.html">Laser CAM</a>
+   <a href="../cut/index.html">TecZone Laser</a>
    <ul class="hide">
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../bend/index.html">Bend CAM</a>
+   <a href="../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../bend/createbenddata.html">Create bend data</a></li>
     <li><button class="tree blank"></button><a href="../bend/navigator.html">Bend navigator</a></li>
@@ -214,11 +214,10 @@
      <button class="tree closed"></button>
      <a href="../bcell/deposit/index.html">Part deposit</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../bcell/deposit/deposit.html">Deposit panel</a></li>
-      <li><button class="tree blank"></button><a href="../bcell/deposit/repeat.html">Repeat and sequence</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/deposit/patterns.html">Deposit pattern types</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/deposit/deposit.html">Deposit tabs</a></li>
       <li><button class="tree blank"></button><a href="../bcell/deposit/separatorsheet.html">Add separator sheets</a></li>
       <li><button class="tree blank"></button><a href="../bcell/deposit/lockpartrest.html">Lock part-rest</a></li>
-      <li><button class="tree blank"></button><a href="../bcell/deposit/patterns.html">Deposit pattern types</a></li>
      </ul>
     </li>
     <li>
@@ -227,6 +226,7 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../bcell/advanced/waypoints.html">Waypoints</a></li>
       <li><button class="tree blank"></button><a href="../bcell/advanced/cellconfig.html">Cell configuration</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/advanced/customcellcomp.html">Custom Cell Components</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../bcell/advanced/gripperdb/index.html">Gripper database</a>
@@ -240,8 +240,56 @@
    </ul>
   </li>
   <li>
+   <button class="tree closed"></button>
+   <a href="../fcell/index.html">FlexCell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../fcell/navigator.html">Bend navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/pickup/index.html">Part pickup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/pickup/frompallet.html">Pickup from pallet</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/pickup/centeringtable.html">Centering table</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/bending/index.html">Robotic bending</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/bending/strategypanel.html">Strategy panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/regrip/index.html">Regripping</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/regrip/regrippanel.html">Regrip panel</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/addregrip.html">Add/Remove regrip</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/gripperpanel.html">Gripper Panel</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/doublesheetstation.html">Double Sheet Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/deposit/index.html">Part deposit</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/deposit/deposit.html">Deposit panel</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/deposit/deposittabs.html">Deposit Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/advanced/waypoints.html">Waypoints</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../fcell/troubleshoot.html">Troubleshooting</a></li>
+   </ul>
+  </li>
+  <li>
    <button class="tree open"></button>
-   <a class="active" href="index.html">Fold CAM</a>
+   <a class="active" href="index.html">TecZone Fold</a>
    <ul>
     <li><button class="tree blank"></button><a href="createfolddata.html">Create fold data</a></li>
     <li><button class="tree blank"></button><a href="foldview.html">The Fold view</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../settings/cutcam/index.html">Cut CAM</a>
+     <a href="../settings/cutcam/index.html">Cut settings</a>
      <ul class="hide">
+      <li><button class="tree blank"></button><a href="../settings/cutcam/cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../settings/cutcam/layout/index.html">Layout</a>
@@ -384,17 +433,17 @@
   </button>
  </div>
  <div>
-  <a href="index.html">Fold CAM</a>
+  <a href="index.html">TecZone Fold</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Fold CAM</h1>
+                        <h1>TecZone Fold</h1>
 <div class="paragraph">
 <p>A sheet metal flat can be bent to its final shape using a panel bender. The
-<strong>Fold CAM</strong><sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> module of TecZone Fold is used to program panel benders. Here
+TecZone Fold module of TecZone is used to program panel benders. Here
 are some of the things this module can do.</p>
 </div>
 <div class="ulist">
@@ -444,10 +493,6 @@ of your edits as you work, without having to request for a recompute.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>All modules of TecZone Fold share a common user-interaction model called the
-<a href="../intro/clarity.html">Clarity</a> interface.</p>
-</li>
-<li>
 <p>You can install panel benders from the <a href="../database/machines.html">Machine Database</a>.</p>
 </li>
 <li>
@@ -462,12 +507,6 @@ can get those CAD files by importing 2D or 3D data, or by drawing it using the
 </li>
 </ul>
 </div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. The term <strong>Bend CAM</strong> is used in TecZone Fold for press brakes, and <strong>Fold CAM</strong> is used for panel benders.
-</div>
-</div>
 
                     </article>
                 </div>
@@ -476,7 +515,7 @@ can get those CAD files by importing 2D or 3D data, or by drawing it using the
                 </div>
             </div>
             <nav class="pagination">
- <span class="prev"><a href="../bcell/advanced/gripperdb/importgripper.html">Import gripper from DXF</a></span>
+ <span class="prev"><a href="../fcell/troubleshoot.html">Troubleshooting</a></span>
  <span class="next"><a href="createfolddata.html">Create fold data</a></span>
 </nav>
 

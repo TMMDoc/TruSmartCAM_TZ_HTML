@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../../img/trumpf-icon.png">
-  <title>Cut CAM</title>
+  <title>Cut settings</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../cut/index.html">Laser CAM</a>
+   <a href="../../cut/index.html">TecZone Laser</a>
    <ul class="hide">
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../bend/index.html">Bend CAM</a>
+   <a href="../../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">Create bend data</a></li>
     <li><button class="tree blank"></button><a href="../../bend/navigator.html">Bend navigator</a></li>
@@ -214,11 +214,10 @@
      <button class="tree closed"></button>
      <a href="../../bcell/deposit/index.html">Part deposit</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../../bcell/deposit/deposit.html">Deposit panel</a></li>
-      <li><button class="tree blank"></button><a href="../../bcell/deposit/repeat.html">Repeat and sequence</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/patterns.html">Deposit pattern types</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/deposit.html">Deposit tabs</a></li>
       <li><button class="tree blank"></button><a href="../../bcell/deposit/separatorsheet.html">Add separator sheets</a></li>
       <li><button class="tree blank"></button><a href="../../bcell/deposit/lockpartrest.html">Lock part-rest</a></li>
-      <li><button class="tree blank"></button><a href="../../bcell/deposit/patterns.html">Deposit pattern types</a></li>
      </ul>
     </li>
     <li>
@@ -227,6 +226,7 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../../bcell/advanced/waypoints.html">Waypoints</a></li>
       <li><button class="tree blank"></button><a href="../../bcell/advanced/cellconfig.html">Cell configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/advanced/customcellcomp.html">Custom Cell Components</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../../bcell/advanced/gripperdb/index.html">Gripper database</a>
@@ -241,7 +241,55 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../fold/index.html">Fold CAM</a>
+   <a href="../../fcell/index.html">FlexCell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../fcell/navigator.html">Bend navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/pickup/index.html">Part pickup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/frompallet.html">Pickup from pallet</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/centeringtable.html">Centering table</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/bending/index.html">Robotic bending</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/bending/strategypanel.html">Strategy panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/regrip/index.html">Regripping</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/regrippanel.html">Regrip panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/addregrip.html">Add/Remove regrip</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/gripperpanel.html">Gripper Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/doublesheetstation.html">Double Sheet Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/deposit/index.html">Part deposit</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/deposit/deposit.html">Deposit panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/deposit/deposittabs.html">Deposit Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/advanced/index.html">Advanced</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/advanced/waypoints.html">Waypoints</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../fcell/troubleshoot.html">Troubleshooting</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../fold/index.html">TecZone Fold</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../fold/createfolddata.html">Create fold data</a></li>
     <li><button class="tree blank"></button><a href="../../fold/foldview.html">The Fold view</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree open"></button>
-     <a class="active" href="index.html">Cut CAM</a>
+     <a class="active" href="index.html">Cut settings</a>
      <ul>
+      <li><button class="tree blank"></button><a href="cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="layout/index.html">Layout</a>
@@ -388,189 +437,149 @@
  </div>
  <div>/</div>
  <div>
-  <a href="index.html">Cut CAM</a>
+  <a href="index.html">Cut settings</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Cut CAM</h1>
+                        <h1>Cut settings</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <strong>Cut CAM</strong> page of the Settings dialog provides the basic set of
-settings for laser CAM.</p>
+<p>The TecZone Laser settings page for cut module is available under different names,
+depending on the sheet metal part processing stage.</p>
+</div>
+<div class="paragraph">
+<p>The following sections are available in TecZone Laser:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Part settings</strong> - The first stage of sheet metal part processing. Configure part
+settings and application settings.</p>
+</li>
+<li>
+<p><strong>Cut settings</strong> - The second stage of processing after tooling. Configure cut
+settings, machine defaults, and application settings.</p>
+</li>
+<li>
+<p><strong>Layout settings</strong> - The third stage of processing after nesting. Configure
+layout settings, machine defaults, and application settings.</p>
+</li>
+<li>
+<p><strong>Machine defaults</strong> - Contains the default settings for the selected machine.</p>
+</li>
+<li>
+<p><strong><a href="cutcam.html">Application settings</a></strong> - Contains the general application settings for TecZone Laser.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Settings available in the Cut, Layout, and Machine defaults sections are also
+available in the Application settings section of the Flux settings page. When
+the same setting is defined in multiple sections, the settings hierarchy
+determines which value takes precedence.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_finishing_rules">Finishing rules</h2>
+<h2 id="_part_settings">Part settings</h2>
 <div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/partsettings.png" alt="Part settings" width="925">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_info_basic_settings">Info - Basic settings</h3>
 <div class="paragraph">
-<p>For details on this section, please see the
-<a href="../../cut/advanced/finishingrules.html">Finishing rules</a> page.</p>
+<p><strong>Part notes</strong> - Specifies notes related to the sheet metal part.</p>
+</div>
+<div class="paragraph">
+<p><strong>Part identifier</strong> - Specifies the unique identifier of the part.</p>
+</div>
+<div class="paragraph">
+<p><strong>Customer</strong> - Specifies the customer associated with the part.</p>
+</div>
+<div class="paragraph">
+<p><strong>Author</strong> - Specifies the name of the person who created the part.</p>
+</div>
+<div class="paragraph">
+<p><strong>Job identifier</strong> - Specifies the unique identifier of the associated job.</p>
+</div>
+<div class="paragraph">
+<p><strong>Tags</strong> - Specifies the tags assigned to the part.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_info_material_settings">Info - Material settings</h3>
+<div class="paragraph">
+<p><strong>Surface</strong> - Specifies the surface finish or treatment of the material.</p>
+</div>
+<div class="paragraph">
+<p><strong>Protective film</strong> - Indicates whether the material includes a protective film.</p>
+</div>
+<div class="paragraph">
+<p><strong>Surface treatment</strong> - Specifies the surface treatment applied to the material.</p>
+</div>
+<div class="paragraph">
+<p><strong>Rolling direction</strong> - Specifies the rolling direction of the material during manufacturing.</p>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_microjoint_settings">Microjoint Settings</h2>
+<h2 id="_dimensions">Dimensions</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="img/microjoint.png" alt="Microjoint settings" width="925">
+<img src="img/dimensionsettings.png" alt="Dimension settings" width="925">
 </div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Length</strong> - Enter the size of the microjoint.</p>
-</li>
-<li>
-<p><strong>Max. allowed dip into slats <em>(determines no. of microjoints)</em></strong> -
-This is the maximum distance the microjoint is allowed to dip into slats on a contour.</p>
-</li>
-<li>
-<p><strong>Spacing <em>(also determines no. of microjoints)</em></strong> -
-This setting along with the above setting, determines number of microjoints. Of
-the two methods, one with the higher microjoint count will be used.</p>
-</li>
-<li>
-<p><strong>Upper limit for no. of microjoints on contour</strong> - The
-maximum number of microjoints allowed on the contour.</p>
-</li>
-<li>
-<p><strong>Preferred microjoint type:</strong></p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>Hard</em> - Hard coded microjoint that cannot be
-modified on the machine.</p>
-</li>
-<li>
-<p><em>Soft</em> - Microjoint that can be modified on
-the machine.</p>
-</li>
-<li>
-<p><em>Nano</em> - An alternative to usual microjoint,
-where no approach is required. Possible only on large contours. Commonly used in
-twinline processing.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Nanojoints stability</strong> - Controls the stability for
-nanojoints.</p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
-<p>Nanojoints are a better alternative to usual microjoint when using thin delicate
-sheets. By default TecZone Laser chooses the most applicable microjoint type. You can
-change this manually in Microjoint settings page.</p>
+<p><strong>Arrow size</strong> - Specifies the size of dimension arrows.</p>
+</div>
+<div class="paragraph">
+<p>Extended line start offset - Specifies the offset between the start of the extension line and the dimensioned feature.</p>
+</div>
+<div class="paragraph">
+<p><strong>Extension line length</strong> - Specifies the length of dimension extension lines.</p>
+</div>
+<div class="paragraph">
+<p><strong>Decimals:linear dimensions</strong> - Specifies the number of decimal places displayed for linear dimensions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Decimals:angular dimensions</strong> - Specifies the number of decimal places displayed for angular dimensions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Text size</strong> - Specifies the size of dimension text.</p>
+</div>
+<div class="paragraph">
+<p><strong>Text position</strong> - Specifies the position of dimension text.</p>
+</div>
+<div class="paragraph">
+<p><strong>Dimension font</strong> - Specifies the font used for dimension text.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_sequence_ordering">Sequence ordering</h2>
+<h2 id="_view">View</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="img/sequenceordering.png" alt="Sequence ordering" width="925">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Start corner</strong> is the start corner of the tooling. The
-start corner choices are <em>bottom left, bottom right, top left and top right</em>.</p>
-</li>
-<li>
-<p><strong>Sort direction</strong> is the sequencing of the parts on
-the sheet.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>Auto</em> - Automatically sorts the parts by choosing the
-direction with the shortest distance.</p>
-</li>
-<li>
-<p><em>X First</em> - Sorts the parts in the X direction first.</p>
-</li>
-<li>
-<p><em>Y First</em> - Sorts the parts in the Y direction first.</p>
-</li>
-<li>
-<p><em>Staggered</em> - Sequencing is done such that the
-next part has a maximum distance to the recently cut part to address heat
-dissipation.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_other_settings">Other settings</h2>
-<div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="img/othersettings.png" alt="Other settings" width="925">
+<img src="img/view.png" alt="View settings" width="925">
 </div>
 </div>
 <div class="paragraph">
-<p>This option is whether the points should be processed or skipped when importing.</p>
+<p><strong>Fill part outline</strong> - Select this checkbox to fill the part outline in the view.</p>
 </div>
 <div class="paragraph">
-<p><em>None</em> - Imports all points.</p>
+<p><strong>Mark ends of open polylines</strong> - Select this checkbox to display markers at the ends of open polylines.</p>
 </div>
 <div class="paragraph">
-<p><em>Points on polylines</em> - Skips points on
-polylines.</p>
-</div>
-<div class="paragraph">
-<p><em>All</em> - Skips all points on import.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_pre_cutting">Pre-cutting</h2>
-<div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="img/precutting.png" alt="Pre-cutting" width="925">
-</div>
-</div>
-<div class="paragraph">
-<p>Pre-cutting setting is available in <strong>Settings / Cut settings / Cut CAM</strong>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="img/cutsettings.png" alt="Cut settings" width="288">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Blank is already sheared-to-size</strong> - This option will be
-enabled when the sheet is already cut to the correct size.</p>
-</li>
-<li>
-<p><strong>Blank margins</strong> - This option is to input a margin
-to be cut to the edge of the blank.</p>
-</li>
-<li>
-<p><strong>Measuring distance from sheet edge</strong> - Distance from
-the sheet edge the pre-cutting should begin.</p>
-</li>
-<li>
-<p><strong>Overtravel after sheet edge</strong> - This is the overtravel
-distance allowed from the sheet edge.</p>
-</li>
-</ul>
+<p><strong>Display center-markers for curves and arcs</strong> - Select this checkbox to display center markers for curves and arcs.</p>
 </div>
 </div>
 </div>
@@ -582,19 +591,19 @@ distance allowed from the sheet edge.</p>
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_finishing_rules">Finishing rules</a>
+   <a href="#_part_settings">Part settings</a>
+  </li>
+  <li level="2">
+   <a href="#_info_basic_settings">Info - Basic settings</a>
+  </li>
+  <li level="2">
+   <a href="#_info_material_settings">Info - Material settings</a>
   </li>
   <li level="1">
-   <a href="#_microjoint_settings">Microjoint Settings</a>
+   <a href="#_dimensions">Dimensions</a>
   </li>
   <li level="1">
-   <a href="#_sequence_ordering">Sequence ordering</a>
-  </li>
-  <li level="1">
-   <a href="#_other_settings">Other settings</a>
-  </li>
-  <li level="1">
-   <a href="#_pre_cutting">Pre-cutting</a>
+   <a href="#_view">View</a>
   </li>
  </ul>
 </aside>
@@ -603,7 +612,7 @@ distance allowed from the sheet edge.</p>
             </div>
             <nav class="pagination">
  <span class="prev"><a href="../bendcam/bendcell.html">Bend cell</a></span>
- <span class="next"><a href="layout/index.html">Layout</a></span>
+ <span class="next"><a href="cutcam.html">Cut CAM</a></span>
 </nav>
 
         </div>
