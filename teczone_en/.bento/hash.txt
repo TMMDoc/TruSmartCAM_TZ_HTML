@@ -12,7 +12,7 @@ LANGUAGE=EN
 TECNOAPP=TruSmartCAM
 TRUMPF=
 Folders=45
-Pages=179
+Pages=178
 UIXlate=False, DebugUIXlate=False, Language=EN
 
 contents.txt • 261117.011145
@@ -46,7 +46,7 @@ Database\FormsComponents.adoc •
 Database\Index.adoc • Database
 Database\Machines.adoc • Machines
 Database\Materials.adoc • 
-FCell\contents.txt • 264005.104016
+FCell\contents.txt • 262018.072003
 FCell\Index.adoc • FlexCell CAM
 FCell\Navigator.adoc • Bend navigator
 FCell\Troubleshoot.adoc • Troubleshooting
@@ -165,26 +165,21 @@ Cut\PartWorkflow\contents.txt • 255726.115716
 Cut\PartWorkflow\Index.adoc • Part workflow
 Cut\PartWorkflow\QuickNest.adoc • Quick-Nest
 FCell\Advanced\CellConfig.adoc • Cell configuration
-FCell\Advanced\contents.txt • 265107.025137
+FCell\Advanced\contents.txt • 262018.072002
 FCell\Advanced\Index.adoc • Advanced
 FCell\Advanced\Waypoints.adoc • Waypoints
-FCell\Bending\contents.txt • 262417.062420
+FCell\Bending\contents.txt • 262018.072002
 FCell\Bending\Index.adoc • Robotic bending
 FCell\Bending\StrategyPanel.adoc • Strategy panel
-FCell\Deposit\contents.txt • 264005.104016
-FCell\Deposit\Deposit.adoc • Deposit panel
+FCell\Deposit\contents.txt • 262018.072002
 FCell\Deposit\DepositTabs.adoc • Deposit Tabs
 FCell\Deposit\Index.adoc • Part deposit
-FCell\Deposit\LockPartRest.adoc • Lock part-rest
-FCell\Deposit\Patterns.adoc • Deposit pattern types
-FCell\Deposit\Repeat.adoc • Repeat and sequence
-FCell\Deposit\SeparatorSheet.adoc • Add separator sheets
 FCell\Pickup\CenteringTable.adoc • Centering table
-FCell\Pickup\contents.txt • 264517.014506
+FCell\Pickup\contents.txt • 262018.072002
 FCell\Pickup\FromPallet.adoc • Pickup from pallet
 FCell\Pickup\Index.adoc • Part pickup
 FCell\Regrip\AddRegrip.adoc • Add/Remove regrip
-FCell\Regrip\contents.txt • 262417.062406
+FCell\Regrip\contents.txt • 262018.072002
 FCell\Regrip\DoubleSheetStation.adoc • Double Sheet Station
 FCell\Regrip\GripperPanel.adoc • Gripper Panel
 FCell\Regrip\Index.adoc • Regripping
@@ -265,7 +260,7 @@ Cut\PartWorkflow\Panels\CornerTreatment.adoc • Corner treatment
 Cut\PartWorkflow\Panels\Index.adoc • Editing panels
 Cut\PartWorkflow\Panels\Part.adoc • Part
 Cut\PartWorkflow\Panels\ScrapCut.adoc • Scrap cut
-FCell\Advanced\GripperDB\contents.txt • 264005.104016
+FCell\Advanced\GripperDB\contents.txt • 262018.072002
 FCell\Advanced\GripperDB\CreateGripper.adoc • Create a gripper
 FCell\Advanced\GripperDB\ImportGripper.adoc • Import gripper from DXF
 FCell\Advanced\GripperDB\Index.adoc • Gripper database

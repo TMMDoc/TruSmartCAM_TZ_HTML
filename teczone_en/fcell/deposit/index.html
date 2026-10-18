@@ -273,7 +273,6 @@
      <button class="tree open"></button>
      <a class="active" href="index.html">Part deposit</a>
      <ul>
-      <li><button class="tree blank"></button><a href="deposit.html">Deposit panel</a></li>
       <li><button class="tree blank"></button><a href="deposittabs.html">Deposit Tabs</a></li>
      </ul>
     </li>
@@ -449,7 +448,26 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>After the bending is completed, the finished part is deposited on a pallet or
-conveyor, or dropped into a basket.</p>
+conveyor, or dropped into a basket. Various settings are used to control this
+deposit operation:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The position, type and orientation of the deposit pallet.</p>
+</li>
+<li>
+<p>The grid of parts on the pallet (rows, columns, layers).</p>
+</li>
+<li>
+<p>The orientation of the part on the pallet.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>These settings are controlled mainly from the <strong>Deposit</strong> panel and
+<strong>Pallet</strong> panel that is supporting the deposit operation. These panels
+are explained below. They are all interconnected by up/down navigation links.</p>
 </div>
 </div>
 </div>
@@ -457,51 +475,193 @@ conveyor, or dropped into a basket.</p>
 <h2 id="_panels">Panels</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><span class="image right"><img src="img/depositpallet.png" alt="DepositPallet" width="300"></span></p>
-</div>
-<div class="paragraph">
-<p>The above settings are controlled mainly from the <strong>Deposit</strong> panel, and
-also from the <strong>Pallet</strong> panel that is supporting the deposit. Here is
-how these panel are accessed:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Click twice on <strong>D1</strong> on the <strong>bend navigator</strong> to open the
-<strong>Deposit</strong> panel and click <span class="icon"><i class="fa fa-arrow-down"></i></span> to navigate to the
-<strong>Pallet</strong> panel.</p>
-<div class="imageblock">
-<div class="content">
-<img src="img/depositdispnav.png" alt="Deposit in bend navigator" width="250">
-</div>
-</div>
-</li>
-<li>
-<p>Click on the deposit pallet (or conveyor, or basket) to open the
-<strong>Pallet</strong> panel and click <span class="icon"><i class="fa fa-arrow-up"></i></span> to navigate to the <strong>Deposit
-D1</strong> panel.</p>
-</li>
-<li>
-<p>Click on one of the finished parts lying on the deposit pallet to open the
-<strong>Deposit</strong> panel.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>In addition, these two panels have navigation links (<span class="icon"><i class="fa fa-arrow-left"></i></span>
-<span class="icon"><i class="fa fa-arrow-up"></i></span> <span class="icon"><i class="fa fa-arrow-down"></i></span> <span class="icon"><i class="fa fa-arrow-right"></i></span>) leading to each other.</p>
-</div>
-<div class="sect2">
-<h3 id="_pallet_panel">Pallet panel</h3>
-<div class="paragraph">
-<p>Use this <a href="../pickup/frompallet.html#_pallet_panel">Pallet panel</a> link to know the
-settings in detail.</p>
-</div>
+<p><span class="image right"><img src="img/deposit.png" alt="Deposit panel" width="148"></span></p>
 </div>
 <div class="sect2">
 <h3 id="_deposit_panel">Deposit panel</h3>
 <div class="paragraph">
-<p>Use this <a href="deposit.html">Deposit panel</a> link to know the settings in detail.</p>
+<p>The <strong>deposit</strong> panel manages the primary settings for placing a part onto a
+pallet, basket, or conveyor. Click on the cells like <strong>D1</strong> on the <strong>bend
+navigator</strong> to open the <strong>deposit</strong> panel or by clicking on one of
+the finished parts lying on the deposit pallet.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Pattern</strong>: Click on the <strong>Pattern</strong> drop down to
+select the deposit pattern type. Following are three pattern types available for
+depositing parts.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Simple Grid</strong>: This pattern is the most commonly used,
+and just stacks parts in a rectangular grid on the pallet.</p>
+</li>
+<li>
+<p><strong>Drop to Basket</strong>: This pattern is used to drop small
+parts into a collection basket, using the mechanical gripper.</p>
+</li>
+<li>
+<p><strong>Conveyor</strong>: This pattern is used to deposit parts on a
+part conveyor. This option is essential when long thin parts are deposited on
+conveyor.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><a href="deposittabs.html">Deposit tabs</a></strong>: The <strong>deposit</strong> panel contains
+several tabs that allow you to configure different aspects of the deposit
+operations. See the <a href="deposittabs.html">Part 1 settings (D1)</a>,
+<a href="deposittabs.html#_repeat_grid_r">Repeat grid (R)</a>,
+<a href="deposittabs.html#_deposit_sequence_s">Deposit sequence (S)</a> for details.</p>
+</li>
+<li>
+<p><strong><a href="../advanced/waypoints.html">Waypoints</a></strong>: This link brings up
+the Waypoints editor panel where the robot
+trajectory during deposit can be fine-tuned.</p>
+</li>
+<li>
+<p><strong><a href="index.html#_gripper_panel">Gripper</a></strong>: This button takes you to the
+<strong>gripper</strong> panel and allows you to configure the gripper settings used during the
+deposit operation.
+Note that this button is available only when the Simple Grid or Conveyor pattern is
+used during the deposit operation.</p>
+</li>
+<li>
+<p><strong>Prev</strong> and <strong>Next</strong>: Use these buttons to navigate to the
+previous and the next operation panels.</p>
+</li>
+<li>
+<p><strong><a href="index.html#_pallet_panel">Pallet</a></strong>: This button takes you to the
+deposit pallet panel and allows you to configure the settings related to the
+deposit pallet.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image right"><img src="img/depositpallet1.png" alt="Pallet" width="148"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pallet_panel">Pallet panel</h3>
+<div class="paragraph">
+<p>Use the <strong>Pallet</strong> panel to select a deposit pallet and set its position in the cell.
+Click on the pickup pallet to open the <strong>Pallet</strong> panel.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Lists the deposit pallets. To see all available pallets,
+clear the <strong>Filtered</strong> checkbox.</p>
+</li>
+<li>
+<p><strong>Position Z, X, R</strong>: These fields display the deposit pallet&#8217;s position in the
+machine coordinate system. These fields are not editable, as the pallet position
+is preset.</p>
+</li>
+<li>
+<p><strong>Rotation Z, X, R</strong>: These fields display the deposit pallet&#8217;s rotation in the machine
+coordinate system. These fields are not editable, as the pallet rotation is
+preset.</p>
+</li>
+<li>
+<p><strong>Save Config</strong>: Click the <strong>Advanced</strong> dropdown to
+view this option. Saves the current cell configuration as the default for this
+machine.</p>
+</li>
+<li>
+<p><strong>Prev</strong> / <strong>Next</strong>: Navigate to the previous or next pallet in
+the cell.</p>
+</li>
+<li>
+<p><strong><a href="index.html#_deposit_panel">Deposit D1</a></strong>: Opens the <strong>Deposit</strong>
+panel.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gripper_panel">Gripper panel</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="img/depositgripper.png" alt="Gripper panel" width="148"></span></p>
+</div>
+<div class="paragraph">
+<p>The <strong>gripper</strong> panel allows you to configure various settings related to
+the gripper used during the deposit operation. Click on the gripper open the
+<strong>gripper</strong> panel or click on the gripper <span class="icon"><i class="fa fa-arrow-up"></i></span> icon in the
+<strong>deposit</strong> panel to navigate to the <strong>gripper</strong> panel.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Swivel Neck</strong>: This option helps to rotate the Jaw Neck
+with 180° rotation.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+These <strong>gripper</strong> and <strong>Suction</strong> panels are available only when the Simple Grid or
+Conveyor pattern is selected for the deposit operation.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_suction_panel">Suction panel</h3>
+<div class="paragraph">
+<p><span class="image right"><img src="img/depositsuction.png" alt="DepositSuction" width="148"></span></p>
+</div>
+<div class="paragraph">
+<p>Use the <strong>Suction</strong> panel to configure the suction cup layout of a gripper.
+Click any suction cup to open this panel, or use the <strong>Suction</strong> link in the
+Gripper panel.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Cup #</strong>: Selects a suction cup to edit.</p>
+</li>
+<li>
+<p><strong>State</strong>: Sets each cup to <strong>On</strong> or <strong>Removed</strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>On</strong>: Default state. Cup is connected to the vacuum line and contributes to
+lift.</p>
+</li>
+<li>
+<p><strong>Removed</strong>: Cup is physically removed from the frame. There will be no lift
+from this cup and no collision occurs. It is useful when a cup falls over a
+formed feature or collides with the die.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Type</strong>: Changes the suction cup type. By default all cups change
+together; clear <strong>Change All</strong> to change individual cups. Note that
+all cups on a gripper frame must share the same working height.</p>
+</li>
+<li>
+<p><strong>Reset</strong>: Restores all cups to their default type and turns them
+all ON.</p>
+</li>
+<li>
+<p><strong>Prev</strong> / <strong>Next</strong>: Navigate to the previous or next cup. The
+selected cup is highlighted in blue</p>
+</li>
+<li>
+<p><strong>Gripper</strong>: Opens the Gripper panel.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -517,10 +677,16 @@ settings in detail.</p>
    <a href="#_panels">Panels</a>
   </li>
   <li level="2">
+   <a href="#_deposit_panel">Deposit panel</a>
+  </li>
+  <li level="2">
    <a href="#_pallet_panel">Pallet panel</a>
   </li>
   <li level="2">
-   <a href="#_deposit_panel">Deposit panel</a>
+   <a href="#_gripper_panel">Gripper panel</a>
+  </li>
+  <li level="2">
+   <a href="#_suction_panel">Suction panel</a>
   </li>
  </ul>
 </aside>
@@ -529,7 +695,7 @@ settings in detail.</p>
             </div>
             <nav class="pagination">
  <span class="prev"><a href="../regrip/doublesheetstation.html">Double Sheet Station</a></span>
- <span class="next"><a href="deposit.html">Deposit panel</a></span>
+ <span class="next"><a href="deposittabs.html">Deposit Tabs</a></span>
 </nav>
 
         </div>

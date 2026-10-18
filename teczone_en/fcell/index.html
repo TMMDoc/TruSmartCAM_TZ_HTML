@@ -273,7 +273,6 @@
      <button class="tree closed"></button>
      <a href="deposit/index.html">Part deposit</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="deposit/deposit.html">Deposit panel</a></li>
       <li><button class="tree blank"></button><a href="deposit/deposittabs.html">Deposit Tabs</a></li>
      </ul>
     </li>
@@ -443,15 +442,23 @@
                         <h1>FlexCell CAM</h1>
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p>FlexCell CAM is offline software for robot-assisted bending. A FlexCell
-is a robotic bending cell that includes a press brake, a robot, and automated
-material handling equipment such as part pallets, grippers, and conveyors.</p>
-</div>
-<div class="paragraph">
+<div class="ulist">
+<ul>
+<li>
+<p>A FlexCell is a robotic bending cell that includes a press brake, a robot, and
+automated material handling equipment such as pallets, grippers, and
+conveyors.</p>
+</li>
+<li>
+<p>FlexCell CAM is offline software that includes a robotic bending CAM
+system capable of creating bending solutions for FlexCell.</p>
+</li>
+<li>
 <p>FlexCell CAM automates the programming of the robot to pick up blanks from input
 pallets, load them into the press brake for bending, and deposit the finished
 parts on output pallets.</p>
+</li>
+</ul>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -497,22 +504,8 @@ between bends, or before deposit, and inserting them as needed.</p>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Computing a FlexCell CAM solution follows the same steps as computing a solution
-for a manual press brake in <a href="../bend/index.html">TecZone Bend</a>. Open a part, and
-press the <kbd>B</kbd> to compute the solution.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Bending solution for the most recently used bending machine will be
-computed automatically. If a different bending machine is required, click on the
-machine name in the document tab and select a different machine.
-</td>
-</tr>
-</table>
+for a manual press brake. Open a part, and press the <kbd>B</kbd> to compute the
+solution.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -520,11 +513,10 @@ machine name in the document tab and select a different machine.
 </div>
 </div>
 <div class="paragraph">
-<p>The solution computed by FlexCell CAM is similar to BendMaster CAM simulation. It
-includes a complete simulation of all the robot trajectory from picking up the
-blank all the way to depositing the finished part on the output pallet. Every
-step of this trajectory is also <strong>collision-checked</strong>, and validated for
-<strong>reachability</strong> by the robot.</p>
+<p>The solution computed by FlexCell CAM includes a complete simulation of all the
+robot trajectory from picking up the blank all the way to depositing the
+finished part on the output pallet. Every step of this trajectory is also
+<strong>collision-checked</strong>, and validated for <strong>reachability</strong> by the robot.</p>
 </div>
 <div class="paragraph">
 <p>As you edit the solution, these checks are done immediately in real time, so you

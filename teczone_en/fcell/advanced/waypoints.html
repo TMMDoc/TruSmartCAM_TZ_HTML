@@ -273,7 +273,6 @@
      <button class="tree closed"></button>
      <a href="../deposit/index.html">Part deposit</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../deposit/deposit.html">Deposit panel</a></li>
       <li><button class="tree blank"></button><a href="../deposit/deposittabs.html">Deposit Tabs</a></li>
      </ul>
     </li>
@@ -449,8 +448,7 @@
                 <div id="site-toc-left">
                     <article id="article">
                         <h1>Waypoints</h1>
-<div class="sect1">
-<h2 id="_overview">Overview</h2>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Each movement of the robot consists of <strong>waypoints</strong>
@@ -483,27 +481,15 @@ Various settings used to control the waypoints are listed below:</p>
 <li>
 <p>Press <kbd>E</kbd> <kbd>W</kbd> to open the <strong>Waypoints</strong> panel for the current stage.</p>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="img/waypointspanelew.png" alt="waypointspanelEW" width="400"></span></p>
-</div>
-<div class="ulist">
-<ul>
 <li>
-<p>Click the <strong>Waypoints</strong> link from Pickup panel, Bend panel, Regrip panel
-or Deposit panel.</p>
+<p>Click the <strong>Waypoints</strong> link from Pickup panel, Bend panel, Regrip panel or
+Deposit panel.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="img/waypointsbendnavi.png" alt="waypointsbendnavi" width="500"></span></p>
-</div>
 <h2 id="_waypoints_panel" class="discrete">Waypoints panel</h2>
-<div class="imageblock right">
-<div class="content">
-<img src="img/waypointspanel1.png" alt="Waypoints" width="150">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/waypointspanelew.png" alt="waypointspanelEW" width="500"></span></p>
 </div>
 <div class="paragraph">
 <p>A typical waypoints panel is shown alongside:</p>
@@ -511,58 +497,61 @@ or Deposit panel.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>The <strong>Phase</strong> slider shows the step by step movement of a waypoint. Each
-phase reflects a particular robot operation like pickup, bend, regrip and deposit.</p>
+<p><strong>Phase</strong>: This slider shows the step by step movement of a
+waypoint. Each phase reflects a particular robot operation like pickup, bend,
+regrip and deposit.</p>
 </li>
 <li>
-<p>Use the <strong>Display</strong> option to view the:</p>
+<p><strong>Display</strong>: Use this option to view the:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Grip Point - The X, Y, Z, W, P, R of Tool Center Point (TCP) are
-displayed and can be edited</p>
+<p><strong>Grip Point</strong>: The position and angle of the gripper (i.e. X, Y, Z, W,
+P, R of Tool Center Point (TCP)) are displayed and can be edited.</p>
 </li>
 <li>
-<p>Wrist Point - The X, Y, Z, W, P, R of End of Arm Tool (EOAT) are
-displayed and can be edited</p>
+<p><strong>Wrist Point</strong>: The position and angle of the wrist (i.e. X, Y, Z, W,
+P, R of End of Arm Tool (EOAT)) are displayed and can be edited.</p>
 </li>
 <li>
-<p>Robot Axes - The robot joint axes values are displayed and can be edited.</p>
+<p><strong>Robot Axes</strong>: The robot joint (J1 to J6) axes values are displayed and
+can be edited. The yellow trace shows the path from the previous step to this
+one, and from this step to the next one (see image above). The 3 small triangles
+indicate the local X and Y coordinates of the robot (wrist or gripper).</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>The yellow trace shows the path from the previous step to this one, and from this
-step to the next one (see image below). The 3 small triangles indicate
-the local X and Y coordinates of the robot (wrist or gripper).</p>
-</li>
-<li>
-<p>The <strong>Simulate</strong> slider is used to move the simulation from
+<p><strong>Simulate</strong>: This slider is used to move the simulation from
 the previous phase to the next phase. If this is in the middle, that is the
 actual phase we are editing.</p>
 </li>
 <li>
-<p>The <strong>Configuration</strong> section shows the current configuration of the robot. It
+<p><strong>Configuration</strong>: This section shows the current configuration of the robot. It
 represents the robot&#8217;s attitude.</p>
 </li>
 <li>
-<p>The <strong>Interpolate</strong> setting is used to switch between
+<p><strong>Interpolate</strong>: This setting is used to switch between
 linear and axis-oriented interpolations.</p>
 </li>
 <li>
-<p>The <strong>Speed</strong> and <strong>Rounding</strong> settings are
+<p><strong>Speed</strong> and <strong>Rounding</strong>: These settings are
 used to edit the speed and accuracy setting for this step.</p>
 </li>
 <li>
-<p><strong>Insert</strong> option is used to create new waypoint by entering new
-values. Newly added waypoints can be removed by <strong>Remove</strong> option.</p>
+<p><strong>Insert</strong>: This option is used to create new waypoint
+by entering new values.</p>
 </li>
 <li>
-<p>Use the <strong>Prev</strong> and <strong>Next</strong> buttons to go to the
-next or previous steps (or you can also use the Left and Right arrow keys).
-Clicking on <strong>Next</strong> button will show each step in a phase.
-At the end of the phase, next corresponding waypoint panel is displayed.</p>
+<p><strong>Remove</strong>: Newly added waypoints can be removed by
+clicking this option.</p>
+</li>
+<li>
+<p><strong>Prev</strong> and <strong>Next</strong>: Use these buttons to go to
+the next or previous steps (or you can also use the Left and Right arrow keys).
+Clicking on <strong>Next</strong> button will show each step in a phase. At the
+end of the phase, next corresponding waypoint panel is displayed.</p>
 </li>
 </ul>
 </div>
@@ -581,10 +570,10 @@ If required, these attributes can be changed.</p>
 </div>
 <div class="paragraph">
 <div class="title">Configuration</div>
-<p><span class="image"><img src="img/waypointconfigpanel.png" alt="waypointconfigpanel"></span></p>
+<p>The configuration panel shows the current joint placements of the robot.</p>
 </div>
 <div class="paragraph">
-<p>These are the joint placements that specify the placement of the wrist and arm.</p>
+<p><span class="image"><img src="img/waypointconfigpanel.png" alt="waypointconfigpanel" width="230"></span></p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <caption class="title">Table 1. Interpolate</caption>
@@ -813,9 +802,6 @@ using this slider.</p>
                     <aside id="site-toc">
  <h3>Contents</h3>
  <ul>
-  <li level="1">
-   <a href="#_overview">Overview</a>
-  </li>
   <li level="1">
    <a href="#_properties_of_waypoints">Properties of waypoints</a>
   </li>
