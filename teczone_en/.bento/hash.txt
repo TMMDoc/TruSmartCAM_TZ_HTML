@@ -6,6 +6,7 @@ BRAND=TRUMPF
 CUTAPP=TecZone Laser
 CUTCAM=TecZone Laser
 FLAVOR=TRUMPF
+FLEXCELL=Flex Cell
 FOLDAPP=TecZone Fold
 FOLDCAM=TecZone Fold
 LANGUAGE=EN
@@ -17,7 +18,7 @@ UIXlate=False, DebugUIXlate=False, Language=EN
 
 contents.txt • 261117.011145
 Index.adoc • Welcome to {APPNAME}
-manifest.txt • 262917.112922
+manifest.txt • 260319.040314
 Appendix\3DFormats.adoc • Supported 3D formats
 Appendix\AdaptGeometry.adoc • The Adapt Geometry feature
 Appendix\BendToolDXF.adoc • Bend tool DXF
@@ -47,7 +48,7 @@ Database\Index.adoc • Database
 Database\Machines.adoc • Machines
 Database\Materials.adoc • 
 FCell\contents.txt • 262018.072003
-FCell\Index.adoc • FlexCell CAM
+FCell\Index.adoc • {FLEXCELL} CAM
 FCell\Navigator.adoc • Bend navigator
 FCell\Troubleshoot.adoc • Troubleshooting
 Fold\contents.txt • 255723.115724
