@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../../img/trumpf-icon.png">
-  <title>Schneide-CAM</title>
+  <title>Cut settings</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../cut/index.html">Laserschneiden</a>
+   <a href="../../cut/index.html">TecZone Laser</a>
    <ul class="hide">
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../bend/index.html">Abkantpresse</a>
+   <a href="../../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">Biegeparameter erstellen</a></li>
     <li><button class="tree blank"></button><a href="../../bend/navigator.html">Biegenavigator</a></li>
@@ -179,7 +179,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../bcell/index.html">BendMaster-CAM</a>
+   <a href="../../bcell/index.html">BendMaster CAM</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../bcell/navigator.html">Biegenavigator</a></li>
     <li>
@@ -212,13 +212,12 @@
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../../bcell/deposit/index.html">Teilablage</a>
+     <a href="../../bcell/deposit/index.html">Werkstückablage</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../../bcell/deposit/deposit.html">Ablage-Panel</a></li>
-      <li><button class="tree blank"></button><a href="../../bcell/deposit/repeat.html">Wiederholung und Reihenfolge</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/patterns.html">Ablagemustertypen</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/deposit.html">Registerkarten für die Ablage</a></li>
       <li><button class="tree blank"></button><a href="../../bcell/deposit/separatorsheet.html">Separator-Bleche hinzufügen</a></li>
       <li><button class="tree blank"></button><a href="../../bcell/deposit/lockpartrest.html">Teil-Ruhelage sperren</a></li>
-      <li><button class="tree blank"></button><a href="../../bcell/deposit/patterns.html">Ablagemustertypen</a></li>
      </ul>
     </li>
     <li>
@@ -227,12 +226,14 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../../bcell/advanced/waypoints.html">Wegpunkte</a></li>
       <li><button class="tree blank"></button><a href="../../bcell/advanced/cellconfig.html">Zellenkonfiguration</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/advanced/customcellcomp.html">Benutzerdefinierte Zellenkomponenten</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../../bcell/advanced/gripperdb/index.html">Greiferdatenbank</a>
        <ul class="hide">
         <li><button class="tree blank"></button><a href="../../bcell/advanced/gripperdb/creategripper.html">Einen Greifer erstellen</a></li>
         <li><button class="tree blank"></button><a href="../../bcell/advanced/gripperdb/importgripper.html">Greifer aus DXF importieren</a></li>
+        <li><button class="tree blank"></button><a href="../../bcell/advanced/gripperdb/importsuctioncup.html">Saugnapf importieren</a></li>
        </ul>
       </li>
      </ul>
@@ -241,7 +242,54 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../fold/index.html">Schwenkbiegen</a>
+   <a href="../../fcell/index.html">Flex Cell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../fcell/navigator.html">Bend-Navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/pickup/index.html">Teileaufnahme</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/frompallet.html">Entnahme von der Palette</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/centeringtable.html">Zentriertisch</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/bending/index.html">Robotergestütztes Biegen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/bending/strategypanel.html">Strategie-Panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/regrip/index.html">Umgreifen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/regrippanel.html">Umgreifen-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/addregrip.html">Umgreifen hinzufügen/entfernen</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/gripperpanel.html">Greifer-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/doublesheetstation.html">Doppelblech-Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/deposit/index.html">Fertigteilablage</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/deposit/deposittabs.html">Ablage-Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/advanced/index.html">Fortgeschrittene Themen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/advanced/waypoints.html">Wegpunkte</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../fcell/troubleshoot.html">Fehlerbehebung</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../fold/index.html">TecZone Fold</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../fold/createfolddata.html">Falzdaten erstellen</a></li>
     <li><button class="tree blank"></button><a href="../../fold/foldview.html">Die Falzansicht</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree open"></button>
-     <a class="active" href="index.html">Schneide-CAM</a>
+     <a class="active" href="index.html">Cut settings</a>
      <ul>
+      <li><button class="tree blank"></button><a href="cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="layout/index.html">Layout</a>
@@ -388,166 +437,149 @@
  </div>
  <div>/</div>
  <div>
-  <a href="index.html">Schneide-CAM</a>
+  <a href="index.html">Cut settings</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Schneide-CAM</h1>
+                        <h1>Cut settings</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die Seite <strong>CAM schneiden</strong> des Dialogs „Einstellungen“ liefert den grundlegenden Satz von Einstellungen für Laser-Cam.</p>
+<p>Die Einstellungsseite für das Schneidmodul in TecZone Laser ist je nach
+Bearbeitungsphase des Blechteils unter verschiedenen Namen verfügbar.</p>
+</div>
+<div class="paragraph">
+<p>In TecZone Laser sind folgende Bereiche verfügbar:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Part settings</strong> - Die erste Phase der Blechteilbearbeitung. Hier konfigurieren Sie die
+Einstellungen für das Teil und die application settings.</p>
+</li>
+<li>
+<p><strong>Cut settings</strong> - Die zweite Bearbeitungsphase nach der Werkzeugausstattung. Hier konfigurieren Sie die Schnitteinstellungen,
+Maschinenvorgaben und application settings.</p>
+</li>
+<li>
+<p><strong>Layout settings</strong> - Die dritte Bearbeitungsphase nach dem Verschachteln. Hier konfigurieren Sie
+die Layouteinstellungen, Maschinenvorgaben und application settings.</p>
+</li>
+<li>
+<p><strong>Machine defaults</strong> - Enthält die Standardeinstellungen für die ausgewählte Maschine.</p>
+</li>
+<li>
+<p><strong><a href="cutcam.html">Application settings</a></strong> - Enthält die allgemeinen application settings für TecZone Laser.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Die in den Bereichen „Cut“, „Layout“ und „Machine defaults“ verfügbaren Einstellungen sind auch
+im Bereich „Application settings“ auf der Flux-Einstellungsseite verfügbar. Wenn
+dieselbe Einstellung in mehreren Bereichen festgelegt ist, bestimmt die Einstellungshierarchie,
+welcher Wert Vorrang hat.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Finishing_Rules">Finishing rules</h2>
+<h2 id="_part_settings">Part settings</h2>
 <div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/partsettings.png" alt="Part settings" width="925">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_info_basic_settings">Info - Basic settings</h3>
 <div class="paragraph">
-<p>Einzelheiten zu diesem Abschnitt finden Sie auf der Seite <a href="../../cut/advanced/finishingrules.html">Abschließende Regeln</a>.</p>
+<p><strong>Part notes</strong> - Gibt Hinweise zum Blechteil an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Part identifier</strong> - Gibt die eindeutige Kennung des Teils an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Customer</strong> - Gibt den Kunden an, dem das Teil zugeordnet ist.</p>
+</div>
+<div class="paragraph">
+<p><strong>Author</strong> - Gibt den Namen der Person an, die das Teil erstellt hat.</p>
+</div>
+<div class="paragraph">
+<p><strong>Job identifier</strong> - Gibt die eindeutige Kennung des zugehörigen Auftrags an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Tags</strong> - Gibt die dem Teil zugewiesenen Tags an.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_info_material_settings">Info - Material settings</h3>
+<div class="paragraph">
+<p><strong>Surface</strong> - Gibt die Oberflächenbeschaffenheit oder -behandlung des Materials an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Protective film</strong> - Gibt an, ob das Material eine Schutzfolie enthält.</p>
+</div>
+<div class="paragraph">
+<p><strong>Surface treatment</strong> - Gibt die auf das Material angewendete Oberflächenbehandlung an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Rolling direction</strong> - Gibt die Walzrichtung des Materials während der Fertigung an.</p>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Microjoint_Settings">Microjointeinstellungen</h2>
+<h2 id="_dimensions">Dimensions</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="img/microjoint.png" alt="Microjoint settings" width="925">
+<img src="img/dimensionsettings.png" alt="Dimension settings" width="925">
 </div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Länge</strong> - Geben Sie die Größe des Microjoints ein.</p>
-</li>
-<li>
-<p><strong>Max. zulässiges Eintauchen in die Auflageleisten (bestimmt die Anzahl der Microjoints)</strong> - Das ist die maximale Distanz, die der Microjoint in die Auflageleisten auf einer Kontur kippen darf.</p>
-</li>
-<li>
-<p><strong>Abstand (bestimmt auch die Anzahl der Microjoints)</strong> - Diese Einstellung bestimmt zusammen mit der obigen Einstellung die Anzahl der Microjoints. Eine der beiden Methoden, die mit der höheren Microjointanzahl, wird verwendet.</p>
-</li>
-<li>
-<p><strong>Obergrenze für die Anzahl der Microjoints auf der Kontur</strong> - Die maximal erlaubte Anzahl an Microjoints auf der Kontur.</p>
-</li>
-<li>
-<p><strong>Bevorzugter Microjointtyp:</strong></p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>Hart</em> - Fest programmierter Microjoint, der nicht an der Maschine modifiziert werden kann.</p>
-</li>
-<li>
-<p><em>Soft</em> - Microjoint, der an der Maschine modifiziert werden kann.</p>
-</li>
-<li>
-<p><em>Nano</em> - Eine Alternative zum üblichen Microjoint, bei der kein Anfahren benötigt wird. Nur auf großen Konturen möglich. Üblicherweise bei der TwinLine-Bearbeitung verwendet.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Stabilität des Nanojoint</strong> - Kontrolliert die Stabilität der Nanojoints.</p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
-<p>Nanojoints sind eine bessere Alternative zu üblichen Microjoints. Im Fall der TwinLine-Bearbeitung sind sie eine Innovation. TecZone Laser kann statt festen oder verstellbaren Microjoints direkt Nanojoints verwenden, wenn diese fortschrittliche Funktion auf der Maschine des Anwenders verfügbar ist. Im Einstellungsfenster für TruLaser-Maschinen können Anwender ihre bevorzugte Art von Microjoints auswählen.</p>
+<p><strong>Arrow size</strong> - Gibt die Größe der Maßpfeile an.</p>
+</div>
+<div class="paragraph">
+<p>Versatz am Anfang der Maßhilfslinie - Gibt den Versatz zwischen dem Anfang der Maßhilfslinie und dem bemaßten Merkmal an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Extension line length</strong> - Gibt die Länge der Maßhilfslinien an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Decimals:linear dimensions</strong> - Gibt die Anzahl der Dezimalstellen an, die bei linearen Maßen angezeigt werden.</p>
+</div>
+<div class="paragraph">
+<p><strong>Decimals:angular dimensions</strong> - Gibt die Anzahl der Dezimalstellen an, die bei Winkelmaßen angezeigt werden.</p>
+</div>
+<div class="paragraph">
+<p><strong>Text size</strong> - Gibt die Größe des Maßtexts an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Text position</strong> - Gibt die Position des Maßtexts an.</p>
+</div>
+<div class="paragraph">
+<p><strong>Dimension font</strong> - Gibt die für den Maßtext verwendete Schriftart an.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_anordnung_der_elemente">Anordnung der Elemente</h2>
+<h2 id="_view">View</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="img/sequenceordering.png" alt="Sequence ordering" width="925">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Start Ecke</strong> ist die Startecke der Bearbeitung. Die Starteckenmöglichkeiten sind <em>„unten links“, „unten rechts“, „oben links“ und „oben rechts“</em>.</p>
-</li>
-<li>
-<p><strong>Sotierrichtung</strong> ist die Reihenfolge der Teile auf der Tafel.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>Auto</em> - Sortiert die Teile automatisch, indem die Richtung mit dem kürzesten Abstand ausgewählt wird.</p>
-</li>
-<li>
-<p><em>X Erste</em> - Sortiert die Teile zuerst in X-Richtung.</p>
-</li>
-<li>
-<p><em>Y Erste</em> - Sortiert die Teile zuerst in Y-Richtung.</p>
-</li>
-<li>
-<p><em>Gestaffelt</em> - Die Reihenfolge wird so festgelegt, dass das nächste Teil einen maximalen Abstand zum zuletzt geschnittenen Teil hat, um die Wärmeableitung zu berücksichtigen.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_weitere_einstellungen">Weitere Einstellungen</h2>
-<div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="img/othersettings.png" alt="Other settings" width="925">
+<img src="img/view.png" alt="View settings" width="925">
 </div>
 </div>
 <div class="paragraph">
-<p>Diese Option bestimmt, ob die Punkte beim Importieren bearbeitet oder übersprungen werden sollten.</p>
+<p><strong>Fill part outline</strong> - Aktivieren Sie dieses Kontrollkästchen, um die Teilekontur in der Ansicht auszufüllen.</p>
 </div>
 <div class="paragraph">
-<p><em>Keine</em> - Alle Punkte importieren.</p>
+<p><strong>Mark ends of open polylines</strong> - Aktivieren Sie dieses Kontrollkästchen, um Markierungen an den Enden offener Polylinien anzuzeigen.</p>
 </div>
 <div class="paragraph">
-<p><em>Punkte auf Polylinien</em> - Punkte auf Polylinien überspringen.</p>
-</div>
-<div class="paragraph">
-<p><em>Alle</em> - Alle Punkte beim Import überspringen.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_vorschneiden">Vorschneiden</h2>
-<div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="img/precutting.png" alt="Pre-cutting" width="925">
-</div>
-</div>
-<div class="paragraph">
-<p>Die Vorschnitteinstellung ist verfügbar unter <strong>Einstellungen / Schnitteinstellungen / Schnitt-CAM</strong>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="img/cutsettings.png" alt="Cut settings" width="288">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Blank ist bereits auf Größe geschoren</strong> - Diese Option wird aktiviert, wenn die Tafel bereits auf die richtige Größe geschnitten wurde.</p>
-</li>
-<li>
-<p><strong>Abstand zum Rand</strong> - Diese Option wird zum Einfügen eines Randbereichs verwendet, der an die Kante des Rohlings geschnitten werden soll.</p>
-</li>
-<li>
-<p><strong>Messabstand von der Blechkante</strong> - Abstand von der Tafelkante, in dem das Vorschneiden beginnen soll.</p>
-</li>
-<li>
-<p><strong>Overtravel nach Blechkante</strong> - Das ist der gesamte erlaubte Abstand des Nachlaufwegs zur Tafelkante.</p>
-</li>
-</ul>
+<p><strong>Display center-markers for curves and arcs</strong> - Aktivieren Sie dieses Kontrollkästchen, um Zentrierungsmarkierungen für Kurven und Bögen anzuzeigen.</p>
 </div>
 </div>
 </div>
@@ -559,19 +591,19 @@
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#Finishing_Rules">Finishing rules</a>
+   <a href="#_part_settings">Part settings</a>
+  </li>
+  <li level="2">
+   <a href="#_info_basic_settings">Info - Basic settings</a>
+  </li>
+  <li level="2">
+   <a href="#_info_material_settings">Info - Material settings</a>
   </li>
   <li level="1">
-   <a href="#Microjoint_Settings">Microjointeinstellungen</a>
+   <a href="#_dimensions">Dimensions</a>
   </li>
   <li level="1">
-   <a href="#_anordnung_der_elemente">Anordnung der Elemente</a>
-  </li>
-  <li level="1">
-   <a href="#_weitere_einstellungen">Weitere Einstellungen</a>
-  </li>
-  <li level="1">
-   <a href="#_vorschneiden">Vorschneiden</a>
+   <a href="#_view">View</a>
   </li>
  </ul>
 </aside>
@@ -580,7 +612,7 @@
             </div>
             <nav class="pagination">
  <span class="prev"><a href="../bendcam/bendcell.html">Biegezelle</a></span>
- <span class="next"><a href="layout/index.html">Layout</a></span>
+ <span class="next"><a href="cutcam.html">Cut CAM</a></span>
 </nav>
 
         </div>
@@ -591,7 +623,7 @@
     </div>
     <footer id="site-footer">
         <div class="left">
-            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co.KG. All rights reserved.</p>
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co. KG. All rights reserved.</p>
         </div>
         <div class="middle"></div>
         <div class="right">

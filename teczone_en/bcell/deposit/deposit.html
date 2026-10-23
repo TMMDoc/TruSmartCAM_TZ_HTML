@@ -233,6 +233,7 @@
        <ul class="hide">
         <li><button class="tree blank"></button><a href="../advanced/gripperdb/creategripper.html">Create a gripper</a></li>
         <li><button class="tree blank"></button><a href="../advanced/gripperdb/importgripper.html">Import gripper from DXF</a></li>
+        <li><button class="tree blank"></button><a href="../advanced/gripperdb/importsuctioncup.html">Import Suction Cup</a></li>
        </ul>
       </li>
      </ul>
@@ -451,7 +452,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><span class="image right"><img src="img/deposittab.png" alt="Deposit tab" width="145"></span></p>
+<p><span class="image right"><img src="img/deposittab.png" alt="Deposit tab" width="148"></span></p>
 </div>
 <div class="paragraph">
 <p>The Deposit panel has the following tabs:</p>
@@ -474,16 +475,21 @@
 <div class="sect1">
 <h2 id="_part_deposit_settings_tab_d1">Part deposit settings tab (D1)</h2>
 <div class="sectionbody">
+<div class="imageblock right">
+<div class="content">
+<img src="img/d1.png" alt="Deposit tab for D1" width="146">
+</div>
+</div>
 <div class="paragraph">
 <p>Use <strong>D1</strong>, <strong>D2</strong>&#8230;&#8203; tab to handle the part deposit settings to drop parts over the
 deposit pallet.</p>
 </div>
 <div class="sect2">
-<h3 id="_rotate_and_pitch">Rotate and Pitch</h3>
+<h3 id="_rotate_pitch">Rotate, Pitch</h3>
 <div class="paragraph">
-<p>The <strong>Rotate</strong> and <strong>Pitch</strong> options control the orientation of the part at the point of
-drop. The Rotate setting (also known as <strong>yaw</strong>) turns the part around the wrist local
-vector, while the <strong>Pitch</strong> axis rotates the part about the machine Z axis.</p>
+<p>The <strong>Rotate, Pitch</strong> options control the part orientation
+at the deposit point by defining its rotational position around the vertical
+axis and its tilt angle around the lateral axis.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -641,7 +647,7 @@ can view the gripper in position for deposits 18, 19 and 20.</p>
    <a href="#_part_deposit_settings_tab_d1">Part deposit settings tab (D1)</a>
   </li>
   <li level="2">
-   <a href="#_rotate_and_pitch">Rotate and Pitch</a>
+   <a href="#_rotate_pitch">Rotate, Pitch</a>
   </li>
   <li level="2">
    <a href="#_delta_shift">Delta Shift</a>

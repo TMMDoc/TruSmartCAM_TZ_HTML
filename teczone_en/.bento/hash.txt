@@ -13,7 +13,7 @@ LANGUAGE=EN
 TECNOAPP=TruSmartCAM
 TRUMPF=
 Folders=45
-Pages=178
+Pages=179
 UIXlate=False, DebugUIXlate=False, Language=EN
 
 contents.txt • 261117.011145
@@ -234,9 +234,10 @@ Settings\FoldCAM\ZBWCarriers.adoc • ZBW carriers
 Settings\Reports\contents.txt • 255022.025036
 Settings\Reports\Index.adoc • 
 Settings\Reports\ItemDefaults.adoc • 
-BCell\Advanced\GripperDB\contents.txt • 252707.122712
+BCell\Advanced\GripperDB\contents.txt • 260220.090253
 BCell\Advanced\GripperDB\CreateGripper.adoc • 
 BCell\Advanced\GripperDB\ImportGripper.adoc • 
+BCell\Advanced\GripperDB\ImportSuctionCup.adoc • Import Suction Cup
 BCell\Advanced\GripperDB\Index.adoc • 
 Cut\Advanced\Twinline\contents.txt • 252712.052728
 Cut\Advanced\Twinline\index.adoc • TwinLine

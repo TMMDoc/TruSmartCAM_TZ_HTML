@@ -1,0 +1,768 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/trumpf-icon.png">
+  <title>Strategie-Panel</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.trumpf.png" width="120" height="40" /></div>
+        <div><p>TecZone Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Willkommen bei TecZone</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../intro/index.html">Einführung</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../intro/install.html">Software-Installation durchführen</a></li>
+    <li><button class="tree blank"></button><a href="../../intro/clarity.html">Die Benutzeroberfläche</a></li>
+    <li><button class="tree blank"></button><a href="../../intro/workflow.html">Teileworkflow</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cad/2dimport/index.html">2-D-Import</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cad/2dimport/2dcleanup.html">2D-Bereinigung</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cad/3dimport/index.html">3-D Import</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/prep3dmodel.html">3D-Modell importieren</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/prepassembly.html">Baugruppe importieren</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/formdetect.html">Formenerkennung</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/componentdetect.html">Komponentenerkennung</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../cad/sketch.html">Ändern der Geometrie</a></li>
+    <li><button class="tree blank"></button><a href="../../cad/attachments.html">Anhänge</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../cut/index.html">TecZone Laser</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/partworkflow/index.html">Teileworkflow</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/partworkflow/panels/index.html">Fensterbereiche zur Bearbeitung</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../../cut/partworkflow/panels/lasercut/index.html">Laserschneiden</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/approach.html">Anfahren</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/withdrawal.html">Rückzug</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/microjoint.html">Microjoint</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/advanced.html">Erweitert</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/contour.html">Kontur</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/scrapcut.html">Schrottschnitt</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/part.html">Teil</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/cornertreatment.html">Eckenbehandlung</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../cut/partworkflow/quicknest.html">Schnellschachteln</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/jobworkflow/index.html">Job-Workflow</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/jobworkflow/jobpanel/index.html">Fensterbereich Job</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/sheets.html">Tab „Tafeln“</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/parts.html">Tab „Teile“</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/layouts.html">Tab „Layouts“</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/summary.html">Tab „Zusammenfassung“</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/jobworkflow/editlayout/index.html">Layout bearbeiten</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/nestingmodes.html">Schachtelmodi</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/placementpanel.html">Fensterbereich Platzierung</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/sequencing.html">Reihenfolge</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/slicesheet.html">Tafelschnitt</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/bevelcut/index.html">Schrägschnitt</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cut/bevelcut/opencontours.html">Offene Konturen</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/bevelcut/variablebevel.html">Variable Schräge</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/bevelcut/miscellaneous.html">Sonstiges</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/advanced/index.html">Erweitert</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cut/advanced/finishingrules.html">Abschließende Regeln</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/editltt.html">LTT bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/advanced/twinline/index.html">TwinLine</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/strategies.html">Strategie</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/microjoints.html">Microjoints</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/stability.html">Weitere Einstellungen</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/detectline.html">DetectLine</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../bend/index.html">TecZone Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">Biegeparameter erstellen</a></li>
+    <li><button class="tree blank"></button><a href="../../bend/navigator.html">Biegenavigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bend/editing/index.html">Biegedaten bearbeiten</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bend/editing/editbend.html">Eine Biegung bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editmount.html">Werkzeughalterung bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editsetup.html">Eine Biegeaufspannung bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editgauge.html">Anschlagfinger bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editacb.html">Winkelmessung bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/bendsheet.html">Tabellenblatt für Biegungen</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/sequencing.html">Reihenfolge ändern</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/addsetup.html">Hinzufügen von Aufspannungen und Stationen</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bend/advanced/index.html">Erweitert</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bend/advanced/anglemeasurement.html">Winkelmessung</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/batchprocess.html">Stapelverarbeitung</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/recompute.html">Programm neu berechnen</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/tonnage.html">Tonnagekontrolle</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../bend/bendingaids.html">Biegehilfen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../bcell/index.html">BendMaster CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../bcell/navigator.html">Biegenavigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/pickup/index.html">Aufnehmen des Teils</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/pickup/frompallet.html">Aufnehmen von Palette</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/pickup/fromdispenser.html">Aufnehmen vom Spender</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/bending/index.html">Roboterbiegen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/bending/insertion.html">Einlegen</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/bending/bending.html">Biegen</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/bending/extraction.html">Entnahme</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/regrip/index.html">Umgreifen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/regrippanel.html">Fensterbereich „Umgreifen“</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/addregrip.html">Umgreifen hinzufügen</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/editregrip.html">Umgreifen bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/jawregrip.html">Umgreifen mit Zangengreifer</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/regrip/rgstationpanel.html">Fensterbereich „Umgreifstation“</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/deposit/index.html">Werkstückablage</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/patterns.html">Ablagemustertypen</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/deposit.html">Registerkarten für die Ablage</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/separatorsheet.html">Separator-Bleche hinzufügen</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/deposit/lockpartrest.html">Teil-Ruhelage sperren</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bcell/advanced/index.html">Erweitert</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bcell/advanced/waypoints.html">Wegpunkte</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/advanced/cellconfig.html">Zellenkonfiguration</a></li>
+      <li><button class="tree blank"></button><a href="../../bcell/advanced/customcellcomp.html">Benutzerdefinierte Zellenkomponenten</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../bcell/advanced/gripperdb/index.html">Greiferdatenbank</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../bcell/advanced/gripperdb/creategripper.html">Einen Greifer erstellen</a></li>
+        <li><button class="tree blank"></button><a href="../../bcell/advanced/gripperdb/importgripper.html">Greifer aus DXF importieren</a></li>
+        <li><button class="tree blank"></button><a href="../../bcell/advanced/gripperdb/importsuctioncup.html">Saugnapf importieren</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Flex Cell CAM</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../navigator.html">Bend-Navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../pickup/index.html">Teileaufnahme</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../pickup/frompallet.html">Entnahme von der Palette</a></li>
+      <li><button class="tree blank"></button><a href="../pickup/centeringtable.html">Zentriertisch</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Robotergestütztes Biegen</a>
+     <ul>
+      <li><button class="tree blank"></button><a class="active" href="strategypanel.html">Strategie-Panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../regrip/index.html">Umgreifen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../regrip/regrippanel.html">Umgreifen-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../regrip/addregrip.html">Umgreifen hinzufügen/entfernen</a></li>
+      <li><button class="tree blank"></button><a href="../regrip/gripperpanel.html">Greifer-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../regrip/doublesheetstation.html">Doppelblech-Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../deposit/index.html">Fertigteilablage</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../deposit/deposittabs.html">Ablage-Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../advanced/index.html">Fortgeschrittene Themen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../advanced/waypoints.html">Wegpunkte</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../troubleshoot.html">Fehlerbehebung</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../fold/index.html">TecZone Fold</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../fold/createfolddata.html">Falzdaten erstellen</a></li>
+    <li><button class="tree blank"></button><a href="../../fold/foldview.html">Die Falzansicht</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fold/editing/index.html">Falzdaten bearbeiten</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fold/editing/editbend.html">Eine Biegung bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editside.html">Einen Schenkel/einen Abschnitt bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editseq.html">Reihenfolge ändern</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editbh.html">Niederhalter bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editgauge.html">Anschlag bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editblade.html">Schwerter bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editload.html">Beladen bearbeiten</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/editing/editunload.html">Entladen bearbeiten</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../fold/toolinventory.html">Werkzeugbestand</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fold/advanced/index.html">Erweitert</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fold/advanced/airgaptables.html">Benutzerdefinierte Spalttabellen</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/advanced/manualbend.html">Manueller Biegeabschluss</a></li>
+      <li><button class="tree blank"></button><a href="../../fold/advanced/minflangelength.html">Erforderliche Schenkellänge</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../settings/index.html">Einstellungen</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/drawing/index.html">Zeichnung</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/drawing/layers.html">Schichten</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/drawing/dimensions.html">Abmessungen</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/drawing/view.html">Ansicht</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/bendcam/index.html">Biege-CAM</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/bendcam/benddefaults.html">Maschinenvoreinstellungen</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/bendcam/bendoutputs.html">Biegeausgaben</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/bendcam/bendview.html">Maschinenanzeige</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/bendcam/bendcell.html">Biegezelle</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/cutcam/index.html">Cut settings</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutcam.html">Cut CAM</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../settings/cutcam/layout/index.html">Layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/nesting.html">Schachteleinstellungen</a></li>
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/sheet.html">Tafel</a></li>
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/sheethandling.html">Blechhandling</a></li>
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/skeletoncuts.html">Restgitterschnitte</a></li>
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/layout/worksupport.html">Arbeitsunterstützung</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../settings/cutcam/lasercam/index.html">Laser CAM</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../settings/cutcam/lasercam/sequence.html">Reihenfolge</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutoutputs.html">Schneidausgaben</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutview.html">Schnittansicht</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/foldcam/index.html">Schwenkbiegen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/foldcam/defaults.html">Voreinstellungen</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/foldcam/zbwcarriers.html">ZBW-Trägerteile</a></li>
+      <li><button class="tree blank"></button><a href="../../settings/foldcam/foldoutputs.html">Ausgaben</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../settings/reports/index.html">Berichte</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/reports/itemdefaults.html">Objektvoreinstellungen</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../settings/importexport.html">Import/Export</a></li>
+    <li><button class="tree blank"></button><a href="../../settings/environment.html">Umgebung</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../database/index.html">Datenbank</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../database/materials.html">Materialien</a></li>
+    <li><button class="tree blank"></button><a href="../../database/machines.html">Maschinen</a></li>
+    <li><button class="tree blank"></button><a href="../../database/bendtools.html">Biegewerkzeuge</a></li>
+    <li><button class="tree blank"></button><a href="../../database/benddeductions.html">Verkürzungswerte</a></li>
+    <li><button class="tree blank"></button><a href="../../database/bendgrippers.html">Biegegreifer</a></li>
+    <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Umformungen und Komponenten</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../report/index.html">Berichte</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../report/designer.html">Berichtsdesigner</a></li>
+    <li><button class="tree blank"></button><a href="../../report/fields.html">Felder, Abbildungen und Tabellen</a></li>
+    <li><button class="tree blank"></button><a href="../../report/bands.html">Bänder (Unterberichte)</a></li>
+    <li><button class="tree blank"></button><a href="../../report/labels.html">Labels, Bitmaps und Formen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../appendix/index.html">Anhang</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../appendix/3dformats.html">Unterstützte 3D-Formate</a></li>
+    <li><button class="tree blank"></button><a href="../../appendix/bseparatordxf.html">Separator-Blech-DXF</a></li>
+    <li><button class="tree blank"></button><a href="../../appendix/bendtooldxf.html">Biegewerkzeug DXF</a></li>
+    <li><button class="tree blank"></button><a href="../../appendix/adaptgeometry.html">Die Funktion „Geometrie anpassen"</a></li>
+   </ul>
+  </li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Flex Cell CAM</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Robotergestütztes Biegen</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="strategypanel.html">Strategie-Panel</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Strategie-Panel</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="img/robotstrategypanel.png" alt="Roboterstrategie" width="140"></span></p>
+</div>
+<div class="paragraph">
+<p>Über das Bedienfeld <strong>Robot Strategy</strong> steuern Sie die Verarbeitungsstrategie für jede Phase des
+Biegevorgangs. Hier legen Sie fest, wie der Roboter das Werkstück einlegt, den
+Biegevorgang ausführt und das Werkstück entnimmt. Für jede Phase können Sie eine
+Strategie und die zugehörigen Einstellungen festlegen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_einlegen">Einlegen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Im Abschnitt <strong>Insertion</strong> des Bedienfelds <strong>Robot Strategy</strong> legen Sie fest, wie
+das Werkstück vor dem Spannen und Biegen in die Maschine eingelegt wird.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Über die Liste <strong>Insertion</strong> wählen Sie die Einlegemethode:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Standard</strong>: Legen Sie das Werkstück gerade von vorne in die Maschine ein.</p>
+</li>
+<li>
+<p><strong>Von links</strong> oder <strong>von rechts</strong>: Schieben Sie das Werkstück seitlich an der Stempel-/Matrizenstation in die Maschine.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_werkstück_zuerst_einlegen">Werkstück zuerst einlegen</h3>
+<div class="paragraph">
+<p>Der normale Einlegevorgang läuft wie folgt ab:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/gaugefirst.png" alt="Zuerst am Hinteranschlag ausrichten" width="710">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Der Hinteranschlag wird einige Millimeter <em>näher</em> an der Biegelinie positioniert, als für die Positionierung des Werkstücks erforderlich.</p>
+</li>
+<li>
+<p>Das Werkstück wird einige Millimeter vor dem Hinteranschlag abgesenkt.</p>
+</li>
+<li>
+<p>Der Roboter schiebt das Werkstück gegen den Hinteranschlag zurück, bis dessen Kontaktsensoren auslösen und anzeigen, dass das Werkstück korrekt positioniert ist. Anschließend beginnt der Biegezyklus.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Wenn ein nach unten gerichteter Flansch positioniert werden muss, ist dies
+manchmal schwierig: Beim Absenken des Werkstücks könnte der Flansch mit dem
+Hinteranschlag kollidieren. In solchen Fällen verwendet Flex Cell CAM automatisch
+die Strategie <strong>Insert part first</strong>, die wie folgt abläuft:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/partfirst.png" alt="Werkstück zuerst einlegen" width="752">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Das Werkstück wird in die Maschine eingeführt und so weit angehoben, dass der nach unten ragende Flansch an der Matrize vorbeigeführt werden kann.</p>
+</li>
+<li>
+<p>Das Werkstück wird über der Matrize abgesenkt und einige Millimeter vor der endgültigen Biegeposition gehalten.</p>
+</li>
+<li>
+<p>Der Hinteranschlag fährt vor und positioniert sich – wie zuvor – einige Millimeter <em>näher</em> an der Biegelinie, als für die Positionierung des Werkstücks erforderlich.</p>
+</li>
+<li>
+<p>Der Roboter schiebt das Werkstück nun einige Millimeter zurück, bis die Kontaktsensoren des Hinteranschlags auslösen. Anschließend wird gebogen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Flex Cell CAM wählt diese Strategie bei Bedarf automatisch aus. Sie können die
+automatische Auswahl jedoch überschreiben, indem Sie diese Option aktivieren.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bg_z_vor_x">BG: Z vor X</h3>
+<div class="paragraph">
+<p>Die Strategie <strong>BG: Z before X</strong> sorgt für einen sichereren
+Bewegungsablauf des Hinteranschlags, wenn die Messposition für die aktuelle
+Biegung <em>näher</em> an der Biegelinie liegt als die Messposition der vorherigen
+Biegung. Nach dem Wechsel zum nächsten Biegeschritt fahren die Hinteranschläge
+normalerweise direkt von der vorherigen zur neuen Messposition.</p>
+</div>
+<div class="paragraph">
+<p>Wenn diese Checkbox aktiviert ist, fahren die Hinteranschläge zunächst in
+Z-Richtung, bis sie direkt hinter ihren Endpositionen ausgerichtet sind.
+Anschließend bewegen sie sich in X-Richtung nach vorne an ihre Position. Dadurch
+wird eine mögliche Kollision vermieden, die bei einer <em>diagonalen</em> Bewegung
+auftreten könnte.</p>
+</div>
+<div class="paragraph">
+<p>Flex Cell CAM wählt diese Strategie bei Bedarf automatisch aus. Sie können die
+automatische Auswahl hier jedoch überschreiben.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_biegen">Biegen</h2>
+<div class="sectionbody">
+<div class="imageblock right">
+<div class="content">
+<img src="img/bendingstrategy.png" alt="Biegestrategie" width="130">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Ohne Abstützung</strong>: Dies ist die Standardstrategie. Während des Biegevorgangs
+gibt der Greifer das Werkstück frei. Er wartet, bis der Biegevorgang abgeschlossen
+ist, fährt dann nach oben und greift das Werkstück erneut.</p>
+</div>
+<div class="paragraph">
+<p><strong>Greifer verschieben</strong>: Mit dieser Option wird die Position des Greifers während
+des Biegevorgangs angepasst, um das Werkstück während des gesamten Biegezyklus
+korrekt auszurichten und abzustützen.</p>
+</div>
+<div class="paragraph">
+<p><strong>Umgreifen hinzufügen</strong>: Mit der Schaltfläche <strong>Umgreifen hinzufügen</strong> fügen Sie
+einen Umgreifvorgang hinzu. Dadurch können Sie die Position und Ausrichtung des
+Greifers ändern oder bei komplexen Sequenzen mit mehreren Biegungen auf eine
+andere Greifebene wechseln. Ausführliche Informationen zum Umgreifen finden Sie
+im Abschnitt <a href="../regrip/addregrip.html">Umgreifen</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entnahme">Entnahme</h2>
+<div class="sectionbody">
+<div class="imageblock right">
+<div class="content">
+<img src="img/extractionstrat.png" alt="ExtractionStrat" width="250">
+</div>
+</div>
+<div class="paragraph">
+<p>Nach Abschluss des Biegevorgangs muss das Werkstück zwischen Stempel und Matrize
+herausgenommen werden, damit es für die nächste Biegung bereit ist. Über die
+Liste <strong>Extraction</strong> können Sie eine der verschiedenen
+Entnahmestrategien wählen. Im Folgenden werden sie kurz erläutert.</p>
+</div>
+<div class="paragraph">
+<p>Flex Cell CAM wählt abhängig von der Werkstückgeometrie automatisch eine dieser
+Strategien aus, um Kollisionen zu vermeiden. Mit den Einstellungen in diesem
+Abschnitt können Sie den Entnahmealgorithmus überschreiben oder die Parameter
+des ausgewählten Algorithmus anpassen.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Standard</strong>: Das Standardverfahren wird verwendet,
+wenn das Werkstück zur Vorbereitung auf die nächste Biegung entnommen und
+gewendet oder gedreht werden muss.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/stdextract.png" alt="Standardentnahme" width="535"></span></p>
+</div>
+</li>
+<li>
+<p><strong>No Extraction</strong>: Liegt die nächste Biegung nahe
+an der gerade ausgeführten, verläuft sie ungefähr parallel dazu und erfolgt
+sie in derselben Biegerichtung, muss das Werkstück nicht entnommen und erneut
+eingelegt werden. Stattdessen schwenkt es einfach um die Z-Achse in die
+Position für die nächste Biegung, wie in der folgenden Abfolge dargestellt.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/noextraction.png" alt="Keine Entnahme" width="697"></span></p>
+</div>
+</li>
+<li>
+<p><strong>Left</strong> / <strong>Right</strong>: Eine direkte
+Entnahme nach hinten ist manchmal schwierig, wenn der Pressbalken nicht weit
+genug geöffnet werden kann oder tiefe Flansche des Werkstücks sich mit dem
+gekröpften Werkzeug verhaken, wie in der Abbildung unten dargestellt.</p>
+<div class="paragraph">
+<p>Mit dieser Strategie wird das Werkstück nach links oder rechts entnommen. Der
+Parameter <strong>Side shift</strong> steuert die seitliche Verschiebung des
+Werkstücks (in Z-Richtung) vor der Entnahme.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/extractright.png" alt="Entnahme nach rechts" width="614">
+</div>
+</div>
+</li>
+<li>
+<p><strong>Slide back</strong>: Diese Strategie kann bei hohen
+Flanschen hilfreich sein. Vor der Entnahme wird das Werkstück mithilfe des
+Parameters <strong>Slide</strong> nach hinten und unten verschoben.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/slideback.png" alt="Zurückschieben" width="904"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_erweitert">Erweitert</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="img/bendingadvanced.png" alt="Erweiterte Biegeoptionen" width="150"></span></p>
+</div>
+<div class="paragraph">
+<p>Im Abschnitt <strong>Advanced</strong> des Panels stehen folgende Parameter zur
+Verfügung:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Die Einstellung <strong>Opening</strong> steuert die Pressbalkenöffnung<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> nach dem Biegen.</p>
+</li>
+<li>
+<p>Zu Beginn der Entnahme hebt die Einstellung <strong>Part lift</strong> das
+Werkstück aus der Parkposition auf der Matrize an, bevor die Entnahme fortgesetzt
+wird.</p>
+</li>
+<li>
+<p>Mit dem Schieberegler <strong>Simulate</strong> am unteren Rand des Panels können
+Sie in der Simulation des Biegezyklus vor- und zurückblättern und so die
+Auswirkungen Ihrer Änderungen überprüfen. Jede Änderung am <strong>Strategy</strong>-Panel
+aktualisiert die Simulation sofort; zugleich werden alle Kollisionsprüfungen
+in Echtzeit ausgeführt und aktualisiert. Der Schieberegler zeigt außerdem die
+aktuelle <em>Phase</em> des Biegevorgangs an. In diesem Beispiel befindet sich die
+Simulation in der Phase <strong>Lower to Die</strong>.</p>
+</li>
+<li>
+<p>Über den Link <strong>Waypoints</strong> gelangen Sie zum Panel
+<a href="../advanced/waypoints.html">Wegpunkte</a>, in dem Sie die <em>Bewegungsbahn</em> des
+Roboters während des Biegeprozesses präzise festlegen können.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. Der Abstand zwischen der Unterseite des Stempels und der Oberseite der Matrize.
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_einlegen">Einlegen</a>
+  </li>
+  <li level="2">
+   <a href="#_werkstück_zuerst_einlegen">Werkstück zuerst einlegen</a>
+  </li>
+  <li level="2">
+   <a href="#_bg_z_vor_x">BG: Z vor X</a>
+  </li>
+  <li level="1">
+   <a href="#_biegen">Biegen</a>
+  </li>
+  <li level="1">
+   <a href="#_entnahme">Entnahme</a>
+  </li>
+  <li level="1">
+   <a href="#_erweitert">Erweitert</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Robotergestütztes Biegen</a></span>
+ <span class="next"><a href="../regrip/index.html">Umgreifen</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co. KG. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../../img/trumpf-icon.png">
-  <title>Ablage-Panel</title>
+  <title>Registerkarten für die Ablage</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../cut/index.html">Laserschneiden</a>
+   <a href="../../cut/index.html">TecZone Laser</a>
    <ul class="hide">
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../bend/index.html">Abkantpresse</a>
+   <a href="../../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">Biegeparameter erstellen</a></li>
     <li><button class="tree blank"></button><a href="../../bend/navigator.html">Biegenavigator</a></li>
@@ -179,7 +179,7 @@
   </li>
   <li>
    <button class="tree open"></button>
-   <a href="../index.html">BendMaster-CAM</a>
+   <a href="../index.html">BendMaster CAM</a>
    <ul>
     <li><button class="tree blank"></button><a href="../navigator.html">Biegenavigator</a></li>
     <li>
@@ -212,13 +212,12 @@
     </li>
     <li>
      <button class="tree open"></button>
-     <a href="index.html">Teilablage</a>
+     <a href="index.html">Werkstückablage</a>
      <ul>
-      <li><button class="tree blank"></button><a class="active" href="deposit.html">Ablage-Panel</a></li>
-      <li><button class="tree blank"></button><a href="repeat.html">Wiederholung und Reihenfolge</a></li>
+      <li><button class="tree blank"></button><a href="patterns.html">Ablagemustertypen</a></li>
+      <li><button class="tree blank"></button><a class="active" href="deposit.html">Registerkarten für die Ablage</a></li>
       <li><button class="tree blank"></button><a href="separatorsheet.html">Separator-Bleche hinzufügen</a></li>
       <li><button class="tree blank"></button><a href="lockpartrest.html">Teil-Ruhelage sperren</a></li>
-      <li><button class="tree blank"></button><a href="patterns.html">Ablagemustertypen</a></li>
      </ul>
     </li>
     <li>
@@ -227,12 +226,14 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../advanced/waypoints.html">Wegpunkte</a></li>
       <li><button class="tree blank"></button><a href="../advanced/cellconfig.html">Zellenkonfiguration</a></li>
+      <li><button class="tree blank"></button><a href="../advanced/customcellcomp.html">Benutzerdefinierte Zellenkomponenten</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../advanced/gripperdb/index.html">Greiferdatenbank</a>
        <ul class="hide">
         <li><button class="tree blank"></button><a href="../advanced/gripperdb/creategripper.html">Einen Greifer erstellen</a></li>
         <li><button class="tree blank"></button><a href="../advanced/gripperdb/importgripper.html">Greifer aus DXF importieren</a></li>
+        <li><button class="tree blank"></button><a href="../advanced/gripperdb/importsuctioncup.html">Saugnapf importieren</a></li>
        </ul>
       </li>
      </ul>
@@ -241,7 +242,54 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../fold/index.html">Schwenkbiegen</a>
+   <a href="../../fcell/index.html">Flex Cell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../fcell/navigator.html">Bend-Navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/pickup/index.html">Teileaufnahme</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/frompallet.html">Entnahme von der Palette</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/centeringtable.html">Zentriertisch</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/bending/index.html">Robotergestütztes Biegen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/bending/strategypanel.html">Strategie-Panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/regrip/index.html">Umgreifen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/regrippanel.html">Umgreifen-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/addregrip.html">Umgreifen hinzufügen/entfernen</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/gripperpanel.html">Greifer-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/doublesheetstation.html">Doppelblech-Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/deposit/index.html">Fertigteilablage</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/deposit/deposittabs.html">Ablage-Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/advanced/index.html">Fortgeschrittene Themen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/advanced/waypoints.html">Wegpunkte</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../fcell/troubleshoot.html">Fehlerbehebung</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../fold/index.html">TecZone Fold</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../fold/createfolddata.html">Falzdaten erstellen</a></li>
     <li><button class="tree blank"></button><a href="../../fold/foldview.html">Die Falzansicht</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../../settings/cutcam/index.html">Schneide-CAM</a>
+     <a href="../../settings/cutcam/index.html">Cut settings</a>
      <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../../settings/cutcam/layout/index.html">Layout</a>
@@ -384,121 +433,93 @@
   </button>
  </div>
  <div>
-  <a href="../index.html">BendMaster-CAM</a>
+  <a href="../index.html">BendMaster CAM</a>
  </div>
  <div>/</div>
  <div>
-  <a href="index.html">Teilablage</a>
+  <a href="index.html">Werkstückablage</a>
  </div>
  <div>/</div>
  <div>
-  <a href="deposit.html">Ablage-Panel</a>
+  <a href="deposit.html">Registerkarten für die Ablage</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Ablage-Panel</h1>
+                        <h1>Registerkarten für die Ablage</h1>
 <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="img/deposittab.png" alt="Deposit tab" width="148"></span></p>
+</div>
+<div class="paragraph">
+<p>Das Bedienfeld „Ablage“ enthält die folgenden Registerkarten:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Einstellungen für die Werkstückablage (<strong>D1, D2,&#8230;&#8203;.,Dn</strong>)</p>
+</li>
+<li>
+<p>Wiederholraster (<strong>R</strong>)</p>
+</li>
+<li>
+<p>Ablagesequenz (<strong>S</strong>)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_registerkarte_für_werkstückablageeinstellungen_d1">Registerkarte für Werkstückablageeinstellungen (D1)</h2>
 <div class="sectionbody">
 <div class="imageblock right">
 <div class="content">
-<img src="img/depositpanel.png" alt="Ablage-Panel" width="148">
+<img src="img/d1.png" alt="Deposit tab for D1" width="146">
 </div>
 </div>
 <div class="paragraph">
-<p>Das <strong>Ablage</strong>-Panel verwaltet die primären Einstellungen für das Ablegen eines
-Teils auf einer Palette, in einem Behälter oder auf ein Förderband. Wählen Sie
-den am besten geeigneten Mustertyp für ein bestimmtes Teil. Zum Beispiel ist das
-Muster "In Behälter ablegen" nur verwendbar, wenn Sie den mechanischen Greifer
-mit einem kleinen Teil verwenden.</p>
+<p>Verwenden Sie die Registerkarten <strong>D1</strong>, <strong>D2</strong> usw., um die Einstellungen für das
+Ablegen der Werkstücke auf der Ablagepalette festzulegen.</p>
 </div>
+<div class="sect2">
+<h3 id="_rotate_pitch">Rotate, Pitch</h3>
 <div class="paragraph">
-<p>Das Ablage-Panel hat die folgenden Registerkarten und andere Optionen:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Ablageposition (<strong>D1, D2,&#8230;&#8203;.,Dn</strong>)</p>
-</li>
-<li>
-<p>Wiederholungsraster (<strong>R</strong>)</p>
-</li>
-<li>
-<p>Ablagereihenfolge (<strong>S</strong>)</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Das folgende Bild zeigt, wie die Ablage-Registerkarten im Biegenavigator erscheinen:</p>
+<p>Mit den Optionen <strong>Rotate, Pitch</strong> wird die Ausrichtung des
+Werkstücks am Ablagepunkt festgelegt, indem seine Drehposition um die vertikale
+Achse und sein Neigungswinkel um die Querachse definiert werden.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/depositdispnav.png" alt="Ablage im Biegenavigator">
+<img src="img/rotatepitch.png" alt="Rotate pitch" width="508">
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_ablage_registerkarten_d1_d2">Ablage-Registerkarten D1 &amp; D2</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_delta_shift">Delta Shift</h3>
 <div class="paragraph">
-<p>Es gibt mehrere <a href="patterns.html">Ablagemuster</a> (Einfach, Alternierend,
-Verschränken, Behälter usw.). Einige dieser Muster (Alternierend, Verschränken)
-verwenden Teile, die in zwei verschiedenen Ausrichtungen abgelegt werden. Die
-Ausrichtung und andere Einstellungen für diese Teile werden auf den
-Registerkarten D1 und optional D2 bearbeitet.</p>
-</div>
-<div class="paragraph">
-<p>Verwenden Sie <strong>D1</strong> und <strong>D2</strong>, um die Einstellungen für das Ablegen von Teilen auf
-der Ablagepalette zu verwalten.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_drehen_und_neigen">Drehen und Neigen</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Die Optionen <strong>Drehen</strong> und <strong>Neigen</strong> steuern die Ausrichtung des Teils am
-Ablagepunkt. Die Einstellung Drehen (auch bekannt als <strong>Gieren</strong>) dreht das Teil
-um den lokalen Vektor des Handgelenks, während die <strong>Neigen</strong>-Achse das Teil um
-die Maschinen-Z-Achse dreht.</p>
+<p>Mit der Option <strong>Delta Shift</strong> wird jedes nachfolgende
+Werkstück relativ zum darunterliegenden Werkstück versetzt. Unten sehen Sie
+einen Versatz von +15 mm in X-Richtung. Dadurch werden die Werkstücke dicht und
+stabil nebeneinander gestapelt.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/rotatepitch.png" alt="Drehen Neigen" width="508">
+<img src="img/delta.png" alt="Delta shift" width="350">
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_delta_verschiebung">Delta-Verschiebung</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_height">Height</h3>
 <div class="paragraph">
-<p>Die Option <strong>Delta-Verschiebung</strong> wird verwendet, um jedes
-aufeinanderfolgende Teil in der Ablage relativ zum darunter liegenden Teil zu
-verschieben. Sie können unten eine Verschiebung von +15 mm in X-Richtung sehen,
-die verwendet wird, um die Teile eng aneinander und auf stabile Weise zu
-stapeln.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="img/delta.png" alt="Delta-Verschiebung" width="350">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_höhe">Höhe</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Der Parameter <strong>Höhe</strong> steuert die Höhe über dem Stapel, aus der
-das Teil freigegeben wird (das Teil fällt um diese Distanz, wenn es auf dem
-Stapel zur Ruhe kommt).</p>
+<p>Der Parameter <strong>Height</strong> legt die Höhe über dem Stapel fest, aus
+der das Werkstück freigegeben wird. Beim Aufsetzen auf den Stapel fällt das
+Werkstück um diese Strecke nach unten.</p>
 </div>
 <div class="paragraph">
-<p>Wir werden das Ablage-Panel aus den folgenden Themen weiter diskutieren:</p>
+<p>Das Ablagebedienfeld wird außerdem in den folgenden Abschnitten behandelt:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -506,24 +527,108 @@ Stapel zur Ruhe kommt).</p>
 <p><a href="../regrip/index.html">Umgreifen</a></p>
 </li>
 <li>
-<p><a href="lockpartrest.html">Teil-Ruhelage sperren</a></p>
+<p><a href="lockpartrest.html">Werkstückablage fixieren</a></p>
 </li>
 <li>
-<p><a href="separatorsheet.html">Separator-Bleche hinzufügen</a></p>
+<p><a href="separatorsheet.html">Trennbleche hinzufügen</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_simulate">Simulate</h3>
+<div class="paragraph">
+<p>Mit der Option <strong>Simulate</strong> können Sie die Reihenfolge
+nachvollziehen, in der die einzelnen Werkstücke auf der Palette abgelegt werden.
+Die Anzahl der Lagen und das für die Ablage verwendete Raster bestimmen, wie
+viele Werkstücke simuliert werden. Sie können die Simulation der Werkstückablage
+anzeigen, indem Sie den Simulationsschieberegler vor- und zurückbewegen.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wiederholraster_r">Wiederholraster (R)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mit der oben gezeigten Registerkarte <strong>D1</strong> wird die Ausrichtung des ersten
+Werkstücks der Ablage festgelegt. Anschließend werden die Einstellungen auf der
+Registerkarte „Wiederholraster“ verwendet, um diese Ausrichtung auf ein Raster
+aus Reihen (Z), Spalten (X) und Lagen zu übertragen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/repeat.png" alt="Repeat grid" width="710">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Mit den Einstellungen für das <strong>Raster</strong> legen Sie die Anzahl der Spalten und
+Reihen der Ablage fest.</p>
+</li>
+<li>
+<p>Mit der Einstellung <strong>Layers</strong> legen Sie fest, wie viele
+Werkstücke in jedem Stapel übereinanderliegen.</p>
+</li>
+<li>
+<p>Mit den Einstellungen <strong>Gap (Z, X)</strong> legen Sie den Abstand
+zwischen aufeinanderfolgenden Spalten oder Reihen fest. Wenn Sie den Wert auf 0
+setzen, liegen die Reihen oder Spalten direkt aneinander.</p>
+</li>
+<li>
+<p>Mit den Einstellungen <strong>Stack shift</strong> können Sie den
+gesamten Stapel aus allen Werkstücken von der Mitte der Palette weg verschieben.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_simulieren">Simulieren</h2>
+<h2 id="_ablagesequenz_s">Ablagesequenz (S)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die Reihenfolge oder Ordnung, in der jedes Teil auf die Palette gelegt wird,
-kann mit der Option <strong>Simulieren</strong> angezeigt werden. Die Anzahl
-der Schichten und das für die Ablage verwendete Raster bestimmen, welche Menge
-simuliert wird. Die Teilablagesimulation kann durch Vor- und Zurückbewegen des
-Simulations-Schiebereglers angezeigt werden.</p>
+<p>Auf der Registerkarte <strong>Sequenz</strong> legen Sie die Reihenfolge fest, in der die
+Werkstücke abgelegt werden. Die Einstellungen dieser Registerkarte sind in der
+Abbildung dargestellt. In diesem Beispiel gibt es zwei Ablageausrichtungen, D1
+und D2, und entsprechend zwei Sätze von Sequenzeinstellungen. Das bedeutet, dass
+die Lagen für D1 an einer Ecke beginnen können, während die Lagen für D2 an
+einer anderen Ecke starten können.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/sequence.png" alt="Deposit sequence" width="663"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Für die Einstellung <strong>Stack</strong> stehen zwei Optionen zur
+Verfügung: <strong>By Layer</strong> oder <strong>By Pile</strong>. In diesem Beispiel
+werden bei der Stapelung nach Lage beide nebeneinanderliegenden Stapel
+gleichzeitig aufgebaut. Das bedeutet, dass die Werkstücke abwechselnd in Stapel
+1, Stapel 2, Stapel 1, Stapel 2 usw. abgelegt werden. Dadurch wachsen beide
+Stapel gleichzeitig in die Höhe. Bei der stapelweisen Ablage werden zunächst
+alle Werkstücke des linken Stapels abgelegt, bevor Werkstücke im rechten Stapel
+abgelegt werden.</p>
+</li>
+<li>
+<p>Mit den Einstellungen für die Ecke <strong>Start</strong> und den Pfad <strong>Path</strong> legen Sie bei mehreren Reihen oder Spalten fest, an welcher Ecke die Stapelung beginnt und ob sie anschließend Reihe für Reihe oder Spalte für Spalte erfolgt. Dies kann besonders bei einem nicht zentrierten Greifer hilfreich sein, da eine andere Startposition zu einer Kollision zwischen dem Greifer und dem zuvor abgelegten Werkstück führen kann.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/startpath.png" alt="Rear right" width="711"></span> <span class="image"><img src="img/startpath1.png" alt="Rear left" width="711"></span></p>
+</div>
+</li>
+<li>
+<p>Die Abbildung zeigt ein Beispiel, bei dem die Ablage an der hinteren rechten Ecke beginnt und zunächst in X-Richtung erfolgt. Die Zahlen 1, 2, 3 und 4 geben die Reihenfolge der Ablagen innerhalb dieser Lage an. Würde die Ablage an der unteren vorderen linken Ecke beginnen (Standardeinstellung), käme es beim Ablegen des zweiten Werkstücks in der Lage zu einer Kollision zwischen Greifer und zuvor abgelegtem Werkstück, da der Greifer außermittig über die Werkstückgrenzen hinausragt.</p>
+</li>
+<li>
+<p>Mit den Simulationseinstellungen (sowohl dem Drehfeld als auch dem
+Schieberegler) können Sie die Ablagen durchlaufen und die Reihenfolge auf der
+Palette anzeigen. Dies ist besonders hilfreich, wenn Sie die Einstellungen für
+die Startecke und den Pfad anpassen. In der obigen Abbildung ist die Ablage von
+Werkstück 17 (von 20) zu sehen. Wenn Sie den Schieberegler nach rechts bewegen
+oder den Wert im Eingabefeld „Simulieren“ anpassen, können Sie die
+Greiferpositionen für die Ablagen der Werkstücke 18, 19 und 20 anzeigen.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -535,19 +640,25 @@ Simulations-Schiebereglers angezeigt werden.</p>
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_ablage_registerkarten_d1_d2">Ablage-Registerkarten D1 &amp; D2</a>
+   <a href="#_registerkarte_für_werkstückablageeinstellungen_d1">Registerkarte für Werkstückablageeinstellungen (D1)</a>
+  </li>
+  <li level="2">
+   <a href="#_rotate_pitch">Rotate, Pitch</a>
+  </li>
+  <li level="2">
+   <a href="#_delta_shift">Delta Shift</a>
+  </li>
+  <li level="2">
+   <a href="#_height">Height</a>
+  </li>
+  <li level="2">
+   <a href="#_simulate">Simulate</a>
   </li>
   <li level="1">
-   <a href="#_drehen_und_neigen">Drehen und Neigen</a>
+   <a href="#_wiederholraster_r">Wiederholraster (R)</a>
   </li>
   <li level="1">
-   <a href="#_delta_verschiebung">Delta-Verschiebung</a>
-  </li>
-  <li level="1">
-   <a href="#_höhe">Höhe</a>
-  </li>
-  <li level="1">
-   <a href="#_simulieren">Simulieren</a>
+   <a href="#_ablagesequenz_s">Ablagesequenz (S)</a>
   </li>
  </ul>
 </aside>
@@ -555,8 +666,8 @@ Simulations-Schiebereglers angezeigt werden.</p>
                 </div>
             </div>
             <nav class="pagination">
- <span class="prev"><a href="index.html">Teilablage</a></span>
- <span class="next"><a href="repeat.html">Wiederholung und Reihenfolge</a></span>
+ <span class="prev"><a href="patterns.html">Ablagemustertypen</a></span>
+ <span class="next"><a href="separatorsheet.html">Separator-Bleche hinzufügen</a></span>
 </nav>
 
         </div>
@@ -567,7 +678,7 @@ Simulations-Schiebereglers angezeigt werden.</p>
     </div>
     <footer id="site-footer">
         <div class="left">
-            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co.KG. All rights reserved.</p>
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co. KG. All rights reserved.</p>
         </div>
         <div class="middle"></div>
         <div class="right">

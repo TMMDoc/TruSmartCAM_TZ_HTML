@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../../img/trumpf-icon.png">
-  <title>Teilablage</title>
+  <title>Werkstückablage</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../cut/index.html">Laserschneiden</a>
+   <a href="../../cut/index.html">TecZone Laser</a>
    <ul class="hide">
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../bend/index.html">Abkantpresse</a>
+   <a href="../../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">Biegeparameter erstellen</a></li>
     <li><button class="tree blank"></button><a href="../../bend/navigator.html">Biegenavigator</a></li>
@@ -179,7 +179,7 @@
   </li>
   <li>
    <button class="tree open"></button>
-   <a href="../index.html">BendMaster-CAM</a>
+   <a href="../index.html">BendMaster CAM</a>
    <ul>
     <li><button class="tree blank"></button><a href="../navigator.html">Biegenavigator</a></li>
     <li>
@@ -212,13 +212,12 @@
     </li>
     <li>
      <button class="tree open"></button>
-     <a class="active" href="index.html">Teilablage</a>
+     <a class="active" href="index.html">Werkstückablage</a>
      <ul>
-      <li><button class="tree blank"></button><a href="deposit.html">Ablage-Panel</a></li>
-      <li><button class="tree blank"></button><a href="repeat.html">Wiederholung und Reihenfolge</a></li>
+      <li><button class="tree blank"></button><a href="patterns.html">Ablagemustertypen</a></li>
+      <li><button class="tree blank"></button><a href="deposit.html">Registerkarten für die Ablage</a></li>
       <li><button class="tree blank"></button><a href="separatorsheet.html">Separator-Bleche hinzufügen</a></li>
       <li><button class="tree blank"></button><a href="lockpartrest.html">Teil-Ruhelage sperren</a></li>
-      <li><button class="tree blank"></button><a href="patterns.html">Ablagemustertypen</a></li>
      </ul>
     </li>
     <li>
@@ -227,12 +226,14 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../advanced/waypoints.html">Wegpunkte</a></li>
       <li><button class="tree blank"></button><a href="../advanced/cellconfig.html">Zellenkonfiguration</a></li>
+      <li><button class="tree blank"></button><a href="../advanced/customcellcomp.html">Benutzerdefinierte Zellenkomponenten</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../advanced/gripperdb/index.html">Greiferdatenbank</a>
        <ul class="hide">
         <li><button class="tree blank"></button><a href="../advanced/gripperdb/creategripper.html">Einen Greifer erstellen</a></li>
         <li><button class="tree blank"></button><a href="../advanced/gripperdb/importgripper.html">Greifer aus DXF importieren</a></li>
+        <li><button class="tree blank"></button><a href="../advanced/gripperdb/importsuctioncup.html">Saugnapf importieren</a></li>
        </ul>
       </li>
      </ul>
@@ -241,7 +242,54 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../fold/index.html">Schwenkbiegen</a>
+   <a href="../../fcell/index.html">Flex Cell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../fcell/navigator.html">Bend-Navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/pickup/index.html">Teileaufnahme</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/frompallet.html">Entnahme von der Palette</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/pickup/centeringtable.html">Zentriertisch</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/bending/index.html">Robotergestütztes Biegen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/bending/strategypanel.html">Strategie-Panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/regrip/index.html">Umgreifen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/regrippanel.html">Umgreifen-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/addregrip.html">Umgreifen hinzufügen/entfernen</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/gripperpanel.html">Greifer-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../../fcell/regrip/doublesheetstation.html">Doppelblech-Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/deposit/index.html">Fertigteilablage</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/deposit/deposittabs.html">Ablage-Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../fcell/advanced/index.html">Fortgeschrittene Themen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../fcell/advanced/waypoints.html">Wegpunkte</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../fcell/troubleshoot.html">Fehlerbehebung</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../fold/index.html">TecZone Fold</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../../fold/createfolddata.html">Falzdaten erstellen</a></li>
     <li><button class="tree blank"></button><a href="../../fold/foldview.html">Die Falzansicht</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../../settings/cutcam/index.html">Schneide-CAM</a>
+     <a href="../../settings/cutcam/index.html">Cut settings</a>
      <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../settings/cutcam/cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../../settings/cutcam/layout/index.html">Layout</a>
@@ -384,99 +433,212 @@
   </button>
  </div>
  <div>
-  <a href="../index.html">BendMaster-CAM</a>
+  <a href="../index.html">BendMaster CAM</a>
  </div>
  <div>/</div>
  <div>
-  <a href="index.html">Teilablage</a>
+  <a href="index.html">Werkstückablage</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Teilablage</h1>
+                        <h1>Werkstückablage</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>Nachdem das Biegen abgeschlossen ist, wird das fertige Teil auf einer Palette oder
-einem Förderband abgelegt oder in einen Behälter fallen gelassen. Verschiedene Einstellungen
-werden verwendet, um diesen Ablagev organg zu steuern:</p>
-</div>
-<div class="paragraph">
-<p><span class="image right"><img src="img/depositpallet.png" alt="Ablagepanel" width="350"></span></p>
+<p>Nach Abschluss des Biegens wird das fertige Werkstück auf einer Palette oder
+einem Förderband abgelegt oder in einen Korb fallen gelassen. Verschiedene
+Einstellungen steuern diesen Ablagevorgang:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Die Position, Art und Ausrichtung der Ablagepalette</p>
+<p>Die Position, der Typ und die Ausrichtung der Ablagepalette</p>
 </li>
 <li>
-<p>Das Raster der Teile auf der Palette (Zeilen, Spalten, Schichten)</p>
+<p>Das Raster der Werkstücke auf der Palette (Zeilen, Spalten, Lagen)</p>
 </li>
 <li>
-<p>Die Ausrichtung des Teils auf der Palette</p>
+<p>Die Ausrichtung des Werkstücks auf der Palette</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>Diese Einstellungen werden hauptsächlich über das Panel <strong>Ablage</strong> und
-auch über das Panel <strong>Pallete</strong>, das die Ablage unterstützt, gesteuert. So werden
-diese Panels aufgerufen:</p>
+<p>Diese Einstellungen werden hauptsächlich über das Bedienfeld
+<strong>Deposit</strong>, das Bedienfeld <strong>Pallet</strong> und das Bedienfeld
+<strong>Gripper</strong> gesteuert, die den Ablagevorgang unterstützen. Diese
+Bedienfelder sind unten abgebildet. Sie sind alle über Navigationslinks nach
+oben/unten miteinander verbunden.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bedienfeld_deposit">Bedienfeld Deposit</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="img/deposit.png" alt="Deposit panel" width="148"></span></p>
+</div>
+<div class="paragraph">
+<p>Das Bedienfeld <strong>deposit</strong> verwaltet die wichtigsten Einstellungen
+für das Ablegen eines Werkstücks auf einer Palette, in einem Korb oder auf einem
+Förderband. Klicken Sie im <strong>Biegenavigator</strong> auf die Zellen D1, D2 usw., um das
+Bedienfeld <strong>deposit</strong> zu öffnen, oder klicken Sie auf eines der
+fertigen Werkstücke auf der Ablagepalette.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Klicken Sie auf die Ablagepalette (oder Förderband oder Behälter), um das
-<strong>Pallete</strong>-Panel zu öffnen und navigieren Sie <span class="icon"><i class="fa fa-arrow-up"></i></span> zur <strong>Ablage D1</strong>.</p>
-<div class="imageblock">
-<div class="content">
-<img src="img/bendnav.png" alt="Biegenavigator" width="200">
-</div>
-</div>
+<p><strong><a href="patterns.html">Pattern</a></strong>: Über diesen Link werden Details
+zu den verschiedenen Mustertypen angezeigt, die für den Werkstückablagevorgang
+verfügbar sind.</p>
 </li>
 <li>
-<p>Klicken Sie zweimal auf Zellen wie <strong>D1</strong>, <strong>D2</strong> usw. im <strong>Biegenavigator</strong>, um das Panel <strong>Ablage</strong> zu öffnen.</p>
+<p><strong><a href="deposit.html">Ablage-Registerkarten</a></strong>: Das Bedienfeld <strong>deposit</strong>
+enthält mehrere Registerkarten, auf denen Sie verschiedene Aspekte des
+Ablagevorgangs konfigurieren können. Weitere Informationen finden Sie unter
+<a href="deposit.html#_registerkarte_für_werkstückablageeinstellungen_d1">Einstellungen für Werkstück 1 (D1)</a>,
+<a href="deposit.html#_wiederholraster_r">Wiederholraster (R)</a> und
+<a href="deposit.html#_ablagesequenz_s">Ablagesequenz (S)</a>.</p>
 </li>
 <li>
-<p>Klicken Sie auf eines der fertigen Teile, die auf der Ablagepalette liegen, um das Panel <strong>Ablage</strong> zu öffnen.</p>
+<p><strong><a href="../advanced/waypoints.html">Waypoints</a></strong>: Über diesen Link wird
+der Waypoint-Editor geöffnet, in dem die Robotertrajektorie während des Ablegens
+feinabgestimmt werden kann.</p>
+</li>
+<li>
+<p><strong><a href="../regrip/rgstationpanel.html">RG-Stations</a></strong>: Über diesen Link wird
+das Bedienfeld „Umgreifstationen“ geöffnet, in dem die Position der
+Umgreifstation während des Ablagevorgangs konfiguriert werden kann.</p>
+</li>
+<li>
+<p><strong>Prev</strong> und <strong>Next</strong>: Mit diesen Schaltflächen wechseln Sie zu
+den Bedienfeldern der vorherigen bzw. nächsten Operation.</p>
+</li>
+<li>
+<p><strong>Gripper</strong>: Über diese Schaltfläche
+gelangen Sie zum Bedienfeld <strong>gripper</strong> und können die
+Greifereinstellungen für den Ablagevorgang konfigurieren.</p>
+</li>
+<li>
+<p><strong>Pallet</strong>: Über diese Schaltfläche gelangen
+Sie zum Bedienfeld <strong>pallet</strong> und können die Einstellungen für die
+Ablagepalette konfigurieren.</p>
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bedienfeld_pallet">Bedienfeld Pallet</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Zusätzlich verfügen diese beiden Panels über Navigationslinks (<span class="icon"><i class="fa fa-arrow-left"></i></span> <span class="icon"><i class="fa fa-arrow-up"></i></span>
-<span class="icon"><i class="fa fa-arrow-down"></i></span> <span class="icon"><i class="fa fa-arrow-right"></i></span>), die zueinander führen.</p>
+<p><span class="image right"><img src="img/palletpanel.png" alt="Pallet panel" width="149"></span></p>
 </div>
 <div class="paragraph">
-<p>Die Optionen für die Teilablage werden in den folgenden Themen näher erläutert:</p>
+<p>Im Bedienfeld <strong>pallet</strong> können Sie verschiedene Einstellungen für die
+Ablagepalette konfigurieren. Klicken Sie auf die Ablagepalette (oder das
+Förderband bzw. den Korb), um das Bedienfeld <strong>pallet</strong> zu öffnen.
+Alternativ können Sie im Bedienfeld <strong>deposit</strong> auf das
+Palettensymbol <span class="icon"><i class="fa fa-arrow-down"></i></span> klicken, um zum Bedienfeld <strong>pallet</strong> zu
+wechseln.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="deposit.html">Panel "Ablage"</a></p>
+<p><strong>Name</strong>: Zeigt die mit dem aktuellen Werkstück kompatiblen Paletten
+an. Um alle verfügbaren Paletten anzuzeigen, deaktivieren Sie das
+Kontrollkästchen <strong>Filtered</strong>.</p>
 </li>
 <li>
-<p><a href="repeat.html">Wiederholen und Sequenz</a></p>
+<p><strong>Position</strong>: Mit diesen Eingabefeldern positionieren Sie die
+Palette in <strong>Z</strong>- und <strong>X</strong>-Richtung (in Zellkoordinaten).</p>
 </li>
 <li>
-<p><a href="separatorsheet.html">Trennbleche hinzufügen</a></p>
+<p><strong>Lift</strong>: Mit dieser Eingabe können Sie die Palette über den Grundboden anheben.</p>
 </li>
 <li>
-<p><a href="lockpartrest.html">Teilerest fixieren</a></p>
+<p><strong>Angle</strong>: Mit dieser Eingabe können Sie die Palette drehen.</p>
 </li>
 <li>
-<p><a href="patterns.html">Ablage-Mustertypen</a></p>
+<p><strong>Save Config</strong>: Mit dieser Schaltfläche im Abschnitt
+<strong>Advanced</strong> speichern Sie die aktuelle Palettenkonfiguration
+(einschließlich aller Paletten) als Standardeinstellung für diese Maschine.</p>
+</li>
+<li>
+<p><strong><a href="deposit.html#_registerkarte_für_werkstückablageeinstellungen_d1">Deposit D1</a></strong>:
+Über diese Schaltfläche gelangen Sie zum Bedienfeld <strong>deposit</strong> und
+können die Einstellungen für den Ablagevorgang konfigurieren.</p>
+</li>
+<li>
+<p><strong>Prev</strong> und <strong>Next</strong>: Mit diesen Schaltflächen wechseln Sie zu den anderen Paletten.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bedienfeld_gripper">Bedienfeld Gripper</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image right"><img src="img/gripperpanel.png" alt="Gripper panel"></span></p>
+</div>
+<div class="paragraph">
+<p>Im Bedienfeld <strong>gripper</strong> können Sie verschiedene Einstellungen für den
+Greifer konfigurieren, der beim Ablagevorgang verwendet wird. Klicken Sie auf
+den Greifer, um das Bedienfeld <strong>gripper</strong> zu öffnen. Alternativ können
+Sie im Bedienfeld <strong>deposit</strong> auf das Greifersymbol <span class="icon"><i class="fa fa-arrow-up"></i></span>
+klicken, um zum Bedienfeld <strong>gripper</strong> zu wechseln.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Swivel Neck</strong>: Mit dieser Option können Sie den Greiferhals um 180° drehen.</p>
+</li>
+<li>
+<p><strong>Slide Gripper</strong>: Mit dieser Option können Sie den Greiferschlitten auf die andere Seite bewegen.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Dieses Bedienfeld <strong>gripper</strong> ist nur verfügbar, wenn beim Ablagevorgang ein Backengreifer verwendet wird.
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 
                     </article>
                 </div>
                 <div id="site-toc-holder">
-                    <aside id="site-toc"></aside>
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_bedienfeld_deposit">Bedienfeld Deposit</a>
+  </li>
+  <li level="1">
+   <a href="#_bedienfeld_pallet">Bedienfeld Pallet</a>
+  </li>
+  <li level="1">
+   <a href="#_bedienfeld_gripper">Bedienfeld Gripper</a>
+  </li>
+ </ul>
+</aside>
+
                 </div>
             </div>
             <nav class="pagination">
  <span class="prev"><a href="../regrip/rgstationpanel.html">Fensterbereich „Umgreifstation“</a></span>
- <span class="next"><a href="deposit.html">Ablage-Panel</a></span>
+ <span class="next"><a href="patterns.html">Ablagemustertypen</a></span>
 </nav>
 
         </div>
@@ -487,7 +649,7 @@ diese Panels aufgerufen:</p>
     </div>
     <footer id="site-footer">
         <div class="left">
-            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co.KG. All rights reserved.</p>
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co. KG. All rights reserved.</p>
         </div>
         <div class="middle"></div>
         <div class="right">

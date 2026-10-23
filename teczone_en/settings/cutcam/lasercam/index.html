@@ -233,6 +233,7 @@
        <ul class="hide">
         <li><button class="tree blank"></button><a href="../../../bcell/advanced/gripperdb/creategripper.html">Create a gripper</a></li>
         <li><button class="tree blank"></button><a href="../../../bcell/advanced/gripperdb/importgripper.html">Import gripper from DXF</a></li>
+        <li><button class="tree blank"></button><a href="../../../bcell/advanced/gripperdb/importsuctioncup.html">Import Suction Cup</a></li>
        </ul>
       </li>
      </ul>
@@ -565,6 +566,37 @@ considered for stitch cut.</p>
 <div class="paragraph">
 <p><strong>Dynamics</strong> - Dynamics dropdown menu includes Normal, High and
 Reduced.</p>
+</div>
+<div class="paragraph">
+<p><strong>Beam offset</strong>: Determines whether the cutting path offset,
+required to compensate for half the laser beam diameter, is calculated by the
+software or by the controller.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This option is available only in Cut Settings, Layout Settings, and
+Machine Defaults.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><em>By controller</em> - The beam offset is
+computed by the controller on the machine based on the beam diameter
+specified in the HMI.</p>
+</div>
+<div class="paragraph">
+<p><em>By software</em> - The beam offset is
+computed by TecZone Laser and output directly into the NC program.</p>
+</div>
+<div class="paragraph">
+<p><em>None</em> - There is no beam offset used - the center
+of the beam lies exactly on the cutting path.</p>
 </div>
 <div class="paragraph">
 <p><strong>Mark bend lines</strong> - When this option is checked, bend lines created using

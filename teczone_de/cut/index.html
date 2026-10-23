@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../img/trumpf-icon.png">
-  <title>Laserschneiden</title>
+  <title>TecZone Laser</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -59,7 +59,7 @@
   </li>
   <li>
    <button class="tree open"></button>
-   <a class="active" href="index.html">Laserschneiden</a>
+   <a class="active" href="index.html">TecZone Laser</a>
    <ul>
     <li>
      <button class="tree closed"></button>
@@ -146,7 +146,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../bend/index.html">Abkantpresse</a>
+   <a href="../bend/index.html">TecZone Bend</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../bend/createbenddata.html">Biegeparameter erstellen</a></li>
     <li><button class="tree blank"></button><a href="../bend/navigator.html">Biegenavigator</a></li>
@@ -179,7 +179,7 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../bcell/index.html">BendMaster-CAM</a>
+   <a href="../bcell/index.html">BendMaster CAM</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../bcell/navigator.html">Biegenavigator</a></li>
     <li>
@@ -212,13 +212,12 @@
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../bcell/deposit/index.html">Teilablage</a>
+     <a href="../bcell/deposit/index.html">Werkstückablage</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../bcell/deposit/deposit.html">Ablage-Panel</a></li>
-      <li><button class="tree blank"></button><a href="../bcell/deposit/repeat.html">Wiederholung und Reihenfolge</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/deposit/patterns.html">Ablagemustertypen</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/deposit/deposit.html">Registerkarten für die Ablage</a></li>
       <li><button class="tree blank"></button><a href="../bcell/deposit/separatorsheet.html">Separator-Bleche hinzufügen</a></li>
       <li><button class="tree blank"></button><a href="../bcell/deposit/lockpartrest.html">Teil-Ruhelage sperren</a></li>
-      <li><button class="tree blank"></button><a href="../bcell/deposit/patterns.html">Ablagemustertypen</a></li>
      </ul>
     </li>
     <li>
@@ -227,12 +226,14 @@
      <ul class="hide">
       <li><button class="tree blank"></button><a href="../bcell/advanced/waypoints.html">Wegpunkte</a></li>
       <li><button class="tree blank"></button><a href="../bcell/advanced/cellconfig.html">Zellenkonfiguration</a></li>
+      <li><button class="tree blank"></button><a href="../bcell/advanced/customcellcomp.html">Benutzerdefinierte Zellenkomponenten</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../bcell/advanced/gripperdb/index.html">Greiferdatenbank</a>
        <ul class="hide">
         <li><button class="tree blank"></button><a href="../bcell/advanced/gripperdb/creategripper.html">Einen Greifer erstellen</a></li>
         <li><button class="tree blank"></button><a href="../bcell/advanced/gripperdb/importgripper.html">Greifer aus DXF importieren</a></li>
+        <li><button class="tree blank"></button><a href="../bcell/advanced/gripperdb/importsuctioncup.html">Saugnapf importieren</a></li>
        </ul>
       </li>
      </ul>
@@ -241,7 +242,54 @@
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../fold/index.html">Schwenkbiegen</a>
+   <a href="../fcell/index.html">Flex Cell CAM</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../fcell/navigator.html">Bend-Navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/pickup/index.html">Teileaufnahme</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/pickup/frompallet.html">Entnahme von der Palette</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/pickup/centeringtable.html">Zentriertisch</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/bending/index.html">Robotergestütztes Biegen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/bending/strategypanel.html">Strategie-Panel</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/regrip/index.html">Umgreifen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/regrip/regrippanel.html">Umgreifen-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/addregrip.html">Umgreifen hinzufügen/entfernen</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/gripperpanel.html">Greifer-Panel</a></li>
+      <li><button class="tree blank"></button><a href="../fcell/regrip/doublesheetstation.html">Doppelblech-Station</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/deposit/index.html">Fertigteilablage</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/deposit/deposittabs.html">Ablage-Tabs</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../fcell/advanced/index.html">Fortgeschrittene Themen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../fcell/advanced/waypoints.html">Wegpunkte</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../fcell/troubleshoot.html">Fehlerbehebung</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../fold/index.html">TecZone Fold</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../fold/createfolddata.html">Falzdaten erstellen</a></li>
     <li><button class="tree blank"></button><a href="../fold/foldview.html">Die Falzansicht</a></li>
@@ -296,8 +344,9 @@
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../settings/cutcam/index.html">Schneide-CAM</a>
+     <a href="../settings/cutcam/index.html">Cut settings</a>
      <ul class="hide">
+      <li><button class="tree blank"></button><a href="../settings/cutcam/cutcam.html">Cut CAM</a></li>
       <li>
        <button class="tree closed"></button>
        <a href="../settings/cutcam/layout/index.html">Layout</a>
@@ -384,20 +433,20 @@
   </button>
  </div>
  <div>
-  <a href="index.html">Laserschneiden</a>
+  <a href="index.html">TecZone Laser</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Laserschneiden</h1>
+                        <h1>TecZone Laser</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Ein Blech-<em>Flachteil</em> kann mit einem <strong>2D-Laserschneider</strong> aus einer Tafel
 ausgeschnitten werden, bevor es zur Weiterverarbeitung auf einer Abkantpresse
-oder einer Schwenkbiegemaschine geschickt wird. Das Cut-Modul von TecZone
+oder einer Schwenkbiegemaschine geschickt wird. Das TecZone Laser-Modul von TecZone
 dient zum Programmieren von 2D-Laserschneidmaschinen. Üblicherweise werden
 mehrere Teile (oft unterschiedlicher Art) aus einer einzigen Tafel
 ausgeschnitten. Dieser Prozess umfasst zwei Stufen:</p>
@@ -428,11 +477,6 @@ TecZone Laser helfen:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Alle Module von TecZone Laser teilen sich ein gemeinsames
-Benutzerinteraktionsmodell, das als
-<a href="../intro/clarity.html">Clarity</a>-Schnittstelle bezeichnet wird.</p>
-</li>
-<li>
 <p>Sie können Lasermaschinen aus der
 <a href="../database/machines.html">Maschinendatenbank</a> installieren.</p>
 </li>
@@ -441,6 +485,35 @@ Benutzerinteraktionsmodell, das als
 Sie können diese CAD-Dateien durch Importieren von 2D- oder 3D-Daten oder durch
 Zeichnen mit den in TecZone integrierten
 <a href="../cad/sketch.html">Skizzierwerkzeugen</a> erhalten.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_maschinendatenbank">Maschinendatenbank</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/machinedb.png" alt="Maschinendatenbank" width="990">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wählen Sie auf der Startseite in der Befehlsleiste links <strong>Database</strong> aus und anschließend <strong>Machines</strong>.</p>
+</li>
+<li>
+<p>Verwenden Sie den Dialog <strong>Machines</strong>, um Maschinen zu installieren oder zu entfernen und ihre Einstellungen zu bearbeiten.</p>
+</li>
+<li>
+<p>Um eine Maschine zu finden, geben Sie ihre Maschinen-ID ein oder erweitern Sie den Baum, um die verfügbaren Maschinen zu durchsuchen.</p>
+</li>
+<li>
+<p>Nachdem Sie eine Maschine ausgewählt haben, werden die zugehörigen Funktionen in den Abschnitten <strong>Settings</strong> angezeigt.</p>
+</li>
+<li>
+<p>Wählen Sie im Pull-down-Menü <strong>Automation:</strong> aus und anschließend <strong>Configure&#8230;&#8203;</strong>, um auf die automatisierungsbezogenen Einstellungen der ausgewählten Maschine zuzugreifen.</p>
 </li>
 </ul>
 </div>
@@ -455,6 +528,9 @@ Zeichnen mit den in TecZone integrierten
  <ul>
   <li level="1">
    <a href="#_erste_schritte">Erste Schritte</a>
+  </li>
+  <li level="1">
+   <a href="#_maschinendatenbank">Maschinendatenbank</a>
   </li>
  </ul>
 </aside>
@@ -474,7 +550,7 @@ Zeichnen mit den in TecZone integrierten
     </div>
     <footer id="site-footer">
         <div class="left">
-            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co.KG. All rights reserved.</p>
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 by TRUMPF SE + Co. KG. All rights reserved.</p>
         </div>
         <div class="middle"></div>
         <div class="right">
